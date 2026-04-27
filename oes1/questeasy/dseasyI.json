@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which data structure uses FIFO order?",
+    "options": ["Stack", "Queue", "Array", "Tree"],
+    "correctAnswerIndex": 1,
+    "hint": "Queue follows First-In-First-Out."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which data structure uses LIFO order?",
+    "options": ["Stack", "Queue", "Array", "Graph"],
+    "correctAnswerIndex": 0,
+    "hint": "Stack follows Last-In-First-Out."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which data structure is used to implement recursion?",
+    "options": ["Queue", "Stack", "Array", "Linked List"],
+    "correctAnswerIndex": 1,
+    "hint": "Function calls are stored in a stack."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which data structure is used to represent hierarchical data?",
+    "options": ["Array", "Tree", "Stack", "Queue"],
+    "correctAnswerIndex": 1,
+    "hint": "Tree represents hierarchy."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which data structure is used to represent networks?",
+    "options": ["Graph", "Tree", "Array", "Stack"],
+    "correctAnswerIndex": 0,
+    "hint": "Graph represents nodes and edges."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which data structure allows random access?",
+    "options": ["Array", "Linked List", "Queue", "Stack"],
+    "correctAnswerIndex": 0,
+    "hint": "Array allows direct indexing."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which data structure is used for breadth-first search?",
+    "options": ["Stack", "Queue", "Array", "Tree"],
+    "correctAnswerIndex": 1,
+    "hint": "Queue supports BFS traversal."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which data structure is used for depth-first search?",
+    "options": ["Queue", "Stack", "Array", "Graph"],
+    "correctAnswerIndex": 1,
+    "hint": "Stack supports DFS traversal."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which data structure is used to implement priority scheduling?",
+    "options": ["Queue", "Priority Queue", "Stack", "Array"],
+    "correctAnswerIndex": 1,
+    "hint": "Priority Queue retrieves highest priority first."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which data structure is used to store unique elements?",
+    "options": ["Array", "Set", "List", "Queue"],
+    "correctAnswerIndex": 1,
+    "hint": "Set stores unique values."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which data structure is used to implement adjacency list?",
+    "options": ["Array", "Linked List", "Queue", "Stack"],
+    "correctAnswerIndex": 1,
+    "hint": "Linked List stores neighbors in adjacency list."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which data structure is used to implement hash tables?",
+    "options": ["Array", "Linked List", "Stack", "Queue"],
+    "correctAnswerIndex": 0,
+    "hint": "Hash tables use arrays with hashing."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which data structure is used to evaluate arithmetic expressions?",
+    "options": ["Queue", "Stack", "Array", "Tree"],
+    "correctAnswerIndex": 1,
+    "hint": "Stack evaluates postfix expressions."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which data structure is used to implement undo operations?",
+    "options": ["Queue", "Stack", "Array", "Graph"],
+    "correctAnswerIndex": 1,
+    "hint": "Stack supports undo functionality."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which data structure is used to store elements in sorted order?",
+    "options": ["Array", "Tree", "Set", "Heap"],
+    "correctAnswerIndex": 3,
+    "hint": "Heap maintains sorted structure for priority."
+  }
+]

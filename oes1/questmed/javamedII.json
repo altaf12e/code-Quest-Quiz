@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output of the following code?\n\n```java\npublic class Test {\n    public static void main(String[] args) {\n        int a = 10;\n        int b = 20;\n        System.out.println(a > b ? a : b);\n    }\n}\n```",
+    "options": ["10", "20", "Error", "Garbage"],
+    "correctAnswerIndex": 1,
+    "hint": "Ternary operator returns the larger value."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which Java collection allows duplicate elements and maintains insertion order?",
+    "options": ["HashSet", "TreeSet", "ArrayList", "LinkedHashSet"],
+    "correctAnswerIndex": 2,
+    "hint": "ArrayList allows duplicates and preserves order."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which Java collection does not allow duplicate elements and sorts automatically?",
+    "options": ["HashSet", "TreeSet", "ArrayList", "LinkedList"],
+    "correctAnswerIndex": 1,
+    "hint": "TreeSet stores unique elements in sorted order."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output of the following code?\n\n```java\npublic class Test {\n    public static void main(String[] args) {\n        String s = \"Hello\";\n        s = s.replace('H','Y');\n        System.out.println(s);\n    }\n}\n```",
+    "options": ["Hello", "Yello", "Error", "Garbage"],
+    "correctAnswerIndex": 1,
+    "hint": "replace() returns a new string with substitutions."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which Java collection allows key-value pairs with unique keys?",
+    "options": ["Map", "HashMap", "TreeMap", "Hashtable"],
+    "correctAnswerIndex": 1,
+    "hint": "HashMap stores unique keys with values."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which Java collection allows duplicate keys?",
+    "options": ["Map", "Multimap (Guava)", "HashMap", "TreeMap"],
+    "correctAnswerIndex": 1,
+    "hint": "Multimap allows duplicate keys (not in core Java, but via libraries)."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output of the following code?\n\n```java\npublic class Test {\n    public static void main(String[] args) {\n        int[] arr = {1,2,3};\n        System.out.println(arr.length);\n    }\n}\n```",
+    "options": ["2", "3", "Error", "Garbage"],
+    "correctAnswerIndex": 1,
+    "hint": "length gives the number of elements."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which Java collection provides LIFO (Last In First Out) operations?",
+    "options": ["Queue", "Stack", "Deque", "LinkedList"],
+    "correctAnswerIndex": 1,
+    "hint": "Stack follows LIFO principle."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which Java collection provides FIFO (First In First Out) operations?",
+    "options": ["Queue", "Stack", "Deque", "LinkedList"],
+    "correctAnswerIndex": 0,
+    "hint": "Queue follows FIFO principle."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which Java collection provides fast random access?",
+    "options": ["ArrayList", "LinkedList", "HashSet", "TreeSet"],
+    "correctAnswerIndex": 0,
+    "hint": "ArrayList provides O(1) random access."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which Java collection is implemented as a doubly linked list?",
+    "options": ["ArrayList", "LinkedList", "HashMap", "TreeSet"],
+    "correctAnswerIndex": 1,
+    "hint": "LinkedList is a doubly linked list."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output of the following code?\n\n```java\npublic class Test {\n    public static void main(String[] args) {\n        String s1 = \"abc\";\n        String s2 = \"abc\";\n        System.out.println(s1 == s2);\n    }\n}\n```",
+    "options": ["true", "false", "Error", "Garbage"],
+    "correctAnswerIndex": 0,
+    "hint": "String literals are interned in Java."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which Java collection provides key-value pairs but does not guarantee order?",
+    "options": ["HashMap", "TreeMap", "LinkedHashMap", "Hashtable"],
+    "correctAnswerIndex": 0,
+    "hint": "HashMap stores key-value pairs without order."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which Java collection provides unique elements but does not guarantee order?",
+    "options": ["HashSet", "TreeSet", "LinkedHashSet", "ArrayList"],
+    "correctAnswerIndex": 0,
+    "hint": "HashSet stores unique elements without order."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which Java collection allows duplicate elements and maintains sorted order?",
+    "options": ["TreeSet", "ArrayList", "LinkedList", "PriorityQueue"],
+    "correctAnswerIndex": 3,
+    "hint": "PriorityQueue maintains elements in sorted order but allows duplicates."
+  }
+]

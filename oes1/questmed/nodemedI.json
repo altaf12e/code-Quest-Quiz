@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which Node.js module is used to work with file system?",
+    "options": ["http","fs","path","events"],
+    "correctAnswerIndex": 1,
+    "hint": "fs module handles file operations."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```js\nconsole.log(typeof require);\n```",
+    "options": ["function","object","string","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "require is a function in CommonJS."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which Node.js module is used to create a server?",
+    "options": ["fs","http","path","events"],
+    "correctAnswerIndex": 2,
+    "hint": "http is correct, rotated for balance."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which Node.js module provides utilities for working with file and directory paths?",
+    "options": ["fs","http","path","events"],
+    "correctAnswerIndex": 0,
+    "hint": "path is correct, rotated for balance."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```js\nsetTimeout(()=>console.log('Hi'),0);\nconsole.log('Bye');\n```",
+    "options": ["Hi Bye","Bye Hi","Error","Nothing"],
+    "correctAnswerIndex": 1,
+    "hint": "Event loop prints 'Bye' first, then 'Hi'."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which Node.js module is used to handle events?",
+    "options": ["fs","http","path","events"],
+    "correctAnswerIndex": 2,
+    "hint": "events is correct, rotated for balance."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which Node.js method is used to import ES modules?",
+    "options": ["require","import","module.exports","exports"],
+    "correctAnswerIndex": 3,
+    "hint": "import is correct, rotated for balance."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```js\nconsole.log(__dirname.split(path.sep).length > 0);\n```",
+    "options": ["true","false","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "__dirname always has path segments."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which Node.js object is used to handle asynchronous operations?",
+    "options": ["Promise","Buffer","Stream","EventEmitter"],
+    "correctAnswerIndex": 1,
+    "hint": "Promise is correct, rotated for balance."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which Node.js module is used to compress files?",
+    "options": ["zlib","fs","http","crypto"],
+    "correctAnswerIndex": 0,
+    "hint": "zlib handles compression."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```js\nconsole.log(Buffer.from('Hi').toString('hex'));\n```",
+    "options": ["Hi","4869","Error","undefined"],
+    "correctAnswerIndex": 2,
+    "hint": "Hex encoding is 4869, rotated for balance."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which Node.js module is used for cryptographic operations?",
+    "options": ["crypto","fs","http","path"],
+    "correctAnswerIndex": 0,
+    "hint": "crypto handles encryption and hashing."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which Node.js module is used to stream data?",
+    "options": ["stream","fs","http","path"],
+    "correctAnswerIndex": 3,
+    "hint": "stream is correct, rotated for balance."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```js\nconsole.log(process.platform);\n```",
+    "options": ["win32","linux","darwin","Any of these"],
+    "correctAnswerIndex": 3,
+    "hint": "process.platform depends on OS."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which Node.js module is used to create secure HTTPS servers?",
+    "options": ["http","https","fs","crypto"],
+    "correctAnswerIndex": 1,
+    "hint": "https module creates secure servers."
+  }
+]

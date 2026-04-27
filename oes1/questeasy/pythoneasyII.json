@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to handle exceptions?",
+    "options": ["catch", "except", "handle", "error"],
+    "correctAnswerIndex": 1,
+    "hint": "except works with try."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to raise an exception?",
+    "options": ["throw", "raise", "error", "except"],
+    "correctAnswerIndex": 1,
+    "hint": "raise generates exceptions."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to define a class?",
+    "options": ["class", "object", "struct", "define"],
+    "correctAnswerIndex": 0,
+    "hint": "class introduces a new class."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to inherit from a base class?",
+    "options": ["extends", "inherits", "super", "class Child(Base)"],
+    "correctAnswerIndex": 3,
+    "hint": "class Child(Base) inherits Base."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which function returns the length of a list?",
+    "options": ["size()", "count()", "len()", "length()"],
+    "correctAnswerIndex": 2,
+    "hint": "len() gives length."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to define a module alias?",
+    "options": ["alias", "as", "rename", "import"],
+    "correctAnswerIndex": 1,
+    "hint": "import module as alias."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to define a generator?",
+    "options": ["yield", "return", "generate", "produce"],
+    "correctAnswerIndex": 0,
+    "hint": "yield produces values lazily."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to define decorators?",
+    "options": ["@", "decorator", "def", "lambda"],
+    "correctAnswerIndex": 0,
+    "hint": "@decorator above a function."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to define static methods?",
+    "options": ["@staticmethod", "@class", "@static", "@method"],
+    "correctAnswerIndex": 0,
+    "hint": "@staticmethod defines static methods."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to define class methods?",
+    "options": ["@classmethod", "@class", "@method", "@static"],
+    "correctAnswerIndex": 0,
+    "hint": "@classmethod defines class methods."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which function converts a list to a set?",
+    "options": ["list()", "set()", "dict()", "tuple()"],
+    "correctAnswerIndex": 1,
+    "hint": "set(list) removes duplicates."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to define abstract base classes?",
+    "options": ["abstract", "ABC", "base", "interface"],
+    "correctAnswerIndex": 1,
+    "hint": "ABC from abc module."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to exit a loop early?",
+    "options": ["stop", "break", "exit", "return"],
+    "correctAnswerIndex": 1,
+    "hint": "break exits loop."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to skip to next iteration?",
+    "options": ["skip", "continue", "next", "pass"],
+    "correctAnswerIndex": 1,
+    "hint": "continue skips iteration."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to define an empty block?",
+    "options": ["none", "pass", "skip", "empty"],
+    "correctAnswerIndex": 1,
+    "hint": "pass does nothing."
+  }
+]

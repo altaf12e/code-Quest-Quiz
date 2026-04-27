@@ -1,0 +1,107 @@
+[
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"II",
+    "question":"Which SQL clause is used to filter rows before grouping?",
+    "options":["HAVING","GROUP BY","ORDER BY","WHERE"],
+    "correctAnswerIndex":3,
+    "hint":"WHERE filters rows before GROUP BY."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"II",
+    "question":"What will be the result?\n\n```sql\nSELECT department, AVG(salary) FROM employees GROUP BY department;\n```",
+    "options":["Average salary per department","Total salary","Error","NULL"],
+    "correctAnswerIndex":0,
+    "hint":"AVG with GROUP BY computes average per group."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"II",
+    "question":"Which SQL keyword is used to combine rows from two queries including duplicates?",
+    "options":["UNION","JOIN","UNION ALL","INTERSECT"],
+    "correctAnswerIndex":2,
+    "hint":"UNION ALL includes duplicates."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"II",
+    "question":"Which SQL join returns all rows from the left table and matching rows from the right?",
+    "options":["INNER JOIN","LEFT JOIN","RIGHT JOIN","FULL JOIN"],
+    "correctAnswerIndex":1,
+    "hint":"LEFT JOIN returns all left rows plus matches."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"II",
+    "question":"What will be the result?\n\n```sql\nSELECT MAX(salary) FROM employees;\n```",
+    "options":["Error","Lowest salary","Highest salary","NULL"],
+    "correctAnswerIndex":2,
+    "hint":"MAX returns the largest value."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"II",
+    "question":"Which SQL command is used to modify table structure?",
+    "options":["UPDATE","CHANGE","ALTER","MODIFY"],
+    "correctAnswerIndex":2,
+    "hint":"ALTER changes table structure."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"II",
+    "question":"Which SQL keyword is used to enforce referential integrity?",
+    "options":["PRIMARY KEY","CHECK","FOREIGN KEY","UNIQUE"],
+    "correctAnswerIndex":2,
+    "hint":"FOREIGN KEY enforces referential integrity."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"II",
+    "question":"Which SQL keyword is used to return common rows between two queries?",
+    "options":["INTERSECT","UNION","JOIN","EXCEPT"],
+    "correctAnswerIndex":0,
+    "hint":"INTERSECT returns common rows."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"II",
+    "question":"What will be the result?\n\n```sql\nSELECT COUNT(DISTINCT department) FROM employees;\n```",
+    "options":["Total departments","Error","NULL","Number of unique departments"],
+    "correctAnswerIndex":3,
+    "hint":"COUNT(DISTINCT) counts unique values."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"II",
+    "question":"Which SQL command is used to delete specific rows?",
+    "options":["DROP","TRUNCATE","DELETE","REMOVE"],
+    "correctAnswerIndex":2,
+    "hint":"DELETE removes specific rows."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"II",
+    "question":"Which SQL keyword is used to create an index?",
+    "options":["KEY","CREATE INDEX","ALTER","INDEX"],
+    "correctAnswerIndex":1,
+    "hint":"CREATE INDEX creates an index."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"II",
+    "question":"Which SQL keyword is used to remove an index?",
+    "options":["ALTER INDEX","DROP INDEX","DELETE INDEX","REMOVE INDEX"],
+    "correctAnswerIndex":1,
+    "hint":"DROP INDEX removes an index."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"II",
+    "question":"What will be the result?\n\n```sql\nSELECT department, SUM(salary) FROM employees GROUP BY department;\n```",
+    "options":["Average salary","Error","Total salary per department","NULL"],
+    "correctAnswerIndex":2,
+    "hint":"SUM with GROUP BY computes totals per group."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"II",
+    "question":"Which SQL keyword is used to exclude rows present in another query?",
+    "options":["JOIN","UNION","EXCEPT","INTERSECT"],
+    "correctAnswerIndex":2,
+    "hint":"EXCEPT excludes rows from another query."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"II",
+    "question":"Which SQL command is used to add new rows?",
+    "options":["UPDATE","INSERT","ALTER","APPEND"],
+    "correctAnswerIndex":1,
+    "hint":"INSERT adds new rows."
+  }
+]

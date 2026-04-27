@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which framework is commonly used with Node.js for building web applications?",
+    "options": ["Express.js", "Django", "Spring", "Laravel"],
+    "correctAnswerIndex": 0,
+    "hint": "Express.js is the most popular Node.js framework."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which database is often paired with Node.js for NoSQL storage?",
+    "options": ["MySQL", "MongoDB", "PostgreSQL", "Oracle"],
+    "correctAnswerIndex": 1,
+    "hint": "MongoDB is a popular NoSQL database with Node.js."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which package manager is bundled with Node.js?",
+    "options": ["pip", "npm", "yarn", "gradle"],
+    "correctAnswerIndex": 1,
+    "hint": "npm is the default Node.js package manager."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which command initializes a new Node.js project?",
+    "options": ["node start", "npm install", "npm init", "project init"],
+    "correctAnswerIndex": 2,
+    "hint": "npm init creates package.json."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which file defines dependencies in a Node.js project?",
+    "options": ["index.js", "app.js", "package.json", "config.js"],
+    "correctAnswerIndex": 2,
+    "hint": "package.json lists dependencies."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which command installs all dependencies listed in package.json?",
+    "options": ["npm start", "node install", "yarn start", "npm install"],
+    "correctAnswerIndex": 3,
+    "hint": "npm install fetches dependencies."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which command runs a Node.js file?",
+    "options": ["npm run", "execute file.js", "start file.js", "node filename.js"],
+    "correctAnswerIndex": 3,
+    "hint": "Use node filename.js to run files."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which module is used to build REST APIs in Node.js?",
+    "options": ["http", "fs", "net", "Express.js"],
+    "correctAnswerIndex": 3,
+    "hint": "Express.js simplifies REST API creation."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which command removes a package in Node.js?",
+    "options": ["npm remove", "node delete", "npm erase", "npm uninstall"],
+    "correctAnswerIndex": 3,
+    "hint": "npm uninstall removes packages."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which command updates a package in Node.js?",
+    "options": ["npm upgrade", "node update", "npm refresh", "npm update"],
+    "correctAnswerIndex": 3,
+    "hint": "npm update upgrades packages."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which command starts a Node.js application defined in package.json?",
+    "options": ["node run", "npm execute", "start app", "npm start"],
+    "correctAnswerIndex": 3,
+    "hint": "npm start runs the app script."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which command installs a package globally?",
+    "options": ["npm global", "node install -g", "npm add", "npm install -g"],
+    "correctAnswerIndex": 3,
+    "hint": "npm install -g installs globally."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which file is the entry point of most Node.js apps?",
+    "options": ["app.js", "server.js", "main.js", "index.js"],
+    "correctAnswerIndex": 3,
+    "hint": "index.js is commonly used as entry point."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which command checks the version of Node.js installed?",
+    "options": ["npm -v", "version node", "check node", "node -v"],
+    "correctAnswerIndex": 3,
+    "hint": "node -v shows version."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which command checks the version of npm installed?",
+    "options": ["node -v", "version npm", "check npm", "npm -v"],
+    "correctAnswerIndex": 3,
+    "hint": "npm -v shows npm version."
+  }
+]

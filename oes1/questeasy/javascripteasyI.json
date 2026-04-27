@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword is used to declare a variable?",
+    "options": ["var", "let", "const", "all of these"],
+    "correctAnswerIndex": 3,
+    "hint": "JavaScript supports var, let, and const."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which symbol starts a single-line comment?",
+    "options": ["//", "#", "/*", "<!--"],
+    "correctAnswerIndex": 0,
+    "hint": "// starts a comment."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which operator checks equality without type conversion?",
+    "options": ["==", "===", "=", "!=="],
+    "correctAnswerIndex": 1,
+    "hint": "=== checks both value and type."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which function displays output in the browser console?",
+    "options": ["alert()", "console.log()", "print()", "write()"],
+    "correctAnswerIndex": 1,
+    "hint": "console.log() prints to console."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which data type represents true/false values?",
+    "options": ["Boolean", "String", "Number", "Object"],
+    "correctAnswerIndex": 0,
+    "hint": "Boolean is true or false."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword declares a block-scoped variable?",
+    "options": ["var", "let", "const", "scope"],
+    "correctAnswerIndex": 1,
+    "hint": "let is block-scoped."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword declares a constant?",
+    "options": ["const", "final", "static", "constant"],
+    "correctAnswerIndex": 0,
+    "hint": "const defines constants."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which operator is used for string concatenation?",
+    "options": ["+", "&", "concat", "append"],
+    "correctAnswerIndex": 0,
+    "hint": "+ joins strings."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword is used to define a function?",
+    "options": ["func", "def", "function", "lambda"],
+    "correctAnswerIndex": 2,
+    "hint": "function defines functions."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which method converts a string to uppercase?",
+    "options": ["toUpper()", "upper()", "toUpperCase()", "capitalize()"],
+    "correctAnswerIndex": 2,
+    "hint": "toUpperCase() converts to uppercase."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which method removes the last element of an array?",
+    "options": ["pop()", "push()", "shift()", "splice()"],
+    "correctAnswerIndex": 0,
+    "hint": "pop() removes last element."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which method adds an element to the end of an array?",
+    "options": ["push()", "append()", "add()", "insert()"],
+    "correctAnswerIndex": 0,
+    "hint": "push() adds to end."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which value represents 'no value'?",
+    "options": ["null", "undefined", "NaN", "empty"],
+    "correctAnswerIndex": 0,
+    "hint": "null means no value."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which value represents 'not defined'?",
+    "options": ["null", "undefined", "NaN", "error"],
+    "correctAnswerIndex": 1,
+    "hint": "undefined means not defined."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which operator is used for logical AND?",
+    "options": ["&&", "||", "&", "and"],
+    "correctAnswerIndex": 0,
+    "hint": "&& is logical AND."
+  }
+]

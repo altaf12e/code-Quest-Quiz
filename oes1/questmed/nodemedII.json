@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which Node.js framework is commonly used for building web applications?",
+    "options": ["Express","React","Angular","Vue"],
+    "correctAnswerIndex": 0,
+    "hint": "Express is the most popular Node.js web framework."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```js\nconsole.log(process.env.NODE_ENV);\n```",
+    "options": ["development","production","undefined","Error"],
+    "correctAnswerIndex": 2,
+    "hint": "If not set, NODE_ENV is undefined."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which middleware is used to parse incoming JSON requests in Express?",
+    "options": ["express.json()","express.urlencoded()","bodyParser","cookieParser"],
+    "correctAnswerIndex": 0,
+    "hint": "express.json() parses JSON payloads."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which HTTP method is used to update resources?",
+    "options": ["GET","POST","PUT","DELETE"],
+    "correctAnswerIndex": 2,
+    "hint": "PUT updates existing resources."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```js\nconst express = require('express');\nconst app = express();\napp.get('/',(req,res)=>res.send('Hello'));\nconsole.log(typeof app);\n```",
+    "options": ["function","object","string","undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "app is an object."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which middleware is used to serve static files in Express?",
+    "options": ["express.static","express.json","express.urlencoded","cookieParser"],
+    "correctAnswerIndex": 0,
+    "hint": "express.static serves static files."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which HTTP status code indicates 'Not Found'?",
+    "options": ["200","404","500","403"],
+    "correctAnswerIndex": 1,
+    "hint": "404 means resource not found."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```js\nconsole.log(Buffer.byteLength('Node'));\n```",
+    "options": ["2","4","Error","undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "String 'Node' has 4 bytes."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which middleware is used to parse URL-encoded data?",
+    "options": ["express.json()","express.urlencoded()","cookieParser","express.static"],
+    "correctAnswerIndex": 1,
+    "hint": "express.urlencoded() parses form data."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which HTTP status code indicates 'Internal Server Error'?",
+    "options": ["200","404","500","403"],
+    "correctAnswerIndex": 2,
+    "hint": "500 indicates server error."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```js\nconsole.log(typeof module.exports);\n```",
+    "options": ["function","object","string","undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "module.exports is an object."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which middleware is used to parse cookies?",
+    "options": ["express.json()","cookieParser","express.static","express.urlencoded()"],
+    "correctAnswerIndex": 1,
+    "hint": "cookieParser parses cookies."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which HTTP method is used to delete resources?",
+    "options": ["GET","POST","PUT","DELETE"],
+    "correctAnswerIndex": 3,
+    "hint": "DELETE removes resources."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which HTTP status code indicates 'Forbidden'?",
+    "options": ["200","404","500","403"],
+    "correctAnswerIndex": 3,
+    "hint": "403 means forbidden."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```js\nconsole.log(typeof process.nextTick);\n```",
+    "options": ["function","object","string","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "process.nextTick is a function."
+  }
+]

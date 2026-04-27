@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which JVM memory area stores class metadata?",
+    "options": ["Heap","Stack","Metaspace","Code Cache"],
+    "correctAnswerIndex": 2,
+    "hint": "Metaspace replaced PermGen in Java 8."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```java\nclass Test {\n  public static void main(String[] args){\n    Object o = null;\n    System.out.println(o instanceof String);\n  }\n}\n```",
+    "options": ["true","false","Error","null"],
+    "correctAnswerIndex": 1,
+    "hint": "instanceof returns false if reference is null."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which concurrency issue occurs when two threads wait on each other’s locks?",
+    "options": ["Race condition","Starvation","Deadlock","Livelock"],
+    "correctAnswerIndex": 2,
+    "hint": "Deadlock is mutual waiting."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which keyword prevents type erasure issues in generics?",
+    "options": ["extends","super","<?>","@SafeVarargs"],
+    "correctAnswerIndex": 3,
+    "hint": "@SafeVarargs prevents heap pollution warnings."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```java\nclass Test {\n  public static void main(String[] args){\n    String s = \"abc\";\n    String t = \"a\" + \"bc\";\n    System.out.println(s == t);\n  }\n}\n```",
+    "options": ["true","false","Error","null"],
+    "correctAnswerIndex": 0,
+    "hint": "Compile-time concatenation interns strings."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which design pattern wraps objects to add behavior dynamically?",
+    "options": ["Observer","Proxy","Decorator","Factory"],
+    "correctAnswerIndex": 2,
+    "hint": "Decorator adds responsibilities at runtime."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which garbage collector is default in Java 11?",
+    "options": ["CMS","Parallel GC","ZGC","G1 GC"],
+    "correctAnswerIndex": 3,
+    "hint": "G1 GC became default in Java 9+."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```java\nclass Test {\n  public static void main(String[] args){\n    int x = 5;\n    System.out.println(x++ + ++x);\n  }\n}\n```",
+    "options": ["11","12","Error","10"],
+    "correctAnswerIndex": 1,
+    "hint": "x++ (5) + ++x (7) = 12."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which Java Stream method triggers parallel execution?",
+    "options": ["map()","filter()","collect()","parallelStream()"],
+    "correctAnswerIndex": 3,
+    "hint": "parallelStream() enables parallel processing."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which reflection method retrieves all declared methods of a class?",
+    "options": ["getMethods()","getFields()","getConstructors()","getDeclaredMethods()"],
+    "correctAnswerIndex": 3,
+    "hint": "getDeclaredMethods() returns all methods including private."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```java\nclass Test {\n  public static void main(String[] args){\n    int[] arr = new int[0];\n    System.out.println(arr.length);\n  }\n}\n```",
+    "options": ["Error","null","undefined","0"],
+    "correctAnswerIndex": 3,
+    "hint": "Zero-length array has length 0."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which concurrency utility schedules tasks with delay?",
+    "options": ["Future","CompletableFuture","ExecutorService","ScheduledExecutorService"],
+    "correctAnswerIndex": 3,
+    "hint": "ScheduledExecutorService supports delayed tasks."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which design pattern notifies observers of state changes?",
+    "options": ["Decorator","Proxy","Factory","Observer"],
+    "correctAnswerIndex": 3,
+    "hint": "Observer pattern propagates updates."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which JVM component loads classes at runtime?",
+    "options": ["JIT Compiler","Garbage Collector","Runtime","ClassLoader"],
+    "correctAnswerIndex": 3,
+    "hint": "ClassLoader loads bytecode dynamically."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```java\nclass Test {\n  public static void main(String[] args){\n    System.out.println(\"\".isEmpty());\n  }\n}\n```",
+    "options": ["false","Error","null","true"],
+    "correctAnswerIndex": 3,
+    "hint": "Empty string returns true for isEmpty()."
+  }
+]

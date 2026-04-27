@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which algorithm is used to sort numbers by repeatedly swapping adjacent elements?",
+    "options": ["Merge Sort", "Quick Sort", "Bubble Sort", "Insertion Sort"],
+    "correctAnswerIndex": 2,
+    "hint": "Bubble Sort compares and swaps neighbors."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which algorithm sorts by dividing the array into halves?",
+    "options": ["Merge Sort", "Quick Sort", "Bubble Sort", "Selection Sort"],
+    "correctAnswerIndex": 0,
+    "hint": "Merge Sort uses divide and conquer."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which algorithm sorts by selecting the smallest element each time?",
+    "options": ["Selection Sort", "Insertion Sort", "Bubble Sort", "Heap Sort"],
+    "correctAnswerIndex": 0,
+    "hint": "Selection Sort picks minimum element."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which algorithm sorts by inserting elements into their correct position?",
+    "options": ["Insertion Sort", "Selection Sort", "Bubble Sort", "Merge Sort"],
+    "correctAnswerIndex": 0,
+    "hint": "Insertion Sort builds sorted list gradually."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which algorithm is used for searching in a sorted array?",
+    "options": ["Linear Search", "Binary Search", "DFS", "BFS"],
+    "correctAnswerIndex": 1,
+    "hint": "Binary Search halves the search space."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which algorithm is used for searching in an unsorted array?",
+    "options": ["Binary Search", "Linear Search", "DFS", "BFS"],
+    "correctAnswerIndex": 1,
+    "hint": "Linear Search checks each element."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which algorithm is used to find shortest path in weighted graphs?",
+    "options": ["DFS", "BFS", "Dijkstra’s Algorithm", "Prim’s Algorithm"],
+    "correctAnswerIndex": 2,
+    "hint": "Dijkstra finds shortest path."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which algorithm is used to find minimum spanning tree?",
+    "options": ["Kruskal’s Algorithm", "Dijkstra’s Algorithm", "DFS", "BFS"],
+    "correctAnswerIndex": 0,
+    "hint": "Kruskal builds MST using union-find."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which algorithm is used to traverse graphs breadth-first?",
+    "options": ["DFS", "BFS", "Dijkstra’s Algorithm", "Prim’s Algorithm"],
+    "correctAnswerIndex": 1,
+    "hint": "BFS uses a queue."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which algorithm is used to traverse graphs depth-first?",
+    "options": ["DFS", "BFS", "Dijkstra’s Algorithm", "Prim’s Algorithm"],
+    "correctAnswerIndex": 0,
+    "hint": "DFS uses recursion or stack."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which algorithm is used to detect cycles in graphs?",
+    "options": ["DFS", "BFS", "Union-Find", "Dijkstra’s Algorithm"],
+    "correctAnswerIndex": 2,
+    "hint": "Union-Find detects cycles efficiently."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which algorithm is used for topological sorting?",
+    "options": ["DFS", "BFS", "Kahn’s Algorithm", "Prim’s Algorithm"],
+    "correctAnswerIndex": 2,
+    "hint": "Kahn’s Algorithm uses indegree and queue."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which algorithm is used for finding strongly connected components?",
+    "options": ["Kosaraju’s Algorithm", "Kruskal’s Algorithm", "Prim’s Algorithm", "Dijkstra’s Algorithm"],
+    "correctAnswerIndex": 0,
+    "hint": "Kosaraju uses DFS twice."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which algorithm is used for finding maximum flow in a network?",
+    "options": ["Ford-Fulkerson", "Dijkstra’s Algorithm", "Prim’s Algorithm", "Kruskal’s Algorithm"],
+    "correctAnswerIndex": 0,
+    "hint": "Ford-Fulkerson finds max flow."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which algorithm is used for finding shortest path in unweighted graphs?",
+    "options": ["DFS", "BFS", "Dijkstra’s Algorithm", "Prim’s Algorithm"],
+    "correctAnswerIndex": 1,
+    "hint": "BFS finds shortest path in unweighted graphs."
+  }
+]

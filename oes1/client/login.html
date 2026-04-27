@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CodeQuest</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="auth-page">
+    <div class="animated-bg">
+        <div class="floating-code">{"}</div>
+        <div class="floating-code">&lt;/&gt;</div>
+        <div class="floating-code">[ ]</div>
+        <div class="floating-code">( )</div>
+    </div>
+
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <div class="logo-small">⚔️</div>
+                <h2>Welcome to <span class="highlight">CodeQuest</span></h2>
+            </div>
+
+            <div class="tab-container">
+                <button class="tab-btn active" data-tab="login">Login</button>
+                <button class="tab-btn" data-tab="signup">Sign Up</button>
+                <div class="tab-indicator"></div>
+            </div>
+
+            <div class="tab-content active" id="login-tab">
+                <form id="loginForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="loginUsername">Username</label>
+                        <input type="text" id="loginUsername" placeholder="Enter username" required>
+                        <span class="error-msg" id="loginUsernameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" placeholder="Enter password" required>
+                        <span class="error-msg" id="loginPasswordError"></span>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="rememberMe">
+                            <span class="checkmark"></span>
+                            Remember me
+                        </label>
+                        <a href="#" class="link" id="forgotPasswordLink">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span class="btn-icon">🔓</span>
+                        Enter the Arena
+                    </button>
+                </form>
+            </div>
+
+            <div class="tab-content" id="signup-tab">
+                <form id="signupForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="signupUsername">Username</label>
+                        <input type="text" id="signupUsername" placeholder="Choose username" required>
+                        <span class="error-msg" id="signupUsernameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signupEmail">Email</label>
+                        <input type="email" id="signupEmail" placeholder="Enter email" required>
+                        <span class="error-msg" id="signupEmailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signupPassword">Password</label>
+                        <input type="password" id="signupPassword" placeholder="Create password" required>
+                        <span class="error-msg" id="signupPasswordError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" placeholder="Re-enter password" required>
+                        <span class="error-msg" id="confirmPasswordError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Choose Your Avatar</label>
+                        <div class="avatar-selection">
+                            <input type="radio" name="avatar" value="🦸" id="avatar1" checked>
+                            <label for="avatar1" class="avatar-option">🦸</label>
+
+                            <input type="radio" name="avatar" value="🧙" id="avatar2">
+                            <label for="avatar2" class="avatar-option">🧙</label>
+
+                            <input type="radio" name="avatar" value="🦹" id="avatar3">
+                            <label for="avatar3" class="avatar-option">🦹</label>
+
+                            <input type="radio" name="avatar" value="🦊" id="avatar4">
+                            <label for="avatar4" class="avatar-option">🦊</label>
+
+                            <input type="radio" name="avatar" value="🐱" id="avatar5">
+                            <label for="avatar5" class="avatar-option">🐱</label>
+
+                            <input type="radio" name="avatar" value="🐼" id="avatar6">
+                            <label for="avatar6" class="avatar-option">🐼</label>
+
+                            <input type="radio" name="avatar" value="🦁" id="avatar7">
+                            <label for="avatar7" class="avatar-option">🦁</label>
+
+                            <input type="radio" name="avatar" value="🐉" id="avatar8">
+                            <label for="avatar8" class="avatar-option">🐉</label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span class="btn-icon">⚔️</span>
+                        Begin Your Quest
+                    </button>
+                </form>
+            </div>
+
+            <div class="tab-content" id="forgot-tab">
+                <form id="forgotForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="forgotEmail">Email Address</label>
+                        <input type="email" id="forgotEmail" placeholder="Enter your email" required>
+                        <span class="error-msg" id="forgotEmailError"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span class="btn-icon">📧</span>
+                        Send Reset Instructions
+                    </button>
+                    
+                    <div class="form-options">
+                        <a href="#" class="link" id="backToLoginLink">← Back to Login</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="auth-footer">
+                <a href="index.html" class="link">← Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

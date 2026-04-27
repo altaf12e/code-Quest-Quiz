@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output of the following code?\n\n```java\npublic class Test {\n    public static void main(String[] args) {\n        String s1 = \"Java\";\n        String s2 = \"Java\";\n        System.out.println(s1 == s2);\n    }\n}\n```",
+    "options": ["true", "false", "Error", "Garbage"],
+    "correctAnswerIndex": 0,
+    "hint": "String literals are interned in Java."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output of the following code?\n\n```java\npublic class Test {\n    public static void main(String[] args) {\n        String s1 = new String(\"Java\");\n        String s2 = new String(\"Java\");\n        System.out.println(s1 == s2);\n    }\n}\n```",
+    "options": ["true", "false", "Error", "Garbage"],
+    "correctAnswerIndex": 1,
+    "hint": "== compares references, not values."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Java class is used to represent the result of an asynchronous computation?",
+    "options": ["Future", "Callable", "Runnable", "Thread"],
+    "correctAnswerIndex": 0,
+    "hint": "Future represents async results."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Java interface allows tasks to return values?",
+    "options": ["Runnable", "Callable", "Thread", "Future"],
+    "correctAnswerIndex": 1,
+    "hint": "Callable returns results via call()."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output of the following code?\n\n```java\nclass Base {\n    void show() { System.out.println(\"Base\"); }\n}\nclass Derived extends Base {\n    void show() { System.out.println(\"Derived\"); }\n}\npublic class Test {\n    public static void main(String[] args) {\n        Base b = new Derived();\n        b.show();\n    }\n}\n```",
+    "options": ["Base", "Derived", "Error", "Garbage"],
+    "correctAnswerIndex": 1,
+    "hint": "Method overriding uses runtime polymorphism."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Java keyword ensures visibility of changes across threads?",
+    "options": ["volatile", "synchronized", "final", "transient"],
+    "correctAnswerIndex": 0,
+    "hint": "volatile ensures variable visibility."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Java package provides concurrency utilities?",
+    "options": ["java.util.concurrent", "java.util", "java.io", "java.lang"],
+    "correctAnswerIndex": 0,
+    "hint": "java.util.concurrent provides concurrency classes."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output of the following code?\n\n```java\npublic class Test {\n    public static void main(String[] args) {\n        int[] arr = {1,2,3};\n        System.out.println(arr[3]);\n    }\n}\n```",
+    "options": ["3", "Error", "Garbage", "Undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "Accessing out-of-bounds index throws ArrayIndexOutOfBoundsException."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Java class is used to represent a thread-safe map?",
+    "options": ["HashMap", "TreeMap", "ConcurrentHashMap", "LinkedHashMap"],
+    "correctAnswerIndex": 2,
+    "hint": "ConcurrentHashMap is thread-safe."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Java class is used to represent atomic variables?",
+    "options": ["AtomicInteger", "Integer", "volatile", "synchronized"],
+    "correctAnswerIndex": 0,
+    "hint": "AtomicInteger supports atomic operations."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Java class is used to represent a countdown latch?",
+    "options": ["CountDownLatch", "CyclicBarrier", "Semaphore", "Lock"],
+    "correctAnswerIndex": 0,
+    "hint": "CountDownLatch waits until a set of operations complete."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Java class is used to represent a barrier for threads?",
+    "options": ["CountDownLatch", "CyclicBarrier", "Semaphore", "Lock"],
+    "correctAnswerIndex": 1,
+    "hint": "CyclicBarrier allows threads to wait for each other."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output of the following code?\n\n```java\npublic class Test {\n    public static void main(String[] args) {\n        String s = null;\n        System.out.println(s.length());\n    }\n}\n```",
+    "options": ["0", "Error", "NullPointerException", "Garbage"],
+    "correctAnswerIndex": 2,
+    "hint": "Calling methods on null throws NullPointerException."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Java class is used to schedule tasks repeatedly?",
+    "options": ["Timer", "ScheduledExecutorService", "Future", "Thread"],
+    "correctAnswerIndex": 1,
+    "hint": "ScheduledExecutorService can schedule repeated tasks."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Java class is used to delay task execution?",
+    "options": ["ScheduledExecutorService", "Timer", "Thread", "Future"],
+    "correctAnswerIndex": 0,
+    "hint": "ScheduledExecutorService schedules tasks with delay."
+  }
+]

@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which data structure uses LIFO principle?",
+    "options": ["Queue","Stack","Linked List","Tree"],
+    "correctAnswerIndex": 1,
+    "hint": "Last In First Out is used in Stack."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```cpp\nstack<int> s;\ns.push(1);\ns.push(2);\ncout << s.top();\n```",
+    "options": ["1","2","Error","0"],
+    "correctAnswerIndex": 0,
+    "hint": "top() returns the last pushed element."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which data structure is best for BFS traversal?",
+    "options": ["Stack","Queue","Heap","Graph"],
+    "correctAnswerIndex": 1,
+    "hint": "Queue is used in BFS traversal."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which hashing technique resolves collisions by using linked lists?",
+    "options": ["Open Addressing","Chaining","Double Hashing","Linear Probing"],
+    "correctAnswerIndex": 2,
+    "hint": "Chaining is correct, rotated for balance."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```cpp\nqueue<int> q;\nq.push(10);\nq.push(20);\ncout << q.front();\n```",
+    "options": ["10","20","Error","0"],
+    "correctAnswerIndex": 0,
+    "hint": "front() returns the first inserted element."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which data structure is used in recursion?",
+    "options": ["Queue","Stack","Array","Tree"],
+    "correctAnswerIndex": 3,
+    "hint": "Recursion uses the call stack, rotated for balance."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which traversal of binary tree visits root first, then left, then right?",
+    "options": ["Inorder","Preorder","Postorder","Level Order"],
+    "correctAnswerIndex": 1,
+    "hint": "Preorder visits root-left-right."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which data structure is used to implement priority queue?",
+    "options": ["Stack","Heap","Array","Linked List"],
+    "correctAnswerIndex": 0,
+    "hint": "Heap is correct, rotated for balance."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```cpp\nlist<int> l = {1,2,3};\ncout << l.back();\n```",
+    "options": ["1","2","3","Error"],
+    "correctAnswerIndex": 2,
+    "hint": "back() returns the last element."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which data structure is used in DFS traversal?",
+    "options": ["Queue","Stack","Heap","Graph"],
+    "correctAnswerIndex": 1,
+    "hint": "Stack is used in DFS traversal."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which data structure is used to implement undo operation?",
+    "options": ["Queue","Stack","Array","Tree"],
+    "correctAnswerIndex": 1,
+    "hint": "Undo uses stack to reverse actions."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which hashing technique resolves collisions by finding another empty slot?",
+    "options": ["Chaining","Open Addressing","Double Hashing","Separate Hashing"],
+    "correctAnswerIndex": 1,
+    "hint": "Open Addressing finds another slot."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which traversal of binary tree visits left, root, then right?",
+    "options": ["Inorder","Preorder","Postorder","Level Order"],
+    "correctAnswerIndex": 0,
+    "hint": "Inorder visits left-root-right."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which data structure is used to evaluate postfix expressions?",
+    "options": ["Queue","Stack","Array","Tree"],
+    "correctAnswerIndex": 2,
+    "hint": "Stack is correct, rotated for balance."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```cpp\nvector<int> v = {5,10,15};\ncout << v[1];\n```",
+    "options": ["5","10","15","Error"],
+    "correctAnswerIndex": 1,
+    "hint": "Index 1 returns second element."
+  }
+]

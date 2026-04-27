@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "algorithms",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which sorting algorithm has average time complexity O(n log n)?",
+    "options": ["Bubble Sort","Merge Sort","Insertion Sort","Selection Sort"],
+    "correctAnswerIndex": 1,
+    "hint": "Merge Sort runs in O(n log n)."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```cpp\nint arr[] = {1,2,3};\ncout << binary_search(arr, arr+3, 2);\n```",
+    "options": ["0","1","Error","2"],
+    "correctAnswerIndex": 1,
+    "hint": "binary_search returns true (1) if element exists."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which algorithm is used to find shortest path in weighted graphs?",
+    "options": ["DFS","BFS","Dijkstra","Kruskal"],
+    "correctAnswerIndex": 2,
+    "hint": "Dijkstra finds shortest path in weighted graphs."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which algorithm is used to find minimum spanning tree?",
+    "options": ["Prim","Dijkstra","Bellman-Ford","Floyd-Warshall"],
+    "correctAnswerIndex": 0,
+    "hint": "Prim’s algorithm builds MST."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```cpp\nint a=5;\nint b=10;\nswap(a,b);\ncout << a << \" \" << b;\n```",
+    "options": ["5 10","10 5","Error","0 0"],
+    "correctAnswerIndex": 1,
+    "hint": "swap exchanges values."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which algorithm is used for finding strongly connected components?",
+    "options": ["Kruskal","Tarjan","Prim","Bellman-Ford"],
+    "correctAnswerIndex": 1,
+    "hint": "Tarjan’s algorithm finds SCCs."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which algorithm is used for matrix chain multiplication?",
+    "options": ["Greedy","Dynamic Programming","Divide and Conquer","Backtracking"],
+    "correctAnswerIndex": 1,
+    "hint": "Matrix chain multiplication uses DP."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```cpp\nint arr[] = {3,1,2};\nsort(arr, arr+3);\ncout << arr[0];\n```",
+    "options": ["1","2","3","Error"],
+    "correctAnswerIndex": 0,
+    "hint": "sort arranges in ascending order."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which algorithm is used for single-source shortest path with negative weights?",
+    "options": ["Dijkstra","Bellman-Ford","Prim","Floyd-Warshall"],
+    "correctAnswerIndex": 1,
+    "hint": "Bellman-Ford handles negative weights."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which algorithm is used for all-pairs shortest path?",
+    "options": ["Prim","Dijkstra","Bellman-Ford","Floyd-Warshall"],
+    "correctAnswerIndex": 3,
+    "hint": "Floyd-Warshall finds all-pairs shortest path."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```cpp\nvector<int> v = {1,2,3};\nreverse(v.begin(), v.end());\ncout << v[0];\n```",
+    "options": ["1","2","3","Error"],
+    "correctAnswerIndex": 2,
+    "hint": "reverse changes order to 3,2,1."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which algorithm is used for minimum spanning tree using greedy approach?",
+    "options": ["Kruskal","Bellman-Ford","Dijkstra","Floyd-Warshall"],
+    "correctAnswerIndex": 0,
+    "hint": "Kruskal uses greedy approach."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which algorithm is used for finding maximum flow in a network?",
+    "options": ["Ford-Fulkerson","Prim","Kruskal","Bellman-Ford"],
+    "correctAnswerIndex": 0,
+    "hint": "Ford-Fulkerson finds max flow."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which algorithm is used for searching in balanced binary search trees?",
+    "options": ["Linear Search","Binary Search","DFS","BFS"],
+    "correctAnswerIndex": 1,
+    "hint": "Binary search is used in BST."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```cpp\nint arr[] = {1,2,3};\nnext_permutation(arr, arr+3);\ncout << arr[0];\n```",
+    "options": ["1","2","3","Error"],
+    "correctAnswerIndex": 1,
+    "hint": "next_permutation rearranges to next lexicographic order."
+  }
+]

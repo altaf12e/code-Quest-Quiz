@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which Python data type is immutable?",
+    "options": ["list","tuple","dict","set"],
+    "correctAnswerIndex": 1,
+    "hint": "Tuples cannot be modified after creation."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which Python keyword is used to handle exceptions?",
+    "options": ["try","catch","except","finally"],
+    "correctAnswerIndex": 2,
+    "hint": "except handles exceptions raised in try block."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which Python keyword is used to define anonymous functions?",
+    "options": ["def","lambda","func","return"],
+    "correctAnswerIndex": 1,
+    "hint": "lambda defines small anonymous functions."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output of the following code?\n\n```python\nx = [1,2,3]\nprint(x[1:])\n```",
+    "options": ["[1,2,3]","[2,3]","[1,2]","Error"],
+    "correctAnswerIndex": 1,
+    "hint": "Slicing from index 1 returns [2,3]."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output of the following code?\n\n```python\nx = \"Hello\"\nprint(x.lower())\n```",
+    "options": ["HELLO","hello","Error","Hello"],
+    "correctAnswerIndex": 1,
+    "hint": "lower() converts string to lowercase."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which Python collection allows duplicate elements?",
+    "options": ["set","dict","list","tuple"],
+    "correctAnswerIndex": 2,
+    "hint": "Lists can contain duplicates."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which Python keyword is used to import modules?",
+    "options": ["include","import","require","module"],
+    "correctAnswerIndex": 1,
+    "hint": "import brings external modules into scope."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output of the following code?\n\n```python\nx = {\"a\":1,\"b\":2}\nprint(x.get(\"c\",3))\n```",
+    "options": ["None","Error","3","1"],
+    "correctAnswerIndex": 2,
+    "hint": "get() returns default if key not found."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which Python keyword is used to create a generator?",
+    "options": ["yield","return","gen","async"],
+    "correctAnswerIndex": 0,
+    "hint": "yield produces values in a generator."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which Python keyword is used to define asynchronous functions?",
+    "options": ["async","await","lambda","def"],
+    "correctAnswerIndex": 0,
+    "hint": "async marks a function as asynchronous."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output of the following code?\n\n```python\nx = [1,2,3]\nprint(x*2)\n```",
+    "options": ["[1,2,3,1,2,3]","[2,4,6]","Error","[1,2,3]*2"],
+    "correctAnswerIndex": 0,
+    "hint": "Multiplying a list repeats its elements."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which Python keyword is used to exit a loop prematurely?",
+    "options": ["stop","exit","break","continue"],
+    "correctAnswerIndex": 2,
+    "hint": "break exits the loop immediately."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which Python keyword is used to skip the current iteration of a loop?",
+    "options": ["skip","continue","break","pass"],
+    "correctAnswerIndex": 1,
+    "hint": "continue skips current iteration."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which Python keyword is used to define a class?",
+    "options": ["class","def","object","struct"],
+    "correctAnswerIndex": 0,
+    "hint": "class defines a new class."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output of the following code?\n\n```python\nx = [1,2,3]\nprint(len(x))\n```",
+    "options": ["2","3","Error","None"],
+    "correctAnswerIndex": 1,
+    "hint": "len() returns number of elements."
+  }
+]

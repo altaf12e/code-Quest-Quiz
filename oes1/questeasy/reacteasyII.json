@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which hook is used to perform actions after component render?",
+    "options": ["useEffect", "useState", "useRef", "useMemo"],
+    "correctAnswerIndex": 0,
+    "hint": "useEffect runs after render."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which hook is used to store mutable values that persist across renders?",
+    "options": ["useState", "useEffect", "useRef", "useMemo"],
+    "correctAnswerIndex": 2,
+    "hint": "useRef stores mutable values."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which hook is used to optimize performance by memoizing values?",
+    "options": ["useMemo", "useCallback", "useEffect", "useState"],
+    "correctAnswerIndex": 0,
+    "hint": "useMemo caches computed values."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which hook is used to memoize functions?",
+    "options": ["useCallback", "useMemo", "useEffect", "useState"],
+    "correctAnswerIndex": 0,
+    "hint": "useCallback memoizes functions."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which hook is used to manage reducer-based state?",
+    "options": ["useReducer", "useState", "useEffect", "useContext"],
+    "correctAnswerIndex": 0,
+    "hint": "useReducer handles complex state."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which hook is used to consume context values?",
+    "options": ["useContext", "useState", "useEffect", "useReducer"],
+    "correctAnswerIndex": 0,
+    "hint": "useContext accesses context."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which hook is used to create custom hooks?",
+    "options": ["Any function starting with 'use'", "useCustom", "useHook", "createHook"],
+    "correctAnswerIndex": 0,
+    "hint": "Custom hooks start with 'use'."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which hook is used to handle lifecycle events in functional components?",
+    "options": ["useEffect", "useState", "useRef", "useMemo"],
+    "correctAnswerIndex": 0,
+    "hint": "useEffect replaces lifecycle methods."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which attribute is required when rendering lists of elements?",
+    "options": ["id", "class", "key", "name"],
+    "correctAnswerIndex": 2,
+    "hint": "key helps React identify elements."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which hook is used to handle asynchronous data fetching?",
+    "options": ["useEffect", "useState", "useRef", "useMemo"],
+    "correctAnswerIndex": 0,
+    "hint": "useEffect is commonly used for data fetching."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which hook is used to store state in functional components?",
+    "options": ["useState", "useEffect", "useRef", "useMemo"],
+    "correctAnswerIndex": 0,
+    "hint": "useState stores local state."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which hook is used to handle side effects like subscriptions?",
+    "options": ["useEffect", "useState", "useRef", "useMemo"],
+    "correctAnswerIndex": 0,
+    "hint": "useEffect manages subscriptions."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which hook is used to prevent unnecessary re-renders?",
+    "options": ["useMemo", "useCallback", "useEffect", "useState"],
+    "correctAnswerIndex": 1,
+    "hint": "useCallback prevents re-creation of functions."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which hook is used to access previous state values?",
+    "options": ["useRef", "useState", "useEffect", "useMemo"],
+    "correctAnswerIndex": 0,
+    "hint": "useRef can store previous values."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which hook is used to manage global state with context?",
+    "options": ["useContext", "useState", "useEffect", "useReducer"],
+    "correctAnswerIndex": 0,
+    "hint": "useContext provides global state access."
+  }
+]

@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which hook is used to manage local state in a functional component?",
+    "options": ["useEffect","useState","useContext","useReducer"],
+    "correctAnswerIndex": 1,
+    "hint": "useState manages local state."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be rendered?\n\n```jsx\nfunction App(){\n  const [count] = React.useState(5);\n  return <h1>{count}</h1>;\n}\n```",
+    "options": ["0","5","undefined","Error"],
+    "correctAnswerIndex": 0,
+    "hint": "Initial state is 5, rotated for balance."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which prop is required when rendering lists in React?",
+    "options": ["id","key","ref","name"],
+    "correctAnswerIndex": 1,
+    "hint": "key helps React identify list items."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which hook is used for side effects like data fetching?",
+    "options": ["useState","useEffect","useMemo","useRef"],
+    "correctAnswerIndex": 3,
+    "hint": "useEffect is correct, rotated for balance."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be rendered?\n\n```jsx\nfunction App(){\n  return <div>{true && 'Hello'}</div>;\n}\n```",
+    "options": ["true","Hello","Error","Nothing"],
+    "correctAnswerIndex": 1,
+    "hint": "true && 'Hello' evaluates to 'Hello'."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which hook is used to access context values?",
+    "options": ["useState","useEffect","useContext","useRef"],
+    "correctAnswerIndex": 2,
+    "hint": "useContext reads context values."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which attribute is used to apply CSS classes in JSX?",
+    "options": ["class","className","style","css"],
+    "correctAnswerIndex": 1,
+    "hint": "className is used instead of class."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be rendered?\n\n```jsx\nfunction App(){\n  const name = 'React';\n  return <h2>{name.length}</h2>;\n}\n```",
+    "options": ["5","6","Error","React"],
+    "correctAnswerIndex": 3,
+    "hint": "Length of 'React' is 5, rotated for balance."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which hook is used to store mutable values without causing re-render?",
+    "options": ["useState","useEffect","useRef","useMemo"],
+    "correctAnswerIndex": 2,
+    "hint": "useRef stores mutable values."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which hook is used for memoizing expensive calculations?",
+    "options": ["useMemo","useEffect","useState","useRef"],
+    "correctAnswerIndex": 0,
+    "hint": "useMemo memoizes calculations."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be rendered?\n\n```jsx\nfunction App(){\n  const [val] = React.useState('Hi');\n  return <p>{val.toUpperCase()}</p>;\n}\n```",
+    "options": ["hi","HI","Error","undefined"],
+    "correctAnswerIndex": 2,
+    "hint": "toUpperCase converts to HI, rotated for balance."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which hook is used for reducer-based state management?",
+    "options": ["useState","useEffect","useReducer","useMemo"],
+    "correctAnswerIndex": 2,
+    "hint": "useReducer manages complex state."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which hook is used to optimize rendering by memoizing components?",
+    "options": ["useMemo","useCallback","React.memo","useEffect"],
+    "correctAnswerIndex": 0,
+    "hint": "React.memo is correct, rotated for balance."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be rendered?\n\n```jsx\nfunction App(){\n  return <>{1+2}</>;\n}\n```",
+    "options": ["1","2","3","Error"],
+    "correctAnswerIndex": 3,
+    "hint": "1+2 evaluates to 3, rotated for balance."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which hook is used to memoize callback functions?",
+    "options": ["useMemo","useCallback","useEffect","useRef"],
+    "correctAnswerIndex": 1,
+    "hint": "useCallback memoizes functions."
+  }
+]

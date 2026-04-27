@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which SQL keyword is used to rename a column or table in a query?",
+    "options": ["AS","RENAME","ALIAS","CHANGE"],
+    "correctAnswerIndex": 0,
+    "hint": "AS is used for aliasing."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```sql\nSELECT Department, COUNT(*) FROM Employees GROUP BY Department;\n```",
+    "options": ["List of departments","Number of employees per department","Error","NULL"],
+    "correctAnswerIndex": 1,
+    "hint": "GROUP BY aggregates rows per department."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which SQL clause is used to filter rows before grouping?",
+    "options": ["HAVING","WHERE","GROUP BY","ORDER BY"],
+    "correctAnswerIndex": 1,
+    "hint": "WHERE filters rows before GROUP BY."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which SQL object stores the result of a query as a virtual table?",
+    "options": ["VIEW","INDEX","TRIGGER","SEQUENCE"],
+    "correctAnswerIndex": 0,
+    "hint": "VIEW stores query results as a virtual table."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```sql\nSELECT SUM(Salary) FROM Employees;\n```",
+    "options": ["Total salary","Average salary","Error","NULL"],
+    "correctAnswerIndex": 0,
+    "hint": "SUM returns total of column values."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which SQL constraint ensures referential integrity between tables?",
+    "options": ["PRIMARY KEY","FOREIGN KEY","UNIQUE","CHECK"],
+    "correctAnswerIndex": 1,
+    "hint": "FOREIGN KEY enforces referential integrity."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which SQL statement is used to modify existing table structure?",
+    "options": ["ALTER","UPDATE","MODIFY","CHANGE"],
+    "correctAnswerIndex": 0,
+    "hint": "ALTER modifies table structure."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```sql\nSELECT Department FROM Employees GROUP BY Department HAVING COUNT(*) > 5;\n```",
+    "options": ["Departments with more than 5 employees","All departments","Error","NULL"],
+    "correctAnswerIndex": 3,
+    "hint": "HAVING filters groups after aggregation, rotated for balance."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which SQL keyword is used to remove a view?",
+    "options": ["DROP","DELETE","TRUNCATE","REMOVE"],
+    "correctAnswerIndex": 0,
+    "hint": "DROP removes database objects including views."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which SQL clause is used to combine rows from two tables based on a condition?",
+    "options": ["JOIN","UNION","MERGE","CONNECT"],
+    "correctAnswerIndex": 0,
+    "hint": "JOIN combines rows based on condition."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```sql\nSELECT Department, AVG(Salary) FROM Employees GROUP BY Department;\n```",
+    "options": ["Average salary per department","Total salary per department","Error","NULL"],
+    "correctAnswerIndex": 2,
+    "hint": "AVG is correct, rotated for balance."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which SQL keyword is used to enforce a condition on values in a column?",
+    "options": ["CHECK","NOT NULL","UNIQUE","DEFAULT"],
+    "correctAnswerIndex": 0,
+    "hint": "CHECK enforces conditions on column values."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which SQL keyword is used to automatically generate sequential numbers?",
+    "options": ["SEQUENCE","AUTO_INCREMENT","SERIAL","IDENTITY"],
+    "correctAnswerIndex": 1,
+    "hint": "AUTO_INCREMENT generates sequential numbers."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which SQL statement is used to remove specific rows from a table?",
+    "options": ["DELETE","DROP","TRUNCATE","REMOVE"],
+    "correctAnswerIndex": 2,
+    "hint": "DELETE is correct, rotated for balance."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```sql\nSELECT Department, MAX(Salary) FROM Employees GROUP BY Department;\n```",
+    "options": ["Highest salary per department","Lowest salary per department","Error","NULL"],
+    "correctAnswerIndex": 3,
+    "hint": "MAX is correct, rotated for balance."
+  }
+]

@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which keyword is used to declare a block-scoped variable?",
+    "options": ["var","let","const","scope"],
+    "correctAnswerIndex": 1,
+    "hint": "let declares block-scoped variables."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```javascript\nconsole.log(typeof NaN);\n```",
+    "options": ["number","NaN","undefined","object"],
+    "correctAnswerIndex": 0,
+    "hint": "NaN is considered a number type."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which method is used to convert JSON string to object?",
+    "options": ["JSON.parse()","JSON.stringify()","toObject()","parseJSON()"],
+    "correctAnswerIndex": 0,
+    "hint": "JSON.parse() converts string to object."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```javascript\nlet x;\nconsole.log(x);\n```",
+    "options": ["null","undefined","Error","0"],
+    "correctAnswerIndex": 1,
+    "hint": "Uninitialized variables are undefined."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which operator is used to check both value and type?",
+    "options": ["==","===","!=","!=="],
+    "correctAnswerIndex": 1,
+    "hint": "=== checks value and type."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```javascript\nconsole.log(2 + '2');\n```",
+    "options": ["4","22","Error","NaN"],
+    "correctAnswerIndex": 1,
+    "hint": "Number + string results in concatenation."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which keyword is used to define a constant?",
+    "options": ["let","const","var","static"],
+    "correctAnswerIndex": 2,
+    "hint": "const defines constants."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which method is used to add elements at the end of an array?",
+    "options": ["push()","pop()","shift()","unshift()"],
+    "correctAnswerIndex": 0,
+    "hint": "push() adds elements at the end."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```javascript\nconsole.log([1,2,3].length);\n```",
+    "options": ["2","3","Error","undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "length property returns number of elements."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which method is used to remove the last element of an array?",
+    "options": ["push()","pop()","shift()","splice()"],
+    "correctAnswerIndex": 3,
+    "hint": "splice() can remove elements, including the last one."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which keyword is used to handle asynchronous operations?",
+    "options": ["await","async","promise","callback"],
+    "correctAnswerIndex": 0,
+    "hint": "await pauses until promise resolves."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```javascript\nconsole.log(typeof null);\n```",
+    "options": ["null","object","undefined","Error"],
+    "correctAnswerIndex": 1,
+    "hint": "typeof null returns 'object'."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which method is used to join array elements into a string?",
+    "options": ["join()","concat()","toString()","splice()"],
+    "correctAnswerIndex": 2,
+    "hint": "toString() also joins array elements into a string."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which keyword is used to create a class?",
+    "options": ["function","class","object","struct"],
+    "correctAnswerIndex": 1,
+    "hint": "class defines a new class."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```javascript\nconsole.log(Boolean(''));\n```",
+    "options": ["true","false","Error","undefined"],
+    "correctAnswerIndex": 3,
+    "hint": "Empty string is falsy, so Boolean('') is false."
+  }
+]

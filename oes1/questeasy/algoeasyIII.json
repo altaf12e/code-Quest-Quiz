@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which algorithm is used for finding shortest path in weighted graphs with non-negative edges?",
+    "options": ["Bellman-Ford", "Dijkstra’s Algorithm", "Floyd-Warshall", "Prim’s Algorithm"],
+    "correctAnswerIndex": 1,
+    "hint": "Dijkstra works with non-negative weights."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which algorithm is used for finding shortest path in graphs with negative edges?",
+    "options": ["Bellman-Ford", "Dijkstra’s Algorithm", "Prim’s Algorithm", "Kruskal’s Algorithm"],
+    "correctAnswerIndex": 0,
+    "hint": "Bellman-Ford handles negative weights."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which algorithm is used for finding minimum spanning tree using greedy approach?",
+    "options": ["Prim’s Algorithm", "Kruskal’s Algorithm", "Dijkstra’s Algorithm", "Bellman-Ford"],
+    "correctAnswerIndex": 0,
+    "hint": "Prim’s Algorithm grows MST step by step."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which algorithm is used for finding minimum spanning tree using union-find?",
+    "options": ["Prim’s Algorithm", "Kruskal’s Algorithm", "Dijkstra’s Algorithm", "Bellman-Ford"],
+    "correctAnswerIndex": 1,
+    "hint": "Kruskal’s Algorithm uses union-find."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which algorithm is used for finding maximum flow in a network?",
+    "options": ["Ford-Fulkerson", "Dijkstra’s Algorithm", "Prim’s Algorithm", "Kruskal’s Algorithm"],
+    "correctAnswerIndex": 0,
+    "hint": "Ford-Fulkerson computes max flow."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which algorithm is used for finding minimum cut in a network?",
+    "options": ["Ford-Fulkerson", "Edmonds-Karp", "Prim’s Algorithm", "Kruskal’s Algorithm"],
+    "correctAnswerIndex": 1,
+    "hint": "Edmonds-Karp finds min cut via max flow."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which algorithm is used for finding longest common subsequence?",
+    "options": ["Dynamic Programming", "Greedy", "Divide and Conquer", "Backtracking"],
+    "correctAnswerIndex": 0,
+    "hint": "DP solves LCS efficiently."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which algorithm is used for finding edit distance between two strings?",
+    "options": ["Dynamic Programming", "Greedy", "Divide and Conquer", "Backtracking"],
+    "correctAnswerIndex": 0,
+    "hint": "DP computes minimum edits."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which algorithm is used for finding knapsack problem solution?",
+    "options": ["Dynamic Programming", "Greedy", "Divide and Conquer", "Backtracking"],
+    "correctAnswerIndex": 0,
+    "hint": "DP solves 0/1 knapsack."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which algorithm is used for finding maximum subarray sum?",
+    "options": ["Kadane’s Algorithm", "Divide and Conquer", "Dynamic Programming", "Greedy"],
+    "correctAnswerIndex": 0,
+    "hint": "Kadane’s Algorithm finds max subarray sum."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which algorithm is used for finding shortest superstring?",
+    "options": ["Greedy", "Dynamic Programming", "Backtracking", "Divide and Conquer"],
+    "correctAnswerIndex": 0,
+    "hint": "Greedy approximates shortest superstring."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which algorithm is used for finding maximum matching in bipartite graphs?",
+    "options": ["Hungarian Algorithm", "Ford-Fulkerson", "Prim’s Algorithm", "Kruskal’s Algorithm"],
+    "correctAnswerIndex": 0,
+    "hint": "Hungarian Algorithm finds maximum matching."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which algorithm is used for finding shortest path in DAGs?",
+    "options": ["Topological Sort", "DFS", "BFS", "Bellman-Ford"],
+    "correctAnswerIndex": 0,
+    "hint": "Topological Sort helps in DAG shortest paths."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which algorithm is used for finding transitive closure of a graph?",
+    "options": ["Floyd-Warshall", "DFS", "BFS", "Bellman-Ford"],
+    "correctAnswerIndex": 0,
+    "hint": "Floyd-Warshall computes transitive closure."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which algorithm is used for finding strongly connected components?",
+    "options": ["Kosaraju’s Algorithm", "Prim’s Algorithm", "Kruskal’s Algorithm", "Dijkstra’s Algorithm"],
+    "correctAnswerIndex": 0,
+    "hint": "Kosaraju’s Algorithm uses DFS twice."
+  }
+]

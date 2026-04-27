@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CodeQuest</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dashboard-page">
+    <div class="animated-bg light"></div>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo-small">⚔️</div>
+            <span class="nav-brand">CodeQuest</span>
+        </div>
+        <div class="nav-right">
+            <button class="nav-btn" onclick="location.href='history.html'" title="Exam History">📚</button>
+            <button class="nav-btn" onclick="location.href='multiplayer.html'" title="Multiplayer Quiz">🏆</button>
+            <button class="nav-btn" id="adminPanelBtn" onclick="location.href='admin.html'" title="Admin Panel" style="display: none;">👑</button>
+            <button class="nav-btn" onclick="location.href='profile.html'" title="Profile">👤</button>
+            <button class="nav-btn" onclick="location.href='index.html'" title="Home">🏠</button>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="user-profile-card">
+                <div class="profile-avatar" id="userAvatar">🦸</div>
+                <div class="profile-info">
+                    <h3 id="userName">CodeWarrior</h3>
+                    <div class="profile-level">Level <span id="userLevel">1</span></div>
+                </div>
+            </div>
+
+            <div class="stats-card">
+                <div class="stat-item">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-details">
+                        <div class="stat-label">Total XP</div>
+                        <div class="stat-value" id="totalXP">0</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🔥</div>
+                    <div class="stat-details">
+                        <div class="stat-label">Streak</div>
+                        <div class="stat-value"><span id="streakCount">0</span> days</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-details">
+                        <div class="stat-label">Rank</div>
+                        <div class="stat-value">#<span id="userRank">999</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="xp-progress-card">
+                <div class="xp-header">
+                    <span>Level Progress</span>
+                    <span class="xp-text"><span id="currentXP">0</span> / <span id="nextLevelXP">100</span> XP</span>
+                </div>
+                <div class="xp-bar">
+                    <div class="xp-fill" id="xpFill"></div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="daily-quests-section">
+                <h2 class="section-title">📅 Daily Quests</h2>
+                <div class="daily-quests-grid" id="dailyQuestsContainer">
+                    <div class="loading-quests">Loading daily quests...</div>
+                </div>
+            </div>
+
+            <section class="section">
+                <h2 class="section-title">🎯 Select Your Quest</h2>
+                <div class="subjects-grid">
+                    <div class="subject-card java" data-subject="java">
+                        <div class="subject-header">
+                            <div class="subject-icon">☕</div>
+                            <h3>Java</h3>
+                        </div>
+                        <p class="subject-description">Master object-oriented programming</p>
+                        <div class="subject-stats">
+                            <span class="subject-attempts">📝 0 Attempts</span>
+                            <span class="subject-progress">⭐ 0% Mastery</span>
+                        </div>
+                        <div class="subject-actions">
+                            <button class="learning-path-btn">📚 Learning Path - Coming Soon</button>
+                        </div>
+                    </div>
+
+                    <div class="subject-card cpp" data-subject="cpp">
+                        <div class="subject-header">
+                            <div class="subject-icon">⚙️</div>
+                            <h3>C++</h3>
+                        </div>
+                        <p class="subject-description">Conquer low-level programming</p>
+                        <div class="subject-stats">
+                            <span class="subject-attempts">📝 0 Attempts</span>
+                            <span class="subject-progress">⭐ 0% Mastery</span>
+                        </div>
+                        <div class="subject-actions">
+                            <button class="learning-path-btn">📚 Learning Path - Coming Soon</button>
+                        </div>
+                    </div>
+
+                    <div class="subject-card python" data-subject="python">
+                        <div class="subject-header">
+                            <div class="subject-icon">🐍</div>
+                            <h3>Python</h3>
+                        </div>
+                        <p class="subject-description">Unleash the power of simplicity</p>
+                        <div class="subject-stats">
+                            <span class="subject-attempts">📝 0 Attempts</span>
+                            <span class="subject-progress">⭐ 0% Mastery</span>
+                        </div>
+                        <div class="subject-actions">
+                            <button class="learning-path-btn">📚 Learning Path - Coming Soon</button>
+                        </div>
+                    </div>
+
+                    <div class="subject-card javascript" data-subject="javascript">
+                        <div class="subject-header">
+                            <div class="subject-icon">⚡</div>
+                            <h3>JavaScript</h3>
+                        </div>
+                        <p class="subject-description">Rule the web development realm</p>
+                        <div class="subject-stats">
+                            <span class="subject-attempts">📝 0 Attempts</span>
+                            <span class="subject-progress">⭐ 0% Mastery</span>
+                        </div>
+                        <div class="subject-actions">
+                            <button class="learning-path-btn">📚 Learning Path - Coming Soon</button>
+                        </div>
+                    </div>
+
+                    <div class="subject-card data" data-subject="data-structures">
+                        <div class="subject-header">
+                            <div class="subject-icon">🗜️</div>
+                            <h3>Data Structures</h3>
+                        </div>
+                        <p class="subject-description">Build efficient data foundations</p>
+                        <div class="subject-stats">
+                            <span class="subject-attempts">📝 0 Attempts</span>
+                            <span class="subject-progress">⭐ 0% Mastery</span>
+                        </div>
+                        <div class="subject-actions">
+                            <button class="learning-path-btn">📚 Learning Path - Coming Soon</button>
+                        </div>
+                    </div>
+
+                    <div class="subject-card algorithms" data-subject="algorithms">
+                        <div class="subject-header">
+                            <div class="subject-icon">🧮</div>
+                            <h3>Algorithms</h3>
+                        </div>
+                        <p class="subject-description">Master problem-solving techniques</p>
+                        <div class="subject-stats">
+                            <span class="subject-attempts">📝 0 Attempts</span>
+                            <span class="subject-progress">⭐ 0% Mastery</span>
+                        </div>
+                        <div class="subject-actions">
+                            <button class="learning-path-btn">📚 Learning Path - Coming Soon</button>
+                        </div>
+                    </div>
+
+                    <div class="subject-card react" data-subject="react">
+                        <div class="subject-header">
+                            <div class="subject-icon">⚛️</div>
+                            <h3>React</h3>
+                        </div>
+                        <p class="subject-description">Build modern user interfaces</p>
+                        <div class="subject-stats">
+                            <span class="subject-attempts">📝 0 Attempts</span>
+                            <span class="subject-progress">⭐ 0% Mastery</span>
+                        </div>
+                        <div class="subject-actions">
+                            <button class="learning-path-btn">📚 Learning Path - Coming Soon</button>
+                        </div>
+                    </div>
+
+                    <div class="subject-card nodejs" data-subject="node">
+                        <div class="subject-header">
+                            <div class="subject-icon">🟢</div>
+                            <h3>Node.js</h3>
+                        </div>
+                        <p class="subject-description">Server-side JavaScript mastery</p>
+                        <div class="subject-stats">
+                            <span class="subject-attempts">📝 0 Attempts</span>
+                            <span class="subject-progress">⭐ 0% Mastery</span>
+                        </div>
+                        <div class="subject-actions">
+                            <button class="learning-path-btn">📚 Learning Path - Coming Soon</button>
+                        </div>
+                    </div>
+
+                    <div class="subject-card sql" data-subject="sql">
+                        <div class="subject-header">
+                            <div class="subject-icon">🗜️</div>
+                            <h3>SQL</h3>
+                        </div>
+                        <p class="subject-description">Database query expertise</p>
+                        <div class="subject-stats">
+                            <span class="subject-attempts">📝 0 Attempts</span>
+                            <span class="subject-progress">⭐ 0% Mastery</span>
+                        </div>
+                        <div class="subject-actions">
+                            <button class="learning-path-btn">📚 Learning Path - Coming Soon</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main Difficulty Selection Modal -->
+            <div class="difficulty-modal" id="difficultyModal">
+                <div class="difficulty-content">
+                    <button class="modal-close" id="modalClose">×</button>
+                    <h2>Choose Difficulty Level</h2>
+                    <p class="selected-subject-name" id="selectedSubjectName"></p>
+                    
+                    <div class="difficulty-buttons">
+                        <button class="difficulty-btn easy" data-difficulty="easy">
+                            <div class="diff-icon">🟢</div>
+                            <div class="diff-name">Easy</div>
+                            <div class="diff-reward">+10 XP per question</div>
+                        </button>
+                        <button class="difficulty-btn medium" data-difficulty="medium">
+                            <div class="diff-icon">🟡</div>
+                            <div class="diff-name">Medium</div>
+                            <div class="diff-reward">+25 XP per question</div>
+                        </button>
+                        <button class="difficulty-btn hard" data-difficulty="hard">
+                            <div class="diff-icon">🔴</div>
+                            <div class="diff-name">Hard</div>
+                            <div class="diff-reward">+50 XP per question</div>
+                        </button>
+                        <button class="difficulty-btn marathon" data-difficulty="marathon">
+                            <div class="diff-icon">🏆</div>
+                            <div class="diff-name">Marathon Quest</div>
+                            <div class="diff-reward">45 min • 30 questions • +100 XP per question</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </main>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+[
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"III",
+    "question":"Which SQL feature allows defining a named temporary result set referenced in the same query?",
+    "options":["VIEW","SUBQUERY","CTE (WITH)","MATERIALIZED VIEW"],
+    "correctAnswerIndex":2,
+    "hint":"CTEs use WITH to define reusable temporary result sets."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"III",
+    "question":"What will be the result?\n\n```sql\nSELECT department, AVG(salary) OVER (PARTITION BY department)\nFROM employees;\n```",
+    "options":["Average per department for each row","Single average for entire table","Error","Average per department only once"],
+    "correctAnswerIndex":0,
+    "hint":"Window functions return a value per row without collapsing into groups."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"III",
+    "question":"Which isolation level can read uncommitted data?",
+    "options":["READ COMMITTED","READ UNCOMMITTED","REPEATABLE READ","SERIALIZABLE"],
+    "correctAnswerIndex":1,
+    "hint":"READ UNCOMMITTED permits dirty reads."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"III",
+    "question":"Which statement is true about correlated subqueries?",
+    "options":["They run independently of outer query","They cannot use EXISTS","They always return multiple rows","They reference columns from the outer query"],
+    "correctAnswerIndex":3,
+    "hint":"Correlated subqueries depend on values from the outer row."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"III",
+    "question":"What will this query compute?\n\n```sql\nSELECT emp_id,\n       ROW_NUMBER() OVER (PARTITION BY department ORDER BY salary DESC) AS rn\nFROM employees;\n```",
+    "options":["Unique row numbers per table","Rank per department ignoring ties","Sequential numbers per department by salary desc","Dense ranks per department"],
+    "correctAnswerIndex":2,
+    "hint":"ROW_NUMBER assigns 1..n per partition following ORDER BY."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"III",
+    "question":"Which SQL feature creates an index optimized for text search?",
+    "options":["B-Tree","Full-Text Index","Hash Index","Bitmap Index"],
+    "correctAnswerIndex":1,
+    "hint":"Full-text indexes support tokenization and text search."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"III",
+    "question":"Which statement about NULL comparisons is correct?",
+    "options":["NULL = NULL is TRUE","NULL <> NULL is TRUE","IS NULL must be used to test NULL","NULL = NULL is UNKNOWN/NULL"],
+    "correctAnswerIndex":2,
+    "hint":"Use IS NULL/IS NOT NULL; equality with NULL is not TRUE."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"III",
+    "question":"Which command ensures changes cannot be rolled back?",
+    "options":["SAVEPOINT","COMMIT","BEGIN","ROLLBACK"],
+    "correctAnswerIndex":1,
+    "hint":"COMMIT makes a transaction durable."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"III",
+    "question":"What does this query return?\n\n```sql\nWITH r AS (\n  SELECT 1 AS n\n  UNION ALL\n  SELECT n+1 FROM r WHERE n < 3\n)\nSELECT SUM(n) FROM r;\n```",
+    "options":["10","6","3","Error"],
+    "correctAnswerIndex":1,
+    "hint":"Recursive CTE builds 1,2,3 then sums => 6."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"III",
+    "question":"Which clause is required to update only rows that match another table?",
+    "options":["GROUP BY","HAVING","WHERE EXISTS (...)","JOIN ... ON ..."],
+    "correctAnswerIndex":2,
+    "hint":"WHERE EXISTS with a correlated subquery filters to matching rows."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"III",
+    "question":"Which set operation returns rows in the first query not present in the second?",
+    "options":["UNION","UNION ALL","EXCEPT/MINUS","INTERSECT"],
+    "correctAnswerIndex":2,
+    "hint":"EXCEPT/MINUS subtracts the second result set from the first."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"III",
+    "question":"Which strategy reduces I/O for large fact tables by slicing data across keys?",
+    "options":["Indexing","Partitioning","Denormalization","Sharding"],
+    "correctAnswerIndex":1,
+    "hint":"Partitioning splits a table into manageably sized segments."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"III",
+    "question":"What will be the result?\n\n```sql\nSELECT department,\n       SUM(salary) FILTER (WHERE salary > 50000)\nFROM employees\nGROUP BY department;\n```",
+    "options":["Error","Sum of salaries > 50000 per department","Sum of all salaries per department","Sum of salaries < 50000 per department"],
+    "correctAnswerIndex":1,
+    "hint":"FILTER applies a condition within the aggregate (dialect support required)."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"III",
+    "question":"Which object materializes query results for faster reads at the cost of refresh overhead?",
+    "options":["CTE","Materialized View","View","Temporary Table"],
+    "correctAnswerIndex":1,
+    "hint":"Materialized views store result sets physically."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"III",
+    "question":"Which constraint guarantees uniqueness and allows NULLs (depending on dialect)?",
+    "options":["PRIMARY KEY","UNIQUE","CHECK","FOREIGN KEY"],
+    "correctAnswerIndex":1,
+    "hint":"UNIQUE allows NULLs in many RDBMS; PRIMARY KEY forbids NULL."
+  }
+]

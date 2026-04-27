@@ -1,0 +1,107 @@
+[
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"I",
+    "question":"Which SQL clause is used to filter groups after aggregation?",
+    "options":["WHERE","HAVING","GROUP BY","ORDER BY"],
+    "correctAnswerIndex":1,
+    "hint":"HAVING filters groups created by GROUP BY."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"I",
+    "question":"What will be the result?\n\n```sql\nSELECT COUNT(*) FROM employees WHERE salary > 50000;\n```",
+    "options":["Number of employees","List of salaries","Error","NULL"],
+    "correctAnswerIndex":0,
+    "hint":"COUNT(*) returns the number of rows matching condition."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"I",
+    "question":"Which SQL keyword is used to remove duplicates?",
+    "options":["DISTINCT","UNIQUE","FILTER","REDUCE"],
+    "correctAnswerIndex":2,
+    "hint":"DISTINCT removes duplicate rows."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"I",
+    "question":"Which SQL join returns only matching rows from both tables?",
+    "options":["INNER JOIN","LEFT JOIN","RIGHT JOIN","FULL JOIN"],
+    "correctAnswerIndex":3,
+    "hint":"INNER JOIN returns rows with matching keys."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"I",
+    "question":"What will be the result?\n\n```sql\nSELECT AVG(salary) FROM employees;\n```",
+    "options":["Average salary","Total salary","Error","NULL"],
+    "correctAnswerIndex":0,
+    "hint":"AVG computes average of numeric column."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"I",
+    "question":"Which SQL command is used to remove a table?",
+    "options":["DELETE","DROP","TRUNCATE","REMOVE"],
+    "correctAnswerIndex":1,
+    "hint":"DROP removes the entire table definition and data."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"I",
+    "question":"Which SQL keyword is used to sort results?",
+    "options":["ORDER BY","GROUP BY","SORT","RANK"],
+    "correctAnswerIndex":2,
+    "hint":"ORDER BY sorts query results."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"I",
+    "question":"Which SQL constraint ensures column values are unique?",
+    "options":["PRIMARY KEY","UNIQUE","NOT NULL","CHECK"],
+    "correctAnswerIndex":3,
+    "hint":"UNIQUE ensures no duplicate values."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"I",
+    "question":"What will be the result?\n\n```sql\nSELECT MIN(salary) FROM employees;\n```",
+    "options":["Lowest salary","Highest salary","Error","NULL"],
+    "correctAnswerIndex":0,
+    "hint":"MIN returns the smallest value."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"I",
+    "question":"Which SQL keyword is used to combine results of two queries?",
+    "options":["UNION","JOIN","MERGE","INTERSECT"],
+    "correctAnswerIndex":2,
+    "hint":"UNION combines results of two queries."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"I",
+    "question":"Which SQL command removes all rows but keeps table structure?",
+    "options":["DELETE","DROP","TRUNCATE","REMOVE"],
+    "correctAnswerIndex":3,
+    "hint":"TRUNCATE deletes all rows but retains table definition."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"I",
+    "question":"Which SQL keyword is used to check a condition?",
+    "options":["CHECK","CONSTRAINT","IF","CASE"],
+    "correctAnswerIndex":2,
+    "hint":"CHECK enforces condition on column values."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"I",
+    "question":"What will be the result?\n\n```sql\nSELECT department, COUNT(*) FROM employees GROUP BY department;\n```",
+    "options":["Number of employees per department","List of departments","Error","NULL"],
+    "correctAnswerIndex":0,
+    "hint":"GROUP BY aggregates rows by department."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"I",
+    "question":"Which SQL keyword is used to rename a column?",
+    "options":["AS","RENAME","ALIAS","CHANGE"],
+    "correctAnswerIndex":2,
+    "hint":"AS creates an alias for a column."
+  },
+  {
+    "subject":"sql","difficulty":"hard","subLevel":"I",
+    "question":"Which SQL command is used to update rows?",
+    "options":["INSERT","UPDATE","ALTER","MODIFY"],
+    "correctAnswerIndex":3,
+    "hint":"UPDATE modifies existing rows."
+  }
+]

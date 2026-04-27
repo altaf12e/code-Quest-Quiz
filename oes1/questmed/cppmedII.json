@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "cpp",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which STL container provides FIFO operations?",
+    "options": ["queue","stack","deque","list"],
+    "correctAnswerIndex": 0,
+    "hint": "queue follows FIFO principle."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which STL container provides LIFO operations?",
+    "options": ["queue","stack","deque","list"],
+    "correctAnswerIndex": 1,
+    "hint": "stack follows LIFO principle."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which STL container provides fast random access?",
+    "options": ["vector","list","deque","map"],
+    "correctAnswerIndex": 0,
+    "hint": "vector provides O(1) random access."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which STL container is implemented as a doubly linked list?",
+    "options": ["vector","list","deque","set"],
+    "correctAnswerIndex": 1,
+    "hint": "list is a doubly linked list."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output of the following code?\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main(){int arr[]={1,2,3};cout<<sizeof(arr)/sizeof(arr[0]);} ```",
+    "options": ["2","3","Error","Garbage"],
+    "correctAnswerIndex": 1,
+    "hint": "sizeof gives total size divided by element size."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which STL container allows duplicate keys?",
+    "options": ["map","multimap","unordered_map","set"],
+    "correctAnswerIndex": 2,
+    "hint": "unordered_map allows duplicate keys in some implementations."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which STL container allows key-value pairs with unique keys?",
+    "options": ["map","multimap","unordered_multimap","vector"],
+    "correctAnswerIndex": 0,
+    "hint": "map stores unique keys with values."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which STL container provides constant time insertion and deletion at both ends?",
+    "options": ["vector","deque","list","stack"],
+    "correctAnswerIndex": 1,
+    "hint": "deque supports fast operations at both ends."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which STL container provides key-value pairs but does not guarantee order?",
+    "options": ["map","unordered_map","multimap","set"],
+    "correctAnswerIndex": 1,
+    "hint": "unordered_map stores key-value pairs without order."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which STL container stores unique elements in sorted order?",
+    "options": ["vector","set","map","unordered_set"],
+    "correctAnswerIndex": 2,
+    "hint": "map also stores unique keys in sorted order."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which STL container allows duplicate elements and maintains sorted order?",
+    "options": ["set","multiset","unordered_set","map"],
+    "correctAnswerIndex": 1,
+    "hint": "multiset allows duplicates in sorted order."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output of the following code?\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main(){int a=10,b=20;cout<<(a>b?a:b);} ```",
+    "options": ["10","20","Error","Garbage"],
+    "correctAnswerIndex": 0,
+    "hint": "Ternary operator returns the larger value."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output of the following code?\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main(){string s=\"Hello\";s[0]='Y';cout<<s;} ```",
+    "options": ["Hello","Yello","Error","Garbage"],
+    "correctAnswerIndex": 1,
+    "hint": "Strings are mutable in C++."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output of the following code?\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main(){int x=5;cout<<x*x++;} ```",
+    "options": ["25","30","Error","Undefined behavior"],
+    "correctAnswerIndex": 2,
+    "hint": "Compilers may treat this as an error in strict mode."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which STL container provides unique elements but does not guarantee order?",
+    "options": ["set","unordered_set","multiset","map"],
+    "correctAnswerIndex": 3,
+    "hint": "map ensures unique keys but ordering depends on implementation."
+  }
+]

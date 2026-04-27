@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplayer Quiz - CodeQuest</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/multiplayer.css">
+</head>
+<body class="multiplayer-page">
+    <div class="animated-bg"></div>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo-small">⚔️</div>
+            <span class="nav-brand">CodeQuest Multiplayer</span>
+        </div>
+        <div class="nav-right">
+            <button class="nav-btn" onclick="location.href='dashboard.html'" title="Dashboard">🏠</button>
+        </div>
+    </nav>
+
+    <div class="multiplayer-container">
+        <!-- Create/Join Selection -->
+        <div class="selection-screen" id="selectionScreen">
+            <div class="selection-card">
+                <h1>🏆 Multiplayer Quiz Battle</h1>
+                <p>Compete with friends in real-time quiz battles!</p>
+                <div class="testing-notice">
+                    <span class="testing-badge">⚠️ Under Testing Phase</span>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="action-btn create-btn" onclick="showCreateForm()">
+                        <div class="btn-icon">🎯</div>
+                        <div class="btn-text">
+                            <h3>Create Quiz</h3>
+                            <p>Start a new multiplayer quiz</p>
+                        </div>
+                    </button>
+                    
+                    <button class="action-btn join-btn" onclick="showJoinForm()">
+                        <div class="btn-icon">🚀</div>
+                        <div class="btn-text">
+                            <h3>Join Quiz</h3>
+                            <p>Enter room code to join</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Create Quiz Form -->
+        <div class="create-screen hidden" id="createScreen">
+            <div class="form-card">
+                <button class="back-btn" onclick="showSelection()">← Back</button>
+                <h2>🎯 Create Multiplayer Quiz</h2>
+                
+                <form id="createQuizForm">
+                    <div class="form-group">
+                        <label>Quiz Title</label>
+                        <input type="text" id="quizTitle" placeholder="Enter quiz title" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <select id="quizSubject" required>
+                                <option value="">Select Subject</option>
+                                <option value="java">☕ Java</option>
+                                <option value="cpp">⚙️ C++</option>
+                                <option value="python">🐍 Python</option>
+                                <option value="javascript">⚡ JavaScript</option>
+                                <option value="data-structures">🗜️ Data Structures</option>
+                                <option value="algorithms">🧮 Algorithms</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Difficulty</label>
+                            <select id="quizDifficulty" required>
+                                <option value="">Select Difficulty</option>
+                                <option value="easy">🟢 Easy</option>
+                                <option value="medium">🟡 Medium</option>
+                                <option value="hard">🔴 Hard</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Number of Questions</label>
+                            <input type="number" id="questionCount" min="5" max="30" value="10" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Time per Question (seconds)</label>
+                            <input type="number" id="timePerQuestion" min="10" max="120" value="30" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="hostParticipates" checked>
+                            <span class="checkmark"></span>
+                            Host participates in quiz
+                        </label>
+                        <small class="form-hint">Uncheck if you want to moderate without competing</small>
+                    </div>
+                    
+                    <button type="submit" class="create-quiz-btn">
+                        <span class="btn-icon">🚀</span>
+                        Create Quiz Room
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Join Quiz Form -->
+        <div class="join-screen hidden" id="joinScreen">
+            <div class="form-card">
+                <button class="back-btn" onclick="showSelection()">← Back</button>
+                <h2>🚀 Join Multiplayer Quiz</h2>
+                
+                <form id="joinQuizForm">
+                    <div class="form-group">
+                        <label>Room Code</label>
+                        <input type="text" id="roomCode" placeholder="Enter 6-digit room code" maxlength="6" required>
+                    </div>
+                    
+                    <button type="submit" class="join-quiz-btn">
+                        <span class="btn-icon">🎯</span>
+                        Join Quiz Room
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Room Created Screen -->
+        <div class="room-created-screen hidden" id="roomCreatedScreen">
+            <div class="room-card">
+                <h2>🎉 Quiz Room Created!</h2>
+                
+                <div class="room-info">
+                    <div class="room-code-display">
+                        <label>Room Code</label>
+                        <div class="code-value" id="displayRoomCode">------</div>
+                        <button class="copy-btn" onclick="copyRoomCode()">📋 Copy</button>
+                    </div>
+                    
+                    <div class="qr-section">
+                        <label>QR Code to Join</label>
+                        <div class="qr-container">
+                            <img id="qrCodeImage" src="" alt="QR Code">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="participants-section">
+                    <h3>👥 Participants (<span id="participantCount">1</span>)</h3>
+                    <div class="participants-list" id="participantsList">
+                        <!-- Participants will be added here -->
+                    </div>
+                </div>
+                
+                <div class="room-actions">
+                    <button class="start-quiz-btn" id="startQuizBtn" onclick="startQuiz()" disabled>
+                        <span class="btn-icon">🚀</span>
+                        Start Quiz (Need 2+ players)
+                    </button>
+                    <button class="end-room-btn" onclick="endRoom()">
+                        <span class="btn-icon">❌</span>
+                        End Room
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Waiting Room Screen -->
+        <div class="waiting-room-screen hidden" id="waitingRoomScreen">
+            <div class="waiting-card">
+                <h2>⏳ Waiting for Quiz to Start</h2>
+                
+                <div class="room-details">
+                    <div class="detail-item">
+                        <span class="label">Room Code:</span>
+                        <span class="value" id="waitingRoomCode">------</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Quiz Title:</span>
+                        <span class="value" id="waitingQuizTitle">Loading...</span>
+                    </div>
+                </div>
+                
+                <div class="participants-section">
+                    <h3>👥 Participants (<span id="waitingParticipantCount">0</span>)</h3>
+                    <div class="participants-grid" id="waitingParticipantsList">
+                        <!-- Participants will be added here -->
+                    </div>
+                </div>
+                
+                <div class="waiting-status">
+                    <div class="loading-spinner"></div>
+                    <p>Waiting for the host to start the quiz...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div class="quiz-screen hidden" id="quizScreen">
+            <div class="quiz-container">
+                <div class="quiz-header">
+                    <div class="progress-info">
+                        <span>Question <span id="currentQuestionNum">1</span> of <span id="totalQuestions">10</span></span>
+                    </div>
+                    <div class="quiz-controls">
+                        <button class="stop-quiz-btn" id="stopQuizBtn" onclick="stopQuiz()" style="display: none;">
+                            <span class="btn-icon">⏹️</span>
+                            Stop Quiz
+                        </button>
+                        <div class="timer-container">
+                            <div class="timer" id="questionTimer">30</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-container">
+                    <h2 id="questionText">Loading question...</h2>
+                    
+                    <div class="options-container" id="optionsContainer">
+                        <!-- Options will be added here -->
+                    </div>
+                </div>
+                
+                <div class="live-leaderboard">
+                    <h3>🏆 Live Leaderboard</h3>
+                    <div class="leaderboard-list" id="liveLeaderboard">
+                        <!-- Live scores will be shown here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div class="results-screen hidden" id="resultsScreen">
+            <div class="results-container">
+                <h1>🏆 Quiz Complete!</h1>
+                
+                <div class="winners-podium">
+                    <div class="podium-places" id="winnersPodium">
+                        <!-- Winners will be displayed here -->
+                    </div>
+                </div>
+                
+                <div class="final-results">
+                    <h3>📊 Final Results</h3>
+                    <div class="results-table" id="finalResultsTable">
+                        <!-- All participants results -->
+                    </div>
+                </div>
+                
+                <div class="results-actions">
+                    <button class="action-btn" onclick="location.href='dashboard.html'">
+                        🏠 Back to Dashboard
+                    </button>
+                    <button class="action-btn" onclick="location.reload()">
+                        🔄 Play Again
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.7.4/socket.io.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/multiplayer.js"></script>
+</body>
+</html>

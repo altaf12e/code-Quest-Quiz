@@ -1,0 +1,128 @@
+[
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which keyword in Java is used to prevent a class from being subclassed?",
+    "options": ["final", "static", "abstract", "sealed"],
+    "correctAnswerIndex": 0,
+    "hint": "final prevents inheritance."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which keyword in Java is used to prevent a method from being overridden?",
+    "options": ["abstract", "final", "static", "private"],
+    "correctAnswerIndex": 1,
+    "hint": "final prevents overriding."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output of the following code?\n\n```java\npublic class Test {\n    public static void main(String[] args) {\n        int x = 5;\n        System.out.println(x++);\n        System.out.println(++x);\n    }\n}\n```",
+    "options": ["5 and 6", "5 and 7", "6 and 7", "6 and 6"],
+    "correctAnswerIndex": 1,
+    "hint": "Post-increment prints old value, pre-increment prints updated value."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output of the following code?\n\n```java\npublic class Test {\n    public static void main(String[] args) {\n        String s1 = \"Hello\";\n        String s2 = new String(\"Hello\");\n        System.out.println(s1 == s2);\n        System.out.println(s1.equals(s2));\n    }\n}\n```",
+    "options": ["true and true", "false and true", "true and false", "false and false"],
+    "correctAnswerIndex": 1,
+    "hint": "== compares references, equals() compares values."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which keyword in Java is used to define a method without implementation?",
+    "options": ["final", "abstract", "static", "default"],
+    "correctAnswerIndex": 1,
+    "hint": "abstract methods have no body."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which keyword in Java is used to define a class that cannot be instantiated?",
+    "options": ["abstract", "final", "static", "sealed"],
+    "correctAnswerIndex": 0,
+    "hint": "abstract classes cannot be instantiated."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output of the following code?\n\n```java\nclass Base {\n    void show() { System.out.println(\"Base\"); }\n}\nclass Derived extends Base {\n    void show() { System.out.println(\"Derived\"); }\n}\npublic class Test {\n    public static void main(String[] args) {\n        Base b = new Derived();\n        b.show();\n    }\n}\n```",
+    "options": ["Base", "Derived", "Error", "Garbage"],
+    "correctAnswerIndex": 1,
+    "hint": "Method overriding uses runtime polymorphism."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which keyword in Java is used to define a block that always executes?",
+    "options": ["try", "catch", "finally", "throw"],
+    "correctAnswerIndex": 2,
+    "hint": "finally always executes."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which keyword in Java is used to throw an exception?",
+    "options": ["throws", "throw", "catch", "finally"],
+    "correctAnswerIndex": 1,
+    "hint": "throw is used to raise exceptions."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which keyword in Java is used to declare exceptions a method may throw?",
+    "options": ["throw", "throws", "catch", "finally"],
+    "correctAnswerIndex": 1,
+    "hint": "throws declares exceptions."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which keyword in Java is used to define a synchronized block?",
+    "options": ["sync", "synchronized", "lock", "threadsafe"],
+    "correctAnswerIndex": 1,
+    "hint": "synchronized ensures thread safety."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which keyword in Java is used to define an interface?",
+    "options": ["interface", "abstract", "class", "implements"],
+    "correctAnswerIndex": 0,
+    "hint": "interface defines contracts."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which keyword in Java is used to implement an interface?",
+    "options": ["extends", "implements", "interface", "abstract"],
+    "correctAnswerIndex": 1,
+    "hint": "implements is used for interfaces."
+  },
+  {
+    "subject": "java",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which keyword in Java is used to inherit a class?",
+    "options": ["extends", "implements", "abstract", "super"],
+    "correctAnswerIndex": 0,
+    "hint": "extends is used for inheritance."
+  }
+]

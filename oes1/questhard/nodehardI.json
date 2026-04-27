@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which phase of the Node.js event loop handles timers?",
+    "options": ["poll","check","timers","close callbacks"],
+    "correctAnswerIndex": 2,
+    "hint": "The timers phase executes setTimeout and setInterval callbacks."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```js\nsetImmediate(()=>console.log('A'));\nprocess.nextTick(()=>console.log('B'));\nconsole.log('C');\n```",
+    "options": ["A B C","B C A","C B A","C A B"],
+    "correctAnswerIndex": 2,
+    "hint": "Logs C first, then nextTick B, then setImmediate A."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Node.js module provides cryptographic functionality?",
+    "options": ["crypto","fs","net","tls"],
+    "correctAnswerIndex": 0,
+    "hint": "The crypto module provides cryptographic operations."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Node.js feature allows scaling across CPU cores?",
+    "options": ["cluster","worker_threads","child_process","events"],
+    "correctAnswerIndex": 1,
+    "hint": "Cluster module enables load balancing across cores."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```js\nconsole.log('1');\nsetTimeout(()=>console.log('2'),0);\nPromise.resolve().then(()=>console.log('3'));\nconsole.log('4');\n```",
+    "options": ["1 2 3 4","1 4 3 2","1 3 4 2","1 4 2 3"],
+    "correctAnswerIndex": 1,
+    "hint": "Logs 1,4 synchronously, then microtask 3, then timer 2."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Node.js module is used for handling streams?",
+    "options": ["stream","fs","net","events"],
+    "correctAnswerIndex": 0,
+    "hint": "The stream module provides APIs for working with streams."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Node.js feature allows running JavaScript in parallel threads?",
+    "options": ["cluster","worker_threads","child_process","events"],
+    "correctAnswerIndex": 1,
+    "hint": "worker_threads enable parallel execution in threads."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Node.js module is used for creating HTTPS servers?",
+    "options": ["http","https","tls","net"],
+    "correctAnswerIndex": 1,
+    "hint": "The https module creates HTTPS servers."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```js\nasync function test(){\n  return await Promise.resolve('X');\n}\ntest().then(console.log);\n```",
+    "options": ["Promise","undefined","X","Error"],
+    "correctAnswerIndex": 2,
+    "hint": "Async function resolves to 'X'."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Node.js module provides file system operations?",
+    "options": ["fs","net","path","os"],
+    "correctAnswerIndex": 0,
+    "hint": "The fs module handles file system operations."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Node.js feature allows observing performance metrics?",
+    "options": ["perf_hooks","events","process","os"],
+    "correctAnswerIndex": 1,
+    "hint": "perf_hooks provides performance monitoring APIs."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Node.js module is used for path manipulations?",
+    "options": ["fs","net","path","os"],
+    "correctAnswerIndex": 2,
+    "hint": "The path module handles file path operations."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```js\nconsole.log(Buffer.from('abc').toString('hex'));\n```",
+    "options": ["616263","abc","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "Buffer converts 'abc' to hex '616263'."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Node.js module provides operating system-related utilities?",
+    "options": ["os","fs","net","events"],
+    "correctAnswerIndex": 0,
+    "hint": "The os module provides OS utilities."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Node.js feature allows handling asynchronous events?",
+    "options": ["events","fs","net","path"],
+    "correctAnswerIndex": 3,
+    "hint": "The events module provides EventEmitter for async events."
+  }
+]

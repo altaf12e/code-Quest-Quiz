@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which built-in function returns the memory address of an object?",
+    "options": ["id()", "addr()", "loc()", "mem()"],
+    "correctAnswerIndex": 0,
+    "hint": "id() gives a unique identifier."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to define asynchronous functions?",
+    "options": ["async", "await", "future", "defer"],
+    "correctAnswerIndex": 0,
+    "hint": "async def defines async functions."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to wait for asynchronous results?",
+    "options": ["wait", "await", "async", "pause"],
+    "correctAnswerIndex": 1,
+    "hint": "await pauses until result is ready."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which module is used for regular expressions?",
+    "options": ["regex", "re", "regexp", "pattern"],
+    "correctAnswerIndex": 1,
+    "hint": "re provides regex functions."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to check membership?",
+    "options": ["in", "contains", "has", "within"],
+    "correctAnswerIndex": 0,
+    "hint": "in checks membership in collections."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to define a property in a class?",
+    "options": ["@property", "@prop", "@getter", "@attr"],
+    "correctAnswerIndex": 0,
+    "hint": "@property defines managed attributes."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to define context managers?",
+    "options": ["with", "context", "manage", "using"],
+    "correctAnswerIndex": 0,
+    "hint": "with ensures proper resource handling."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to define type hints?",
+    "options": ["hint", "typing", ":", "->"],
+    "correctAnswerIndex": 2,
+    "hint": "Use : for parameters, -> for return type."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which built-in function returns sorted list?",
+    "options": ["sort()", "sorted()", "order()", "arrange()"],
+    "correctAnswerIndex": 1,
+    "hint": "sorted() returns a new sorted list."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to define an abstract method?",
+    "options": ["abstractmethod", "abstract", "virtual", "base"],
+    "correctAnswerIndex": 0,
+    "hint": "@abstractmethod from abc module."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to define a frozen set?",
+    "options": ["frozenset", "immutable", "fset", "constset"],
+    "correctAnswerIndex": 0,
+    "hint": "frozenset is immutable set."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to define an empty function?",
+    "options": ["none", "pass", "skip", "empty"],
+    "correctAnswerIndex": 1,
+    "hint": "pass defines empty blocks."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to import specific names from a module?",
+    "options": ["import", "from ... import", "require", "include"],
+    "correctAnswerIndex": 1,
+    "hint": "from module import name."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to define global variables inside a function?",
+    "options": ["global", "public", "extern", "static"],
+    "correctAnswerIndex": 0,
+    "hint": "global declares global scope."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to define nonlocal variables in nested functions?",
+    "options": ["nonlocal", "outer", "parent", "scope"],
+    "correctAnswerIndex": 0,
+    "hint": "nonlocal refers to enclosing scope."
+  }
+]

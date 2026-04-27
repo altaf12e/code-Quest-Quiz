@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which JavaScript feature allows creating functions with preserved lexical scope?",
+    "options": ["Closure","Prototype","Hoisting","Class"],
+    "correctAnswerIndex": 0,
+    "hint": "Closures capture variables from outer scope."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```js\nconsole.log(typeof NaN);\n```",
+    "options": ["number","NaN","undefined","object"],
+    "correctAnswerIndex": 0,
+    "hint": "NaN is of type number."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which JavaScript feature allows inheritance between objects?",
+    "options": ["Closure","Class","Hoisting","Prototype chain"],
+    "correctAnswerIndex": 3,
+    "hint": "Prototype chain enables inheritance."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which JavaScript keyword prevents object modification?",
+    "options": ["const","let","Object.seal","Object.freeze"],
+    "correctAnswerIndex": 3,
+    "hint": "Object.freeze makes objects immutable."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```js\nconsole.log([] == ![]);\n```",
+    "options": ["false","Error","undefined","true"],
+    "correctAnswerIndex": 3,
+    "hint": "[] coerces to false, so [] == ![] is true."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which JavaScript feature allows asynchronous iteration?",
+    "options": ["for...in","for...of","for await...of","Promise.all"],
+    "correctAnswerIndex": 2,
+    "hint": "for await...of iterates async data sources."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which JavaScript feature allows defining private class fields?",
+    "options": ["WeakMap","Symbol","#field syntax","Object.defineProperty"],
+    "correctAnswerIndex": 2,
+    "hint": "#field syntax defines private fields."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```js\nconsole.log(typeof null);\n```",
+    "options": ["null","object","undefined","Error"],
+    "correctAnswerIndex": 1,
+    "hint": "typeof null is 'object'."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which JavaScript feature allows scheduling microtasks?",
+    "options": ["setTimeout","setInterval","Promise.then","requestAnimationFrame"],
+    "correctAnswerIndex": 2,
+    "hint": "Promise.then queues microtasks."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which JavaScript feature allows creating iterable objects?",
+    "options": ["Object.keys","Array.from","Symbol.iterator","Map"],
+    "correctAnswerIndex": 2,
+    "hint": "Symbol.iterator defines iteration behavior."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```js\nconsole.log(1 + '1' - 1);\n```",
+    "options": ["10","11","0","Error"],
+    "correctAnswerIndex": 0,
+    "hint": "1+'1' gives '11'; '11'-1 coerces to 10."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which JavaScript feature allows controlling async flow with generators?",
+    "options": ["await","Promise","yield","Symbol.asyncIterator"],
+    "correctAnswerIndex": 2,
+    "hint": "yield pauses generator functions."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which JavaScript feature allows creating proxies for objects?",
+    "options": ["Reflect","Proxy","Symbol","Object.assign"],
+    "correctAnswerIndex": 1,
+    "hint": "Proxy intercepts operations on objects."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which JavaScript feature allows defining async functions?",
+    "options": ["Promise","async keyword","setTimeout","await"],
+    "correctAnswerIndex": 1,
+    "hint": "async keyword defines async functions."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```js\nconsole.log(+true);\n```",
+    "options": ["true","1","Error","NaN"],
+    "correctAnswerIndex": 1,
+    "hint": "Unary + converts true to 1."
+  }
+]

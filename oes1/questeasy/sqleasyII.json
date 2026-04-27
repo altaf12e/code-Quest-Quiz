@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which SQL keyword is used to combine results from two queries?",
+    "options": ["JOIN", "UNION", "INTERSECT", "MERGE"],
+    "correctAnswerIndex": 1,
+    "hint": "UNION combines results of two queries."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which SQL keyword is used to find common records between two queries?",
+    "options": ["UNION", "INTERSECT", "JOIN", "EXCEPT"],
+    "correctAnswerIndex": 1,
+    "hint": "INTERSECT returns common records."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which SQL keyword is used to return records from the first query but not the second?",
+    "options": ["EXCEPT", "INTERSECT", "UNION", "JOIN"],
+    "correctAnswerIndex": 0,
+    "hint": "EXCEPT excludes records from the second query."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which SQL clause is used to join tables based on related columns?",
+    "options": ["JOIN", "GROUP BY", "ORDER BY", "HAVING"],
+    "correctAnswerIndex": 0,
+    "hint": "JOIN combines rows from multiple tables."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which type of JOIN returns all rows from both tables?",
+    "options": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL OUTER JOIN"],
+    "correctAnswerIndex": 3,
+    "hint": "FULL OUTER JOIN returns all rows."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which type of JOIN returns only matching rows?",
+    "options": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL OUTER JOIN"],
+    "correctAnswerIndex": 0,
+    "hint": "INNER JOIN returns only matches."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which type of JOIN returns all rows from the left table and matching rows from the right?",
+    "options": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL OUTER JOIN"],
+    "correctAnswerIndex": 1,
+    "hint": "LEFT JOIN keeps all left table rows."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which type of JOIN returns all rows from the right table and matching rows from the left?",
+    "options": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL OUTER JOIN"],
+    "correctAnswerIndex": 2,
+    "hint": "RIGHT JOIN keeps all right table rows."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which SQL keyword is used to create a new table?",
+    "options": ["ALTER TABLE", "CREATE TABLE", "DROP TABLE", "TRUNCATE TABLE"],
+    "correctAnswerIndex": 1,
+    "hint": "CREATE TABLE defines a new table."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which SQL keyword is used to delete a table?",
+    "options": ["DROP TABLE", "DELETE TABLE", "REMOVE TABLE", "TRUNCATE TABLE"],
+    "correctAnswerIndex": 0,
+    "hint": "DROP TABLE removes a table completely."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which SQL keyword is used to remove all rows but keep the table structure?",
+    "options": ["DELETE", "DROP", "TRUNCATE", "REMOVE"],
+    "correctAnswerIndex": 2,
+    "hint": "TRUNCATE clears rows but keeps structure."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which SQL keyword is used to modify a table structure?",
+    "options": ["ALTER TABLE", "UPDATE TABLE", "CHANGE TABLE", "MODIFY TABLE"],
+    "correctAnswerIndex": 0,
+    "hint": "ALTER TABLE changes structure."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which SQL keyword is used to remove a column from a table?",
+    "options": ["DELETE COLUMN", "DROP COLUMN", "REMOVE COLUMN", "ALTER COLUMN"],
+    "correctAnswerIndex": 1,
+    "hint": "DROP COLUMN removes a column."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which SQL keyword is used to add a column to a table?",
+    "options": ["ADD COLUMN", "INSERT COLUMN", "ALTER TABLE ADD", "CREATE COLUMN"],
+    "correctAnswerIndex": 2,
+    "hint": "ALTER TABLE ADD adds a column."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which SQL keyword is used to change the name of a table?",
+    "options": ["RENAME TABLE", "ALTER TABLE RENAME", "CHANGE TABLE NAME", "UPDATE TABLE"],
+    "correctAnswerIndex": 1,
+    "hint": "ALTER TABLE RENAME changes table name."
+  }
+]

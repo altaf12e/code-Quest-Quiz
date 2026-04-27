@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which C++ feature allows compile-time polymorphism?",
+    "options": ["Virtual functions","Inheritance","Templates","Macros"],
+    "correctAnswerIndex": 2,
+    "hint": "Templates enable compile-time polymorphism."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main(){\n  int a = 3;\n  cout << a++ * ++a;\n}\n```",
+    "options": ["12","15","16","Error"],
+    "correctAnswerIndex": 1,
+    "hint": "a++ (3) * ++a (5) = 15."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which smart pointer allows shared ownership of a resource?",
+    "options": ["unique_ptr","shared_ptr","weak_ptr","auto_ptr"],
+    "correctAnswerIndex": 1,
+    "hint": "shared_ptr allows multiple owners."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which STL container provides logarithmic time search?",
+    "options": ["vector","map","deque","list"],
+    "correctAnswerIndex": 1,
+    "hint": "map is implemented as a balanced tree."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main(){\n  const char* p = \"ABC\";\n  cout << *(p+1);\n}\n```",
+    "options": ["A","B","C","Error"],
+    "correctAnswerIndex": 1,
+    "hint": "Pointer arithmetic moves to 'B'."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which C++11 feature allows deferred execution of functions?",
+    "options": ["lambda","bind","future","async"],
+    "correctAnswerIndex": 3,
+    "hint": "async launches tasks asynchronously."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which operator is used to allocate memory dynamically?",
+    "options": ["malloc","alloc","new","calloc"],
+    "correctAnswerIndex": 2,
+    "hint": "new allocates memory in C++."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main(){\n  string s = \"C++\";\n  cout << s.size();\n}\n```",
+    "options": ["3","2","Error","null"],
+    "correctAnswerIndex": 0,
+    "hint": "Length of \"C++\" is 3."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which C++ feature allows type-safe enumerations?",
+    "options": ["enum","typedef","enum class","macro"],
+    "correctAnswerIndex": 2,
+    "hint": "enum class provides type safety."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which STL container provides constant-time random access?",
+    "options": ["list","map","set","vector"],
+    "correctAnswerIndex": 3,
+    "hint": "vector provides O(1) random access."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main(){\n  int arr[2] = {1,2};\n  cout << *(arr+1);\n}\n```",
+    "options": ["1","2","Error","null"],
+    "correctAnswerIndex": 1,
+    "hint": "Pointer arithmetic moves to second element."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which C++ feature allows functions to be executed in parallel?",
+    "options": ["thread","future","promise","mutex"],
+    "correctAnswerIndex": 0,
+    "hint": "thread enables parallel execution."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which C++11 feature allows non-copyable objects to be returned?",
+    "options": ["rvalue references","constexpr","auto","lambda"],
+    "correctAnswerIndex": 0,
+    "hint": "rvalue references enable move semantics."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which STL container maintains insertion order?",
+    "options": ["unordered_map","unordered_set","list","set"],
+    "correctAnswerIndex": 2,
+    "hint": "list maintains insertion order."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main(){\n  cout << (nullptr == 0);\n}\n```",
+    "options": ["true","false","Error","null"],
+    "correctAnswerIndex": 0,
+    "hint": "nullptr equals 0 in comparisons."
+  }
+]

@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which Python keyword is used to define a decorator?",
+    "options": ["@", "decorator", "def", "lambda"],
+    "correctAnswerIndex": 0,
+    "hint": "Decorators are defined using @ before a function."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output of the following code?\n\n```python\nx = [i*i for i in range(3)]\nprint(x)\n```",
+    "options": ["[0,1,4]", "[1,4,9]", "[0,1,2]", "Error"],
+    "correctAnswerIndex": 2,
+    "hint": "List comprehension squares each number from 0 to 2."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which Python collection maintains insertion order and unique keys?",
+    "options": ["dict", "set", "list", "tuple"],
+    "correctAnswerIndex": 0,
+    "hint": "Since Python 3.7+, dict preserves insertion order."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output of the following code?\n\n```python\ndef func(a,b=2):\n    return a+b\nprint(func(3))\n```",
+    "options": ["5", "3", "Error", "None"],
+    "correctAnswerIndex": 1,
+    "hint": "Default parameter b=2 is used when not passed."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which Python keyword is used to define an abstract base class?",
+    "options": ["abstract", "ABC", "class", "def"],
+    "correctAnswerIndex": 2,
+    "hint": "ABC module defines abstract base classes."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which Python keyword is used to handle cleanup actions?",
+    "options": ["finally", "except", "cleanup", "end"],
+    "correctAnswerIndex": 0,
+    "hint": "finally always executes for cleanup."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output of the following code?\n\n```python\nx = {1,2,2,3}\nprint(len(x))\n```",
+    "options": ["4", "3", "2", "Error"],
+    "correctAnswerIndex": 1,
+    "hint": "Sets store only unique elements."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which Python keyword is used to inherit a class?",
+    "options": ["extends", "inherits", "class", "super"],
+    "correctAnswerIndex": 3,
+    "hint": "super() is used to call parent methods."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which Python keyword is used to define asynchronous iteration?",
+    "options": ["async for", "await", "yield", "lambda"],
+    "correctAnswerIndex": 0,
+    "hint": "async for is used in async loops."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output of the following code?\n\n```python\ntry:\n    print(1/0)\nexcept ZeroDivisionError:\n    print(\"Error\")\n```",
+    "options": ["0", "Error", "None", "Exception"],
+    "correctAnswerIndex": 1,
+    "hint": "Division by zero raises ZeroDivisionError."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which Python keyword is used to define a context manager?",
+    "options": ["with", "context", "manager", "open"],
+    "correctAnswerIndex": 0,
+    "hint": "with is used for context managers."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which Python keyword is used to define multiple inheritance?",
+    "options": ["extends", "class", "super", "comma"],
+    "correctAnswerIndex": 1,
+    "hint": "class can inherit multiple parents by comma separation."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output of the following code?\n\n```python\nx = [1,2,3]\nprint(x[::-1])\n```",
+    "options": ["[3,2,1]", "[1,2,3]", "Error", "None"],
+    "correctAnswerIndex": 0,
+    "hint": "Slicing with -1 reverses the list."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which Python keyword is used to define a property in a class?",
+    "options": ["property", "@property", "getter", "setter"],
+    "correctAnswerIndex": 1,
+    "hint": "@property decorator defines class properties."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which Python keyword is used to pause execution in async functions?",
+    "options": ["pause", "await", "yield", "stop"],
+    "correctAnswerIndex": 3,
+    "hint": "await pauses until coroutine completes."
+  }
+]

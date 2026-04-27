@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which JavaScript feature allows delaying execution until the call stack is clear?",
+    "options": ["setTimeout","Promise.then","setImmediate","requestAnimationFrame"],
+    "correctAnswerIndex": 1,
+    "hint": "Promise.then schedules microtasks after the current stack."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```js\nconsole.log([] + []);\n```",
+    "options": ["[]","Error","''","undefined"],
+    "correctAnswerIndex": 2,
+    "hint": "Empty arrays stringify to empty strings."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which JavaScript feature allows defining default values in destructuring?",
+    "options": ["spread","rest","default assignment","optional chaining"],
+    "correctAnswerIndex": 2,
+    "hint": "You can assign defaults in destructuring."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which JavaScript operator checks both type and value?",
+    "options": ["==","===","!=","!=="],
+    "correctAnswerIndex": 1,
+    "hint": "=== checks strict equality."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```js\nconsole.log(typeof function(){});\n```",
+    "options": ["object","function","Error","undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "Functions are of type 'function'."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which JavaScript feature allows spreading elements of an array?",
+    "options": ["spread operator","rest parameter","concat","slice"],
+    "correctAnswerIndex": 0,
+    "hint": "Spread operator expands arrays."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which JavaScript feature allows creating unique property keys?",
+    "options": ["Symbol","WeakMap","Proxy","Reflect"],
+    "correctAnswerIndex": 0,
+    "hint": "Symbols create unique keys."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```js\nconsole.log(0 == '0');\n```",
+    "options": ["true","false","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "== performs type coercion."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which JavaScript feature allows chaining promises?",
+    "options": ["Promise.all","Promise.race","async/await","Promise.then"],
+    "correctAnswerIndex": 3,
+    "hint": "Promise.then chains promises."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which JavaScript feature allows optional property access?",
+    "options": ["optional chaining","nullish coalescing","spread","rest"],
+    "correctAnswerIndex": 0,
+    "hint": "Optional chaining uses ?. operator."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```js\nconsole.log([...'abc']);\n```",
+    "options": ["['abc']","['a','b','c']","Error","undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "Spread turns string into array of chars."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which JavaScript feature allows freezing object structure but not values?",
+    "options": ["Object.freeze","Object.seal","Object.preventExtensions","Object.assign"],
+    "correctAnswerIndex": 1,
+    "hint": "Object.seal prevents adding/removing properties."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which JavaScript feature allows async/await execution?",
+    "options": ["Promise","setTimeout","Symbol.asyncIterator","async functions"],
+    "correctAnswerIndex": 3,
+    "hint": "async functions enable await."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which JavaScript feature allows merging objects?",
+    "options": ["Object.assign","Object.freeze","Object.seal","Object.create"],
+    "correctAnswerIndex": 0,
+    "hint": "Object.assign merges properties."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```js\nconsole.log(+false);\n```",
+    "options": ["false","Error","NaN","0"],
+    "correctAnswerIndex": 3,
+    "hint": "Unary + converts false to 0."
+  }
+]

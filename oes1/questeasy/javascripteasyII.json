@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which method parses a JSON string into an object?",
+    "options": ["JSON.parse()", "JSON.stringify()", "parseJSON()", "toObject()"],
+    "correctAnswerIndex": 0,
+    "hint": "JSON.parse() converts string to object."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which method converts an object to a JSON string?",
+    "options": ["JSON.parse()", "JSON.stringify()", "toJSON()", "objectToString()"],
+    "correctAnswerIndex": 1,
+    "hint": "JSON.stringify() converts object to string."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to create a block of code that handles errors?",
+    "options": ["catch", "try", "throw", "error"],
+    "correctAnswerIndex": 1,
+    "hint": "try encloses risky code."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to handle exceptions?",
+    "options": ["catch", "handle", "except", "error"],
+    "correctAnswerIndex": 0,
+    "hint": "catch handles exceptions."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to throw an exception?",
+    "options": ["throw", "raise", "error", "except"],
+    "correctAnswerIndex": 0,
+    "hint": "throw generates exceptions."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which method adds one or more elements to the beginning of an array?",
+    "options": ["push()", "unshift()", "shift()", "prepend()"],
+    "correctAnswerIndex": 1,
+    "hint": "unshift() adds to start."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which method removes the first element of an array?",
+    "options": ["pop()", "shift()", "splice()", "remove()"],
+    "correctAnswerIndex": 1,
+    "hint": "shift() removes first element."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which method joins all elements of an array into a string?",
+    "options": ["join()", "concat()", "toString()", "merge()"],
+    "correctAnswerIndex": 0,
+    "hint": "join() combines elements with separator."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which method returns a portion of an array?",
+    "options": ["slice()", "splice()", "split()", "subArray()"],
+    "correctAnswerIndex": 0,
+    "hint": "slice() returns shallow copy."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which method changes the contents of an array by removing or replacing elements?",
+    "options": ["slice()", "splice()", "split()", "replace()"],
+    "correctAnswerIndex": 1,
+    "hint": "splice() modifies array."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which method executes a function once for each array element?",
+    "options": ["map()", "forEach()", "filter()", "reduce()"],
+    "correctAnswerIndex": 1,
+    "hint": "forEach() iterates over array."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which method creates a new array with results of calling a function?",
+    "options": ["map()", "forEach()", "filter()", "reduce()"],
+    "correctAnswerIndex": 0,
+    "hint": "map() transforms array."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which method creates a new array with elements that pass a test?",
+    "options": ["map()", "filter()", "reduce()", "find()"],
+    "correctAnswerIndex": 1,
+    "hint": "filter() selects elements."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which method applies a function against an accumulator and array elements?",
+    "options": ["map()", "reduce()", "filter()", "forEach()"],
+    "correctAnswerIndex": 1,
+    "hint": "reduce() accumulates values."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which method finds the first element that satisfies a condition?",
+    "options": ["find()", "filter()", "map()", "reduce()"],
+    "correctAnswerIndex": 0,
+    "hint": "find() returns first match."
+  }
+]

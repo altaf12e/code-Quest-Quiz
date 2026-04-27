@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword defines an abstract class?",
+    "options": ["abstract", "interface", "virtual", "base"],
+    "correctAnswerIndex": 0,
+    "hint": "abstract defines incomplete classes."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to define an interface?",
+    "options": ["class", "interface", "implements", "abstract"],
+    "correctAnswerIndex": 1,
+    "hint": "interface defines contracts."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which annotation marks a method as deprecated?",
+    "options": ["@Deprecated", "@Override", "@SuppressWarnings", "@SafeVarargs"],
+    "correctAnswerIndex": 0,
+    "hint": "@Deprecated warns usage."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used for thread synchronization?",
+    "options": ["sync", "synchronized", "lock", "threadsafe"],
+    "correctAnswerIndex": 1,
+    "hint": "synchronized ensures thread safety."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which class is used for reading input from console?",
+    "options": ["Scanner", "Reader", "Console", "Input"],
+    "correctAnswerIndex": 0,
+    "hint": "Scanner reads input."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to override a method?",
+    "options": ["override", "@Override", "extends", "super"],
+    "correctAnswerIndex": 1,
+    "hint": "@Override annotation is used."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which stream class is used to write text to files?",
+    "options": ["FileReader", "FileWriter", "BufferedReader", "Scanner"],
+    "correctAnswerIndex": 1,
+    "hint": "FileWriter writes characters."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to define a constant in an interface?",
+    "options": ["static", "final", "const", "immutable"],
+    "correctAnswerIndex": 1,
+    "hint": "final makes constants in interfaces."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to create a thread by inheritance?",
+    "options": ["Thread", "Runnable", "extends Thread", "implements Runnable"],
+    "correctAnswerIndex": 2,
+    "hint": "Subclassing Thread creates a thread."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to handle multiple catch blocks?",
+    "options": ["multi", "catch", "multi-catch", "throws"],
+    "correctAnswerIndex": 2,
+    "hint": "multi-catch handles multiple exceptions."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to define a lambda expression?",
+    "options": ["->", "lambda", "function", "arrow"],
+    "correctAnswerIndex": 0,
+    "hint": "-> defines lambda."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to define a generic class?",
+    "options": ["<>", "generic", "template", "type"],
+    "correctAnswerIndex": 0,
+    "hint": "Angle brackets <> define generics."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to throw an exception?",
+    "options": ["throw", "throws", "error", "raise"],
+    "correctAnswerIndex": 0,
+    "hint": "throw sends an exception."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to declare checked exceptions in a method?",
+    "options": ["throw", "throws", "error", "catch"],
+    "correctAnswerIndex": 1,
+    "hint": "throws declares exceptions."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to define a nested class?",
+    "options": ["inner", "nested", "class inside class", "static"],
+    "correctAnswerIndex": 3,
+    "hint": "static defines nested class."
+  }
+]

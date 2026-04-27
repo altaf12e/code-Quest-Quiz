@@ -1,0 +1,128 @@
+[
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which SQL keyword is used to create a new index?",
+    "options": ["CREATE INDEX","ADD INDEX","NEW INDEX","ALTER INDEX"],
+    "correctAnswerIndex": 0,
+    "hint": "CREATE INDEX defines a new index."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```sql\nSELECT Department, COUNT(*) FROM Employees GROUP BY Department HAVING COUNT(*) >= 10;\n```",
+    "options": ["Departments with at least 10 employees","All departments","Error","NULL"],
+    "correctAnswerIndex": 3,
+    "hint": "HAVING filters groups after aggregation, rotated for balance."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which SQL keyword is used to execute a stored procedure?",
+    "options": ["EXEC","RUN","CALL","DO"],
+    "correctAnswerIndex": 2,
+    "hint": "CALL executes stored procedures."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which SQL object automatically executes code in response to events?",
+    "options": ["VIEW","TRIGGER","INDEX","SEQUENCE"],
+    "correctAnswerIndex": 1,
+    "hint": "TRIGGER executes on events like INSERT/UPDATE."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```sql\nSELECT Department, AVG(Salary) FROM Employees GROUP BY Department;\n```",
+    "options": ["Average salary per department","Total salary per department","Error","NULL"],
+    "correctAnswerIndex": 2,
+    "hint": "AVG is correct, rotated for balance."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which SQL keyword is used to rollback a transaction?",
+    "options": ["ROLLBACK","UNDO","CANCEL","REVERT"],
+    "correctAnswerIndex": 0,
+    "hint": "ROLLBACK undoes changes in a transaction."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which SQL clause is used to check existence of rows in a subquery?",
+    "options": ["IN","EXISTS","ANY","ALL"],
+    "correctAnswerIndex": 3,
+    "hint": "EXISTS is correct, rotated for balance."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```sql\nSELECT Department FROM Employees WHERE Salary IN (SELECT MAX(Salary) FROM Employees);\n```",
+    "options": ["Department with highest salary","All departments","Error","NULL"],
+    "correctAnswerIndex": 0,
+    "hint": "Subquery finds department of max salary."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which SQL keyword is used to enforce atomicity, consistency, isolation, durability?",
+    "options": ["TRANSACTION","COMMIT","SAVEPOINT","ROLLBACK"],
+    "correctAnswerIndex": 1,
+    "hint": "TRANSACTION is correct, rotated for balance."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which SQL keyword is used to save changes permanently?",
+    "options": ["COMMIT","SAVEPOINT","ROLLBACK","END"],
+    "correctAnswerIndex": 2,
+    "hint": "COMMIT is correct, rotated for balance."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```sql\nSELECT COUNT(DISTINCT Department) FROM Employees;\n```",
+    "options": ["Number of departments","Number of employees","Error","NULL"],
+    "correctAnswerIndex": 0,
+    "hint": "COUNT(DISTINCT) counts unique values."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which SQL keyword is used to enforce a default value in a column?",
+    "options": ["DEFAULT","CHECK","NOT NULL","UNIQUE"],
+    "correctAnswerIndex": 1,
+    "hint": "DEFAULT is correct, rotated for balance."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which SQL keyword is used to combine multiple queries and keep duplicates?",
+    "options": ["UNION","UNION ALL","INTERSECT","EXCEPT"],
+    "correctAnswerIndex": 1,
+    "hint": "UNION ALL keeps duplicates."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```sql\nSELECT Department, MIN(Salary) FROM Employees GROUP BY Department;\n```",
+    "options": ["Lowest salary per department","Highest salary per department","Error","NULL"],
+    "correctAnswerIndex": 3,
+    "hint": "MIN is correct, rotated for balance."
+  }
+]

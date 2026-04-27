@@ -1,0 +1,138 @@
+[
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Python module provides support for multithreading?",
+    "options": ["threading","multiprocessing","asyncio","concurrent"],
+    "correctAnswerIndex": 0,
+    "hint": "threading module supports multithreading."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Python module provides support for regular expressions?",
+    "options": ["regex","re","string","pattern"],
+    "correctAnswerIndex": 1,
+    "hint": "re module handles regex operations."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Python keyword is used to define a static method?",
+    "options": ["@staticmethod","static","method","class"],
+    "correctAnswerIndex": 0,
+    "hint": "@staticmethod defines static methods."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output of the following code?\n\n```python\nx = [1,2,3]\nprint(sum(x))\n```",
+    "options": ["6","5","Error","None"],
+    "correctAnswerIndex": 0,
+    "hint": "sum() adds all elements in the list."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Python module provides support for JSON?",
+    "options": ["json","pickle","marshal","config"],
+    "correctAnswerIndex": 2,
+    "hint": "marshal also supports serialization but less common than json/pickle."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output of the following code?\n\n```python\nx = [1,2,3]\nprint(x.pop())\n```",
+    "options": ["1","2","3","Error"],
+    "correctAnswerIndex": 2,
+    "hint": "pop() removes and returns the last element."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Python keyword is used to define class inheritance?",
+    "options": ["extends","inherits","class","super"],
+    "correctAnswerIndex": 2,
+    "hint": "class keyword defines inheritance."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Python module provides support for serialization?",
+    "options": ["pickle","json","marshal","config"],
+    "correctAnswerIndex": 0,
+    "hint": "pickle serializes Python objects."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output of the following code?\n\n```python\nx = {\"a\":1,\"b\":2}\nprint(list(x.keys()))\n```",
+    "options": ["['a','b']","['b','a']","Error","None"],
+    "correctAnswerIndex": 1,
+    "hint": "dict keys preserve insertion order since Python 3.7."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Python keyword is used to define a coroutine?",
+    "options": ["async","await","yield","def"],
+    "correctAnswerIndex": 0,
+    "hint": "async defines coroutine functions."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Python module provides support for asynchronous programming?",
+    "options": ["asyncio","threading","multiprocessing","concurrent"],
+    "correctAnswerIndex": 3,
+    "hint": "concurrent.futures also supports async programming."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output of the following code?\n\n```python\nx = [1,2,3]\nprint(x[0])\n```",
+    "options": ["1","2","3","Error"],
+    "correctAnswerIndex": 0,
+    "hint": "Index 0 returns the first element."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Python keyword is used to define a generator function?",
+    "options": ["yield","return","lambda","def"],
+    "correctAnswerIndex": 0,
+    "hint": "yield defines generator functions."
+  },
+  {
+    "subject": "python",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Python module provides support for configuration files?",
+    "options": ["configparser","json","pickle","marshal"],
+    "correctAnswerIndex": 0,
+    "hint": "configparser handles INI-style configuration files."
+  },
+
+  {
+  "subject": "python",
+  "difficulty": "medium",
+  "subLevel": "III",
+  "question": "What will be the output of the following code?\n\n```python\nx = [1,2,3]\nprint(x[1:3])\n```",
+  "options": ["[1,2]","[2,3]","[3]","Error"],
+  "correctAnswerIndex": 1,
+  "hint": "Slicing from index 1 up to 3 returns [2,3]."
+}
+]

@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which keyword in Java prevents a class from being subclassed?",
+    "options": ["static","final","abstract","sealed"],
+    "correctAnswerIndex": 1,
+    "hint": "final prevents inheritance."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```java\nclass Test {\n  public static void main(String[] args){\n    String s1 = \"abc\";\n    String s2 = new String(\"abc\");\n    System.out.println(s1 == s2);\n  }\n}\n```",
+    "options": ["true","false","Error","null"],
+    "correctAnswerIndex": 1,
+    "hint": "== compares references, not values."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Java class is used for thread-safe collections?",
+    "options": ["ArrayList","HashMap","ConcurrentHashMap","TreeSet"],
+    "correctAnswerIndex": 2,
+    "hint": "ConcurrentHashMap is thread-safe."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which keyword is used to restrict a method from being overridden?",
+    "options": ["static","final","abstract","private"],
+    "correctAnswerIndex": 1,
+    "hint": "final prevents method overriding."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```java\nclass Test {\n  public static void main(String[] args){\n    try {\n      int x = 5/0;\n    } catch(Exception e){\n      System.out.println(\"Error\");\n    }\n  }\n}\n```",
+    "options": ["Error","ArithmeticException","0","Nothing"],
+    "correctAnswerIndex": 0,
+    "hint": "Division by zero is caught, prints Error."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which design pattern ensures only one instance of a class?",
+    "options": ["Factory","Singleton","Builder","Prototype"],
+    "correctAnswerIndex": 1,
+    "hint": "Singleton restricts instantiation to one object."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Java keyword is used to achieve multiple inheritance of type?",
+    "options": ["extends","implements","super","interface"],
+    "correctAnswerIndex": 1,
+    "hint": "implements allows multiple interfaces."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```java\nclass Test {\n  public static void main(String[] args){\n    String s = \"Hello\";\n    s.concat(\"World\");\n    System.out.println(s);\n  }\n}\n```",
+    "options": ["HelloWorld","Hello","World","Error"],
+    "correctAnswerIndex": 1,
+    "hint": "Strings are immutable."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Java package provides concurrency utilities?",
+    "options": ["java.util","java.io","java.util.concurrent","java.lang"],
+    "correctAnswerIndex": 2,
+    "hint": "java.util.concurrent provides concurrency utilities."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which keyword is used to call a parent class constructor?",
+    "options": ["super","this","extends","parent"],
+    "correctAnswerIndex": 0,
+    "hint": "super calls parent constructor."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```java\nclass Test {\n  public static void main(String[] args){\n    StringBuilder sb = new StringBuilder(\"Hi\");\n    sb.append(\"!\");\n    System.out.println(sb);\n  }\n}\n```",
+    "options": ["Hi","Hi!","Error","null"],
+    "correctAnswerIndex": 1,
+    "hint": "StringBuilder is mutable."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Java keyword is used to prevent thread interference?",
+    "options": ["volatile","synchronized","transient","static"],
+    "correctAnswerIndex": 1,
+    "hint": "synchronized prevents race conditions."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Java exception is checked at compile time?",
+    "options": ["NullPointerException","IOException","ArithmeticException","RuntimeException"],
+    "correctAnswerIndex": 1,
+    "hint": "IOException is checked."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Java collection maintains insertion order?",
+    "options": ["HashSet","TreeSet","LinkedHashSet","PriorityQueue"],
+    "correctAnswerIndex": 2,
+    "hint": "LinkedHashSet maintains insertion order."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```java\nclass Test {\n  public static void main(String[] args){\n    int[] arr = new int[3];\n    System.out.println(arr[0]);\n  }\n}\n```",
+    "options": ["0","null","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "Default int array values are 0."
+  }
+]

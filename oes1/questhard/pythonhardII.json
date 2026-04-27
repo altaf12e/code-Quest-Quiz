@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Python feature allows customizing attribute access at the class level?",
+    "options": ["__slots__","__getattr__","__getattribute__","Descriptors"],
+    "correctAnswerIndex": 3,
+    "hint": "Descriptors define how attributes are accessed."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```python\ndef f(x, y, /, z):\n    return x+y+z\nprint(f(1,2,3))\n```",
+    "options": ["6","Error","3","None"],
+    "correctAnswerIndex": 0,
+    "hint": "Positional-only parameters work fine here."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Python module provides support for asynchronous I/O?",
+    "options": ["threading","asyncio","multiprocessing","queue"],
+    "correctAnswerIndex": 1,
+    "hint": "asyncio is designed for async I/O."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Python feature allows defining behavior for the 'in' operator?",
+    "options": ["__contains__","__iter__","__getitem__","__len__"],
+    "correctAnswerIndex": 0,
+    "hint": "__contains__ defines membership test."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```python\nx = (1,2,3)\ny = x*2\nprint(y)\n```",
+    "options": ["(1,2,3,1,2,3)","(2,4,6)","Error","None"],
+    "correctAnswerIndex": 0,
+    "hint": "Tuple repetition duplicates elements."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Python feature allows defining custom iteration logic?",
+    "options": ["__iter__","__next__","__getitem__","__call__"],
+    "correctAnswerIndex": 0,
+    "hint": "__iter__ returns an iterator object."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Python module provides inter-process communication?",
+    "options": ["threading","multiprocessing","asyncio","queue"],
+    "correctAnswerIndex": 1,
+    "hint": "multiprocessing supports IPC."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```python\nprint({1,2,3} & {2,3,4})\n```",
+    "options": ["{2,3}","{1,2,3,4}","Error","None"],
+    "correctAnswerIndex": 0,
+    "hint": "Set intersection gives {2,3}."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Python feature allows defining callable objects?",
+    "options": ["__init__","__getitem__","__iter__","__call__"],
+    "correctAnswerIndex": 3,
+    "hint": "__call__ makes instances callable."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Python module provides profiling tools?",
+    "options": ["time","inspect","cProfile","resource"],
+    "correctAnswerIndex": 2,
+    "hint": "cProfile profiles Python programs."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```python\nx = [i*i for i in range(3)]\nprint(x)\n```",
+    "options": ["[0,1,4]","[1,4,9]","Error","None"],
+    "correctAnswerIndex": 0,
+    "hint": "Squares of 0,1,2 are [0,1,4]."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Python feature allows defining context managers?",
+    "options": ["__init__","__del__","__slots__","__enter__ and __exit__"],
+    "correctAnswerIndex": 3,
+    "hint": "Context managers implement __enter__ and __exit__."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Python module provides weak references?",
+    "options": ["gc","sys","inspect","weakref"],
+    "correctAnswerIndex": 3,
+    "hint": "weakref creates weak references."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Python feature allows operator overloading?",
+    "options": ["__str__","__repr__","__len__","__add__"],
+    "correctAnswerIndex": 3,
+    "hint": "__add__ overloads + operator."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```python\nprint(bool([]))\n```",
+    "options": ["True","False","Error","None"],
+    "correctAnswerIndex": 1,
+    "hint": "Empty lists are falsy."
+  }
+]

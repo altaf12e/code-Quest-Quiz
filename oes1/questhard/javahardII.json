@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which keyword is used to declare generic classes in Java?",
+    "options": ["extends","implements","<>","generic"],
+    "correctAnswerIndex": 2,
+    "hint": "Angle brackets <> declare generics."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```java\nclass Test {\n  public static void main(String[] args){\n    int x = 10;\n    Integer y = x;\n    System.out.println(y);\n  }\n}\n```",
+    "options": ["10","Error","null","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "Autoboxing converts int to Integer."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Java class is used for reflection?",
+    "options": ["Object","Method","Field","Class"],
+    "correctAnswerIndex": 3,
+    "hint": "Class provides reflection methods."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which annotation is used to suppress compiler warnings?",
+    "options": ["@Override","@SuppressWarnings","@Deprecated","@SafeVarargs"],
+    "correctAnswerIndex": 1,
+    "hint": "@SuppressWarnings disables warnings."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```java\nclass Test {\n  public static void main(String[] args){\n    String s = null;\n    System.out.println(s == null);\n  }\n}\n```",
+    "options": ["false","Error","null","true"],
+    "correctAnswerIndex": 3,
+    "hint": "s is null, so the condition is true."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Java stream operation is terminal?",
+    "options": ["map","filter","collect","peek"],
+    "correctAnswerIndex": 2,
+    "hint": "collect is terminal."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which keyword can be used to create a thread by subclassing?",
+    "options": ["Runnable","new","interface","extends Thread"],
+    "correctAnswerIndex": 3,
+    "hint": "Extending Thread creates a new thread."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```java\nclass Test {\n  public static void main(String[] args){\n    StringBuilder sb = new StringBuilder(\"Java\");\n    sb.reverse();\n    System.out.println(sb);\n  }\n}\n```",
+    "options": ["avaJ","Java","Error","null"],
+    "correctAnswerIndex": 0,
+    "hint": "reverse() reverses the string."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Java keyword ensures visibility of shared variables across threads?",
+    "options": ["final","synchronized","transient","volatile"],
+    "correctAnswerIndex": 3,
+    "hint": "volatile ensures visibility."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which design pattern provides a simplified interface to a complex system?",
+    "options": ["Adapter","Facade","Decorator","Observer"],
+    "correctAnswerIndex": 1,
+    "hint": "Facade simplifies complex subsystems."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```java\nclass Test {\n  public static void main(String[] args){\n    int[] arr = {1,2,3};\n    System.out.println(arr.length);\n  }\n}\n```",
+    "options": ["3","Error","null","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "Array length is 3."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Java keyword is used to define constants?",
+    "options": ["static","final","const","volatile"],
+    "correctAnswerIndex": 1,
+    "hint": "final defines constants."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Java class is used for thread pools?",
+    "options": ["Thread","ExecutorService","Runnable","Future"],
+    "correctAnswerIndex": 1,
+    "hint": "ExecutorService manages thread pools."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Java phrase enables an object to be serialized?",
+    "options": ["Serializable","serialize","transient","implements Serializable"],
+    "correctAnswerIndex": 3,
+    "hint": "implements Serializable enables serialization."
+  },
+  {
+    "subject": "java",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be printed?\n\n```java\nclass Test {\n  public static void main(String[] args){\n    System.out.println(Runtime.getRuntime().availableProcessors() > 0);\n  }\n}\n```",
+    "options": ["true","false","Error","null"],
+    "correctAnswerIndex": 0,
+    "hint": "availableProcessors returns number of cores, typically > 0."
+  }
+]

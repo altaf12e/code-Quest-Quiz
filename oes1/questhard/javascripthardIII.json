@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which JavaScript feature allows importing modules dynamically?",
+    "options": ["require","export","module.exports","import()"],
+    "correctAnswerIndex": 3,
+    "hint": "import() loads modules dynamically."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```js\nconsole.log([] == []);\n```",
+    "options": ["true","false","Error","undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "Different array references are never equal."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which JavaScript feature allows intercepting operations on objects?",
+    "options": ["Symbol","Reflect","Proxy","Object.assign"],
+    "correctAnswerIndex": 2,
+    "hint": "Proxy intercepts operations on objects."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which JavaScript operator returns the first truthy value?",
+    "options": ["||","??","&&","==="],
+    "correctAnswerIndex": 0,
+    "hint": "|| returns the first truthy operand."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```js\nconsole.log('5' - 2);\n```",
+    "options": ["3","'52'","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "String '5' coerces to number."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which construct defines async generators?",
+    "options": ["Promise.all","Symbol.iterator","async function*","yield"],
+    "correctAnswerIndex": 2,
+    "hint": "async function* defines async generators."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which promise combinator waits for all promises to fulfill?",
+    "options": ["Promise.race","Promise.any","Promise.all","Promise.allSettled"],
+    "correctAnswerIndex": 2,
+    "hint": "Promise.all resolves when all resolve; rejects if any reject."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```js\nconsole.log(typeof Symbol());\n```",
+    "options": ["symbol","object","Error","string"],
+    "correctAnswerIndex": 0,
+    "hint": "typeof Symbol() is 'symbol'."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which syntax defines private methods in classes?",
+    "options": ["WeakMap","Symbol","Object.defineProperty","#method syntax"],
+    "correctAnswerIndex": 3,
+    "hint": "#method syntax defines private methods."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which operator returns the first defined (non-nullish) value?",
+    "options": ["||","??","&&","!=="],
+    "correctAnswerIndex": 1,
+    "hint": "?? returns first non-null/undefined value."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```js\nconsole.log(+undefined);\n```",
+    "options": ["NaN","0","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "Unary + on undefined gives NaN."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which built-in API mirrors object operations used by Proxy handlers?",
+    "options": ["Symbol.iterator","Object.create","Reflect","Map"],
+    "correctAnswerIndex": 2,
+    "hint": "Reflect provides methods for common operations (get, set, apply)."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which symbol defines the synchronous iteration protocol?",
+    "options": ["Symbol.asyncIterator","Symbol.iterator","Object.keys","Array.from"],
+    "correctAnswerIndex": 1,
+    "hint": "Symbol.iterator enables for...of on sync iterables."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which promise combinator resolves on the first fulfilled promise?",
+    "options": ["Promise.all","Promise.any","Promise.race","Promise.allSettled"],
+    "correctAnswerIndex": 1,
+    "hint": "Promise.any ignores rejects and resolves with first fulfillment."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```js\nconsole.log([] == 0);\n```",
+    "options": ["true","false","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "[] coerces to 0, so [] == 0 is true."
+  }
+]

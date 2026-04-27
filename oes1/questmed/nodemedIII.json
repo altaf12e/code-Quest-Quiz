@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which package is commonly used for JWT authentication in Node.js?",
+    "options": ["jsonwebtoken","bcrypt","passport","express-session"],
+    "correctAnswerIndex": 0,
+    "hint": "jsonwebtoken handles JWT creation and verification."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```js\nconsole.log(typeof process.hrtime.bigint);\n```",
+    "options": ["object","function","bigint","undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "process.hrtime.bigint is a function."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which middleware is used for securing Express apps by setting HTTP headers?",
+    "options": ["cors","morgan","helmet","cookieParser"],
+    "correctAnswerIndex": 2,
+    "hint": "helmet secures apps with headers."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Node.js module is used for clustering?",
+    "options": ["os","worker_threads","events","cluster"],
+    "correctAnswerIndex": 3,
+    "hint": "cluster enables multi-core utilization."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```js\nconsole.log(Buffer.from('A').toString('base64'));\n```",
+    "options": ["QQ==","A","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "Base64 encoding of 'A' is QQ==."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which package is used for password hashing?",
+    "options": ["helmet","bcrypt","jsonwebtoken","express"],
+    "correctAnswerIndex": 1,
+    "hint": "bcrypt hashes passwords securely."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Node.js module is used for worker threads?",
+    "options": ["cluster","os","worker_threads","events"],
+    "correctAnswerIndex": 2,
+    "hint": "worker_threads enables parallel execution."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```js\nconsole.log(process.memoryUsage().rss > 0);\n```",
+    "options": ["true","false","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "rss shows memory usage in bytes, typically > 0."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which middleware is used for handling file uploads?",
+    "options": ["helmet","cors","express.json","multer"],
+    "correctAnswerIndex": 3,
+    "hint": "multer handles multipart/form-data."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Node.js module provides operating system information?",
+    "options": ["cluster","worker_threads","os","events"],
+    "correctAnswerIndex": 2,
+    "hint": "os module provides system info."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```js\nconsole.log(typeof require('fs').promises);\n```",
+    "options": ["function","object","string","undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "fs.promises is an object."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which package is used for logging HTTP requests?",
+    "options": ["helmet","cors","multer","morgan"],
+    "correctAnswerIndex": 3,
+    "hint": "morgan logs HTTP requests."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which Node.js module is used for cryptographic operations?",
+    "options": ["fs","http","crypto","path"],
+    "correctAnswerIndex": 2,
+    "hint": "crypto handles encryption and hashing."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which testing framework is commonly used with Node.js?",
+    "options": ["React","Mocha","Angular","Vue"],
+    "correctAnswerIndex": 1,
+    "hint": "Mocha is a popular Node.js testing framework."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```js\nconsole.log(typeof process.uptime);\n```",
+    "options": ["function","object","string","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "process.uptime is a function."
+  }
+]

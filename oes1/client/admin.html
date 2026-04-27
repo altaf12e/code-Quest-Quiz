@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - CodeQuest</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="dashboard-page">
+    <div class="animated-bg light"></div>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo-small">👑</div>
+            <span class="nav-brand">CodeQuest Admin</span>
+        </div>
+        <div class="nav-right">
+            <button class="nav-btn" onclick="location.href='dashboard.html'">
+                <span>👤</span> Dashboard
+            </button>
+            <button class="nav-btn" onclick="location.href='index.html'">
+                <span>🏠</span> Home
+            </button>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="admin-profile-card">
+                <div class="profile-avatar">👑</div>
+                <div class="profile-info">
+                    <h3>Administrator</h3>
+                    <div class="profile-role">System Admin</div>
+                </div>
+            </div>
+
+            <div class="admin-nav">
+                <div class="nav-item active" data-section="overview">
+                    <span class="nav-icon">📊</span>
+                    <span class="nav-text">Overview</span>
+                </div>
+                <div class="nav-item" data-section="users">
+                    <span class="nav-icon">👥</span>
+                    <span class="nav-text">Users</span>
+                </div>
+                <div class="nav-item" data-section="questions">
+                    <span class="nav-icon">❓</span>
+                    <span class="nav-text">Questions</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="admin-section active" id="overview">
+                <div class="section-header">
+                    <h2 class="section-title">📊 System Overview</h2>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-info">
+                            <div class="stat-number" id="totalUsers">0</div>
+                            <div class="stat-label">Total Users</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">❓</div>
+                        <div class="stat-info">
+                            <div class="stat-number" id="totalQuestions">0</div>
+                            <div class="stat-label">Questions</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">📝</div>
+                        <div class="stat-info">
+                            <div class="stat-number" id="totalExams">0</div>
+                            <div class="stat-label">Exams Taken</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="admin-section" id="users">
+                <div class="section-header">
+                    <h2 class="section-title">👥 User Management</h2>
+                </div>
+                <div class="admin-table-container">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Avatar</th>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>Level</th>
+                                <th>XP</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="usersTable">
+                            <tr><td colspan="6" class="loading-cell">Loading users...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="admin-section" id="questions">
+                <div class="section-header">
+                    <h2 class="section-title">❓ Question Management</h2>
+                    <button class="btn btn-primary" id="addQuestionBtn">
+                        <span>➕</span> Add Question
+                    </button>
+                </div>
+                <div class="admin-table-container">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Difficulty</th>
+                                <th>Question</th>
+                                <th>XP Value</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="questionsTable">
+                            <tr><td colspan="5" class="loading-cell">Loading questions...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>

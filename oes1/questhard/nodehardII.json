@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Node.js feature allows tracking asynchronous resources?",
+    "options": ["async_hooks","events","perf_hooks","worker_threads"],
+    "correctAnswerIndex": 0,
+    "hint": "async_hooks provides APIs to track async resources."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```js\nsetTimeout(()=>console.log('A'),0);\nPromise.resolve().then(()=>console.log('B'));\nconsole.log('C');\n```",
+    "options": ["A B C","C B A","C A B","B C A"],
+    "correctAnswerIndex": 1,
+    "hint": "Logs C first, then microtask B, then timer A."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Node.js module provides zlib compression?",
+    "options": ["zlib","fs","net","crypto"],
+    "correctAnswerIndex": 2,
+    "hint": "The zlib module provides compression utilities."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Node.js feature allows spawning new processes?",
+    "options": ["cluster","child_process","worker_threads","events"],
+    "correctAnswerIndex": 3,
+    "hint": "child_process allows spawning new processes."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```js\nconsole.log('1');\nprocess.nextTick(()=>console.log('2'));\nconsole.log('3');\n```",
+    "options": ["1 2 3","1 3 2","2 1 3","3 2 1"],
+    "correctAnswerIndex": 1,
+    "hint": "Logs 1,3 synchronously, then nextTick 2."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Node.js module provides TLS/SSL functionality?",
+    "options": ["tls","net","crypto","https"],
+    "correctAnswerIndex": 2,
+    "hint": "The tls module provides TLS/SSL support."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Node.js feature allows sharing memory between threads?",
+    "options": ["SharedArrayBuffer","Buffer","cluster","events"],
+    "correctAnswerIndex": 0,
+    "hint": "SharedArrayBuffer allows memory sharing between threads."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Node.js module provides DNS resolution?",
+    "options": ["dns","net","os","path"],
+    "correctAnswerIndex": 2,
+    "hint": "The dns module provides DNS resolution."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```js\n(async()=>{\n  console.log(await Promise.resolve('X'));\n})();\n```",
+    "options": ["Promise","X","Error","undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "Async IIFE logs 'X'."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Node.js module provides HTTP/2 support?",
+    "options": ["http2","https","net","tls"],
+    "correctAnswerIndex": 0,
+    "hint": "The http2 module provides HTTP/2 support."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Node.js feature allows monitoring garbage collection?",
+    "options": ["perf_hooks","async_hooks","events","os"],
+    "correctAnswerIndex": 1,
+    "hint": "perf_hooks can monitor GC events."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Node.js module provides assertion testing?",
+    "options": ["assert","test","util","events"],
+    "correctAnswerIndex": 2,
+    "hint": "The assert module provides assertion testing."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```js\nconsole.log(typeof require('fs'));\n```",
+    "options": ["function","object","string","undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "require('fs') returns an object."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Node.js feature allows worker threads to communicate?",
+    "options": ["MessageChannel","events","cluster","child_process"],
+    "correctAnswerIndex": 3,
+    "hint": "MessageChannel enables communication between worker threads."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which Node.js module provides utilities for debugging?",
+    "options": ["util","debug","assert","events"],
+    "correctAnswerIndex": 0,
+    "hint": "The util module provides debugging utilities."
+  }
+]

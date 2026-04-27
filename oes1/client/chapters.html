@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Path - CodeQuest</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/chapters.css">
+</head>
+<body>
+    <div class="animated-bg">
+        <div class="floating-code">{"}</div>
+        <div class="floating-code">&lt;/&gt;</div>
+        <div class="floating-code">[ ]</div>
+        <div class="floating-code">( )</div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="logo">⚔️</span>
+                <span class="brand-text">CodeQuest</span>
+            </div>
+            <div class="nav-menu">
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+                <a href="index.html" class="nav-link">Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <button onclick="history.back()" class="btn btn-secondary">← Back</button>
+            <h1 id="subjectTitle">Learning Path</h1>
+            <div class="progress-info">
+                <span id="progressText">0% Complete</span>
+            </div>
+        </div>
+
+        <div class="learning-path">
+            <div class="path-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="overallProgress"></div>
+                </div>
+                <span class="progress-label">Overall Progress</span>
+            </div>
+
+            <p style="text-align: center; color: #888; font-size: 1.1rem; margin-bottom: 1rem;">Coming Soon...</p>
+            <div class="chapters-grid" id="chaptersGrid">
+                <!-- Chapters will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Chapter Details Modal -->
+    <div class="modal" id="chapterModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalChapterTitle">Chapter Details</h3>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="modalChapterDescription"></p>
+                <div class="chapter-stats">
+                    <div class="stat">
+                        <span class="stat-icon">⏱️</span>
+                        <span class="stat-text" id="modalEstimatedTime">15 min</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-icon">📊</span>
+                        <span class="stat-text" id="modalDifficulty">Beginner</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-icon">❓</span>
+                        <span class="stat-text" id="modalQuestionCount">10 questions</span>
+                    </div>
+                    <div class="stat" id="modalScoreStat" style="display: none;">
+                        <span class="stat-icon">⭐</span>
+                        <span class="stat-text" id="modalScore">0%</span>
+                    </div>
+                </div>
+                <div class="prerequisites" id="modalPrerequisites" style="display: none;">
+                    <h4>Prerequisites:</h4>
+                    <ul id="prerequisitesList"></ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="modalCancel">Cancel</button>
+                <button class="btn btn-primary" id="modalStart">Start Chapter</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/chapters.js"></script>
+</body>
+</html>

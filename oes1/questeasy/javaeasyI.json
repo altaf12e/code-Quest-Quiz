@@ -1,0 +1,137 @@
+[
+{
+  "subject": "java",
+  "difficulty": "easy",
+  "subLevel": "I",
+  "question": "Which keyword is used to stop the execution of a program immediately?",
+  "options": ["exit", "break", "return", "stop"],
+  "correctAnswerIndex": 0,
+  "hint": "System.exit() ends the program."
+}
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword is used to declare a class?",
+    "options": ["class", "struct", "define", "object"],
+    "correctAnswerIndex": 0,
+    "hint": "class introduces a new class."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "What is the entry point of a Java program?",
+    "options": ["start()", "main()", "run()", "init()"],
+    "correctAnswerIndex": 1,
+    "hint": "main() is the entry point."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which symbol starts a single-line comment?",
+    "options": ["#", "//", "/*", "<!--"],
+    "correctAnswerIndex": 1,
+    "hint": "Same as C/C++."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword is used to define a constant?",
+    "options": ["const", "final", "static", "immutable"],
+    "correctAnswerIndex": 1,
+    "hint": "final makes a variable constant."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which operator compares primitive values?",
+    "options": ["=", "==", "equals()", "==="],
+    "correctAnswerIndex": 1,
+    "hint": "== checks equality."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword refers to the current object?",
+    "options": ["self", "this", "me", "current"],
+    "correctAnswerIndex": 1,
+    "hint": "this refers to current instance."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which loop executes at least once?",
+    "options": ["for", "while", "do-while", "foreach"],
+    "correctAnswerIndex": 2,
+    "hint": "do-while checks after execution."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which package is imported automatically?",
+    "options": ["java.io", "java.util", "java.lang", "java.net"],
+    "correctAnswerIndex": 2,
+    "hint": "java.lang is always available."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword is used for inheritance?",
+    "options": ["extends", "implements", "super", "base"],
+    "correctAnswerIndex": 0,
+    "hint": "extends inherits a class."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword is used to stop execution of a loop?",
+    "options": ["stop", "break", "exit", "return"],
+    "correctAnswerIndex": 1,
+    "hint": "break exits loop."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword is used to define a method?",
+    "options": ["method", "function", "void", "def"],
+    "correctAnswerIndex": 2,
+    "hint": "void defines return type."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword makes a member visible only in its class?",
+    "options": ["public", "protected", "private", "default"],
+    "correctAnswerIndex": 2,
+    "hint": "private restricts access."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword is used to create an object?",
+    "options": ["create", "new", "instantiate", "build"],
+    "correctAnswerIndex": 1,
+    "hint": "new allocates memory."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword is used to define a subclass?",
+    "options": ["extends", "implements", "super", "final"],
+    "correctAnswerIndex": 0,
+    "hint": "extends creates subclass."
+  }
+]

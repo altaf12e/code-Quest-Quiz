@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which operator is used for scope resolution?",
+    "options": ["::", ":", ".", "->"],
+    "correctAnswerIndex": 0,
+    "hint": ":: accesses global or class scope."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which header is required for input/output streams?",
+    "options": ["<iostream>", "<stdio.h>", "<io>", "<stream>"],
+    "correctAnswerIndex": 0,
+    "hint": "<iostream> provides cin/cout."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which function is the entry point of a C++ program?",
+    "options": ["main()", "start()", "run()", "begin()"],
+    "correctAnswerIndex": 0,
+    "hint": "main() is the entry point."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which operator dereferences a pointer?",
+    "options": ["&", "*", "->", "%"],
+    "correctAnswerIndex": 1,
+    "hint": "* gets value at pointer."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword allocates dynamic memory?",
+    "options": ["malloc", "new", "alloc", "create"],
+    "correctAnswerIndex": 1,
+    "hint": "new allocates memory in C++."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword releases dynamic memory?",
+    "options": ["delete", "free", "remove", "release"],
+    "correctAnswerIndex": 0,
+    "hint": "delete frees memory in C++."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which operator accesses members of a pointer to an object?",
+    "options": [".", "->", "::", "*"],
+    "correctAnswerIndex": 1,
+    "hint": "Arrow operator."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword defines a constant?",
+    "options": ["const", "final", "static", "let"],
+    "correctAnswerIndex": 0,
+    "hint": "const defines constants."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which operator checks equality?",
+    "options": ["=", "==", "===", ":="],
+    "correctAnswerIndex": 1,
+    "hint": "== compares values."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword defines inline functions?",
+    "options": ["inline", "fast", "quick", "macro"],
+    "correctAnswerIndex": 0,
+    "hint": "inline suggests expansion at call site."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which STL container stores key-value pairs?",
+    "options": ["vector", "map", "set", "stack"],
+    "correctAnswerIndex": 1,
+    "hint": "map stores key-value pairs."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword grants access to private members?",
+    "options": ["friend", "access", "allow", "open"],
+    "correctAnswerIndex": 0,
+    "hint": "friend gives special access."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which header provides string class?",
+    "options": ["<cstring>", "<string>", "<str>", "<sstring>"],
+    "correctAnswerIndex": 1,
+    "hint": "<string> for std::string."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "What does STL stand for?",
+    "options": ["Standard Template Library", "Simple Template List", "Standard Type Library", "System Template List"],
+    "correctAnswerIndex": 0,
+    "hint": "STL contains containers and algorithms."
+  }
+{
+  "subject": "cpp",
+  "difficulty": "easy",
+  "subLevel": "I",
+  "question": "Which keyword is used to define a structure in C++?",
+  "options": ["struct", "class", "object", "define"],
+  "correctAnswerIndex": 0,
+  "hint": "struct defines a structure."
+}
+]

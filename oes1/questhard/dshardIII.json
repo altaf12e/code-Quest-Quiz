@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which data structure is used in Dinic’s algorithm for maximum flow?",
+    "options": ["Stack","Queue","Heap","Array"],
+    "correctAnswerIndex": 1,
+    "hint": "Dinic’s uses BFS with a queue."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```cpp\nvector<int> v = {10,20,30};\ncout << v.back();\n```",
+    "options": ["10","20","30","Error"],
+    "correctAnswerIndex": 2,
+    "hint": "back() returns the last element."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which data structure is used in Union-Find with path compression?",
+    "options": ["Stack","Queue","Disjoint Set","Heap"],
+    "correctAnswerIndex": 2,
+    "hint": "Union-Find is a disjoint set data structure."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which data structure is used in Segment Tree?",
+    "options": ["Array","Stack","Queue","Heap"],
+    "correctAnswerIndex": 0,
+    "hint": "Segment tree is implemented using arrays."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```cpp\nmultiset<int> ms = {5,5,10};\ncout << ms.count(5);\n```",
+    "options": ["1","2","Error","undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "multiset stores duplicates; count(5)=2."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which data structure is used in Rabin-Karp string matching?",
+    "options": ["Hashing","Trie","Stack","Queue"],
+    "correctAnswerIndex": 0,
+    "hint": "Rabin-Karp uses rolling hash."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which data structure is used in Euler tour technique?",
+    "options": ["Stack","Queue","Array","Heap"],
+    "correctAnswerIndex": 2,
+    "hint": "Euler tour technique uses arrays to flatten trees."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```cpp\nunordered_set<int> us;\nus.insert(1);\nus.insert(2);\ncout << us.size();\n```",
+    "options": ["1","2","Error","undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "Two unique elements inserted; size=2."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which data structure is used in Heavy-Light Decomposition?",
+    "options": ["Stack","Queue","Segment Tree","Heap"],
+    "correctAnswerIndex": 2,
+    "hint": "Heavy-Light decomposition uses segment trees."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which data structure is used in Bloom filters?",
+    "options": ["Stack","Queue","Bit Array","Heap"],
+    "correctAnswerIndex": 2,
+    "hint": "Bloom filters use bit arrays."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```cpp\nmap<int,int> m;\nm[3]=30;\ncout << m[1];\n```",
+    "options": ["0","30","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "Accessing absent key default-initializes to 0."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which data structure is used in Tarjan’s LCA algorithm?",
+    "options": ["Stack","Queue","Disjoint Set","Heap"],
+    "correctAnswerIndex": 2,
+    "hint": "Tarjan’s LCA uses Union-Find."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which data structure is used in suffix automaton?",
+    "options": ["Stack","Queue","Array","HashMap"],
+    "correctAnswerIndex": 3,
+    "hint": "Suffix automaton uses hash maps for transitions."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which data structure is used in balanced binary search trees?",
+    "options": ["Heap","Stack","Queue","Rotation + Pointers"],
+    "correctAnswerIndex": 3,
+    "hint": "Balanced BSTs use rotations and pointers."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```cpp\npriority_queue<int,vector<int>,greater<int>> pq;\npq.push(5);\npq.push(1);\ncout << pq.top();\n```",
+    "options": ["1","5","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "Min-heap top is 1."
+  }
+]

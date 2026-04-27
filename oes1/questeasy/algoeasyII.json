@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which algorithm is used to find shortest path in unweighted graphs?",
+    "options": ["DFS", "BFS", "Dijkstra’s Algorithm", "Prim’s Algorithm"],
+    "correctAnswerIndex": 1,
+    "hint": "BFS finds shortest path in unweighted graphs."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which algorithm is used to find shortest path in weighted graphs with negative edges?",
+    "options": ["Dijkstra’s Algorithm", "Bellman-Ford Algorithm", "Prim’s Algorithm", "Kruskal’s Algorithm"],
+    "correctAnswerIndex": 1,
+    "hint": "Bellman-Ford handles negative weights."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which algorithm is used to find all pairs shortest paths?",
+    "options": ["Dijkstra’s Algorithm", "Bellman-Ford Algorithm", "Floyd-Warshall Algorithm", "Prim’s Algorithm"],
+    "correctAnswerIndex": 2,
+    "hint": "Floyd-Warshall computes all pairs shortest paths."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which algorithm is used to find strongly connected components?",
+    "options": ["Kosaraju’s Algorithm", "Prim’s Algorithm", "Kruskal’s Algorithm", "Dijkstra’s Algorithm"],
+    "correctAnswerIndex": 0,
+    "hint": "Kosaraju uses DFS twice."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which algorithm is used to find articulation points in a graph?",
+    "options": ["Tarjan’s Algorithm", "Prim’s Algorithm", "Kruskal’s Algorithm", "Bellman-Ford Algorithm"],
+    "correctAnswerIndex": 0,
+    "hint": "Tarjan’s Algorithm finds articulation points."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which algorithm is used to find bridges in a graph?",
+    "options": ["Tarjan’s Algorithm", "Prim’s Algorithm", "Kruskal’s Algorithm", "Bellman-Ford Algorithm"],
+    "correctAnswerIndex": 0,
+    "hint": "Tarjan’s Algorithm finds bridges."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which algorithm is used to detect cycles in directed graphs?",
+    "options": ["DFS", "BFS", "Union-Find", "Topological Sort"],
+    "correctAnswerIndex": 0,
+    "hint": "DFS detects cycles in directed graphs."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which algorithm is used to detect cycles in undirected graphs?",
+    "options": ["DFS", "BFS", "Union-Find", "Topological Sort"],
+    "correctAnswerIndex": 2,
+    "hint": "Union-Find detects cycles in undirected graphs."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which algorithm is used to find maximum bipartite matching?",
+    "options": ["Ford-Fulkerson", "Hungarian Algorithm", "Prim’s Algorithm", "Kruskal’s Algorithm"],
+    "correctAnswerIndex": 1,
+    "hint": "Hungarian Algorithm finds maximum matching."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which algorithm is used to find minimum spanning tree using greedy approach?",
+    "options": ["Prim’s Algorithm", "Kruskal’s Algorithm", "Dijkstra’s Algorithm", "Bellman-Ford Algorithm"],
+    "correctAnswerIndex": 0,
+    "hint": "Prim’s Algorithm grows MST greedily."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which algorithm is used to find minimum spanning tree using union-find?",
+    "options": ["Prim’s Algorithm", "Kruskal’s Algorithm", "Dijkstra’s Algorithm", "Bellman-Ford Algorithm"],
+    "correctAnswerIndex": 1,
+    "hint": "Kruskal’s Algorithm uses union-find."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which algorithm is used to find shortest path in DAGs?",
+    "options": ["Topological Sort", "DFS", "BFS", "Bellman-Ford Algorithm"],
+    "correctAnswerIndex": 0,
+    "hint": "Topological Sort helps in DAG shortest paths."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which algorithm is used to find Eulerian path in a graph?",
+    "options": ["Hierholzer’s Algorithm", "Prim’s Algorithm", "Kruskal’s Algorithm", "Dijkstra’s Algorithm"],
+    "correctAnswerIndex": 0,
+    "hint": "Hierholzer’s Algorithm finds Eulerian path."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which algorithm is used to find Hamiltonian path in a graph?",
+    "options": ["Backtracking", "Prim’s Algorithm", "Kruskal’s Algorithm", "Dijkstra’s Algorithm"],
+    "correctAnswerIndex": 0,
+    "hint": "Hamiltonian path is solved using backtracking."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which algorithm is used to find transitive closure of a graph?",
+    "options": ["Floyd-Warshall", "DFS", "BFS", "Bellman-Ford"],
+    "correctAnswerIndex": 0,
+    "hint": "Floyd-Warshall computes transitive closure."
+  }
+]

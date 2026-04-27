@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which algorithm is used in finding strongly connected components besides Tarjan?",
+    "options": ["Prim","Kruskal","Kosaraju","Bellman-Ford"],
+    "correctAnswerIndex": 2,
+    "hint": "Kosaraju’s algorithm finds SCCs using two DFS passes."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```cpp\nvector<int> v={4,2,8};\ncout<<*min_element(v.begin(),v.end());\n```",
+    "options": ["2","4","8","Error"],
+    "correctAnswerIndex": 0,
+    "hint": "Minimum element is 2."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which algorithm is used in maximum flow with scaling?",
+    "options": ["Dinic","Capacity Scaling","Edmonds-Karp","Push-Relabel"],
+    "correctAnswerIndex": 1,
+    "hint": "Capacity scaling improves Ford-Fulkerson."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which algorithm is used in suffix array construction?",
+    "options": ["Prefix Doubling","Radix Sort","KMP","Rabin-Karp"],
+    "correctAnswerIndex": 0,
+    "hint": "Prefix doubling builds suffix arrays efficiently."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```cpp\nstring s=\"zzz\";\ncout<<next_permutation(s.begin(),s.end());\n```",
+    "options": ["0","1","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "No next permutation exists, returns false (0)."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which algorithm is used in minimum cut problems?",
+    "options": ["Prim","Kruskal","Bellman-Ford","Karger’s"],
+    "correctAnswerIndex": 3,
+    "hint": "Karger’s randomized algorithm finds minimum cut."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which algorithm is used in DP optimization with quadrangle inequality?",
+    "options": ["Divide and Conquer DP","Knuth Optimization","Convex Hull Trick","Monotone Queue"],
+    "correctAnswerIndex": 1,
+    "hint": "Knuth optimization applies quadrangle inequality."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which algorithm is used in randomized min-cut?",
+    "options": ["Prim","Kruskal","Bellman-Ford","Karger’s"],
+    "correctAnswerIndex": 3,
+    "hint": "Karger’s algorithm is randomized min-cut."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```cpp\nint a[]={7,3,5};\npartial_sort(a,a+2,a+3);\ncout<<a[0]<<a[1];\n```",
+    "options": ["35","57","73","Error"],
+    "correctAnswerIndex": 0,
+    "hint": "Partial sort puts two smallest first: 3,5."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which algorithm is used in bipartite maximum matching?",
+    "options": ["Hungarian","Hopcroft–Karp","Ford-Fulkerson","Edmonds-Karp"],
+    "correctAnswerIndex": 1,
+    "hint": "Hopcroft–Karp finds maximum matching in bipartite graphs."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which approach constructs a suffix automaton?",
+    "options": ["Greedy","Incremental Extension","Dynamic Programming","Divide and Conquer"],
+    "correctAnswerIndex": 1,
+    "hint": "Suffix automaton is built by incremental extension."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which algorithm is used in randomized primality testing?",
+    "options": ["AKS","Euclid","Miller-Rabin","Sieve of Eratosthenes"],
+    "correctAnswerIndex": 2,
+    "hint": "Miller-Rabin is randomized primality test."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```cpp\nvector<int> v={9,1,5};\ncout<<*max_element(v.begin(),v.end());\n```",
+    "options": ["1","5","9","Error"],
+    "correctAnswerIndex": 2,
+    "hint": "Maximum element is 9."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which algorithm is used in finding bridges in a graph?",
+    "options": ["Prim","Kruskal","Tarjan","Bellman-Ford"],
+    "correctAnswerIndex": 2,
+    "hint": "Tarjan’s algorithm finds bridges."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which algorithm is used in randomized selection?",
+    "options": ["Prim","Kruskal","Bellman-Ford","Quickselect"],
+    "correctAnswerIndex": 3,
+    "hint": "Quickselect finds k-th smallest element."
+  }
+]

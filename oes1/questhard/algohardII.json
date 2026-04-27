@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which algorithm is used in maximum flow problems?",
+    "options": ["Prim","Kruskal","Ford-Fulkerson","Bellman-Ford"],
+    "correctAnswerIndex": 2,
+    "hint": "Ford-Fulkerson computes max flow."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```cpp\nint a[]={3,1,2};\nsort(a,a+3,greater<int>());\ncout<<a[0];\n```",
+    "options": ["1","2","3","Error"],
+    "correctAnswerIndex": 2,
+    "hint": "Sorting descending puts 3 first."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which algorithm is used in shortest path with negative weights?",
+    "options": ["Dijkstra","Bellman-Ford","Prim","Floyd-Warshall"],
+    "correctAnswerIndex": 1,
+    "hint": "Bellman-Ford handles negative weights."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which algorithm is used in convex hull?",
+    "options": ["Graham Scan","Prim","Kruskal","Bellman-Ford"],
+    "correctAnswerIndex": 0,
+    "hint": "Graham Scan finds convex hull."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```cpp\nstring s=\"aba\";\ncout<<boolalpha<<next_permutation(s.begin(),s.end());\n```",
+    "options": ["false","undefined","Error","true"],
+    "correctAnswerIndex": 3,
+    "hint": "There exists a next permutation (baa)."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which algorithm is used in minimum spanning tree (alternative to Prim)?",
+    "options": ["Prim","Kruskal","Dijkstra","Floyd-Warshall"],
+    "correctAnswerIndex": 1,
+    "hint": "Kruskal builds MST using union-find."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which algorithm is used in string matching with prefix function?",
+    "options": ["Rabin-Karp","KMP","Naive","Aho-Corasick"],
+    "correctAnswerIndex": 1,
+    "hint": "KMP uses prefix function."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which algorithm is used in randomized quicksort?",
+    "options": ["Greedy","Dynamic Programming","Backtracking","Divide and Conquer"],
+    "correctAnswerIndex": 3,
+    "hint": "Randomized quicksort is divide and conquer."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```cpp\nvector<int> v={1,2,3};\ncout<<is_sorted(v.begin(),v.end());\n```",
+    "options": ["1","0","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "Vector is sorted ascending, returns true (1)."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which algorithm is used in dynamic programming optimization with monotone queue?",
+    "options": ["Knuth Optimization","Divide and Conquer DP","Convex Hull Trick","Monotone Queue Optimization"],
+    "correctAnswerIndex": 3,
+    "hint": "Monotone queue optimizes DP transitions."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which algorithm is used in finding articulation points?",
+    "options": ["Tarjan","Prim","Kruskal","Bellman-Ford"],
+    "correctAnswerIndex": 0,
+    "hint": "Tarjan’s algorithm finds articulation points."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which algorithm is used in shortest path for all pairs?",
+    "options": ["Prim","Kruskal","Floyd-Warshall","DFS"],
+    "correctAnswerIndex": 2,
+    "hint": "Floyd-Warshall computes all-pairs shortest paths."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```cpp\nint a[]={2,4,1};\nmake_heap(a,a+3);\ncout<<a[0];\n```",
+    "options": ["4","1","2","Error"],
+    "correctAnswerIndex": 0,
+    "hint": "Heap root is max element (4)."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which algorithm is used in maximum subarray sum?",
+    "options": ["Prim","Kadane","Kruskal","Bellman-Ford"],
+    "correctAnswerIndex": 1,
+    "hint": "Kadane’s algorithm finds max subarray sum."
+  },
+  {
+    "subject": "algorithms",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which algorithm is used in topological sorting?",
+    "options": ["BFS","Heap","DFS","Greedy"],
+    "correctAnswerIndex": 2,
+    "hint": "DFS can produce topological order."
+  }
+]

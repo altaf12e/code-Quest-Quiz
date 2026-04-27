@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which data structure is used to implement Dijkstra’s algorithm?",
+    "options": ["Stack","Queue","Priority Queue","Graph"],
+    "correctAnswerIndex": 2,
+    "hint": "Priority queue is used for shortest path."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```cpp\nvector<int> v = {1,2,3};\ncout << v.front();\n```",
+    "options": ["1","2","3","Error"],
+    "correctAnswerIndex": 0,
+    "hint": "front() returns first element."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which traversal of binary tree visits nodes in breadth-first manner?",
+    "options": ["Inorder","Preorder","Postorder","Level Order"],
+    "correctAnswerIndex": 3,
+    "hint": "Level Order uses queue."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which hashing technique uses probing with a fixed interval?",
+    "options": ["Chaining","Open Addressing","Double Hashing","Linear Probing"],
+    "correctAnswerIndex": 3,
+    "hint": "Linear probing uses fixed interval."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```cpp\nstack<int> s;\ns.push(7);\ns.push(9);\ncout << s.size();\n```",
+    "options": ["1","2","Error","0"],
+    "correctAnswerIndex": 1,
+    "hint": "size() returns number of elements."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which data structure is used to implement Kruskal’s algorithm?",
+    "options": ["Union-Find","Stack","Queue","Heap"],
+    "correctAnswerIndex": 0,
+    "hint": "Union-Find detects cycles in Kruskal’s algorithm."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which traversal of binary tree visits root, left, then right?",
+    "options": ["Inorder","Preorder","Postorder","Level Order"],
+    "correctAnswerIndex": 1,
+    "hint": "Preorder visits root-left-right."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```cpp\nqueue<int> q;\nq.push(4);\nq.push(8);\nq.pop();\ncout << q.front();\n```",
+    "options": ["4","8","Error","0"],
+    "correctAnswerIndex": 1,
+    "hint": "After pop, front is 8."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which data structure is used to implement Prim’s algorithm?",
+    "options": ["Stack","Queue","Priority Queue","Graph"],
+    "correctAnswerIndex": 2,
+    "hint": "Prim’s algorithm uses priority queue."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which hashing technique uses two hash functions?",
+    "options": ["Chaining","Open Addressing","Double Hashing","Linear Probing"],
+    "correctAnswerIndex": 2,
+    "hint": "Double hashing uses two functions."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```cpp\nlist<int> l = {10,20,30};\nl.pop_front();\ncout << l.front();\n```",
+    "options": ["10","20","30","Error"],
+    "correctAnswerIndex": 1,
+    "hint": "After pop_front, front is 20."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which traversal of binary tree visits left, root, then right?",
+    "options": ["Inorder","Preorder","Postorder","Level Order"],
+    "correctAnswerIndex": 0,
+    "hint": "Inorder visits left-root-right."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which data structure is used to implement Huffman coding?",
+    "options": ["Stack","Queue","Heap","Graph"],
+    "correctAnswerIndex": 2,
+    "hint": "Heap is used in Huffman coding."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```cpp\nvector<int> v = {2,4,6};\nv.pop_back();\ncout << v.back();\n```",
+    "options": ["2","4","6","Error"],
+    "correctAnswerIndex": 1,
+    "hint": "After pop_back, last element is 4."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which data structure is used to implement DFS?",
+    "options": ["Queue","Stack","Heap","Graph"],
+    "correctAnswerIndex": 1,
+    "hint": "Stack is used in DFS."
+  }
+]

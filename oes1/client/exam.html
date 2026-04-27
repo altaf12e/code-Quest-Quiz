@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam - CodeQuest</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="exam-page">
+    <div class="exam-navbar">
+        <div class="nav-left">
+            <div class="logo-small">⚔️</div>
+            <span class="nav-brand">CodeQuest</span>
+
+        </div>
+        <div class="nav-center">
+            <div class="timer-container" id="timerContainer">
+                <span class="timer-icon">⏱️</span>
+                <span class="timer-text" id="timer">00:30</span>
+            </div>
+        </div>
+        <div class="nav-right">
+
+            <button class="btn btn-danger btn-small" id="quitExam">Exit Quest</button>
+        </div>
+    </div>
+
+    <div class="exam-progress" id="examProgress">
+        <div class="exam-progress-fill" id="examProgressFill"></div>
+    </div>
+
+    <div class="exam-container">
+        <aside class="exam-sidebar">
+            <div class="progress-container">
+                <div class="progress-header">
+                    <span class="progress-title">📈 Progress</span>
+                    <div class="progress-stats">
+                        <div class="progress-stat">
+                            <div class="progress-stat-icon answered"></div>
+                            <span id="progressAnswered">0</span>
+                        </div>
+                        <div class="progress-stat">
+                            <div class="progress-stat-icon current"></div>
+                            <span>Current</span>
+                        </div>
+                        <div class="progress-stat">
+                            <div class="progress-stat-icon unanswered"></div>
+                            <span id="progressRemaining">10</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overall-progress">
+                    <div class="overall-progress-bar">
+                        <div class="overall-progress-fill" id="overallProgressFill"></div>
+                    </div>
+                    <div class="progress-text">
+                        <span>Overall Progress</span>
+                        <span id="overallProgressText">0%</span>
+                    </div>
+                </div>
+                
+                <div class="section-progress-bars" id="sectionProgressBars">
+                    <!-- Section progress bars will be populated here -->
+                </div>
+            </div>
+            
+            <div class="section-navigator">
+                <div class="navigator-header">
+                    <h4>🧭 Navigator</h4>
+                    <div class="navigator-controls">
+                        <div class="navigator-btn active" data-filter="all">All</div>
+                        <div class="navigator-btn" data-filter="answered">Done</div>
+                        <div class="navigator-btn" data-filter="unanswered">Todo</div>
+                    </div>
+                </div>
+                <div class="section-tabs" id="sectionTabs"></div>
+                <div class="question-grid" id="questionNavigator"></div>
+                <div class="quick-nav" id="quickNav">
+                    <div class="quick-nav-btn" id="prevBtn">← Previous</div>
+                    <div class="quick-nav-btn" id="nextQuickBtn">Next →</div>
+                    <div class="quick-nav-btn" id="firstUnanswered">🎯 First Unanswered</div>
+                </div>
+            </div>
+            
+            <div class="exam-info-card">
+                <h3>Quest Info</h3>
+                <div class="info-row">
+                    <span class="info-label">Subject:</span>
+                    <span class="info-value" id="examSubject">Java</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Difficulty:</span>
+                    <span class="info-value" id="examDifficulty">Medium</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Question:</span>
+                    <span class="info-value"><span id="currentQuestion">1</span> / <span id="totalQuestions">10</span></span>
+                </div>
+            </div>
+
+            <div class="score-card">
+                <div class="score-item">
+                    <div class="score-icon">⚡</div>
+                    <div class="score-details">
+                        <div class="score-label">Session XP</div>
+                        <div class="score-value" id="sessionXP">0</div>
+                    </div>
+                </div>
+                <div class="score-item">
+                    <div class="score-icon">🔥</div>
+                    <div class="score-details">
+                        <div class="score-label">Streak</div>
+                        <div class="score-value" id="examStreak">0</div>
+                    </div>
+                </div>
+                <div class="score-item">
+                    <div class="score-icon">✅</div>
+                    <div class="score-details">
+                        <div class="score-label">Correct</div>
+                        <div class="score-value"><span id="correctAnswers">0</span>/<span id="totalAnswered">0</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hints-card">
+                <h4>💡 Hints Available</h4>
+                <div class="hint-count">
+                    <span class="hint-badge" id="hintsRemaining">3</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="exam-main">
+            <div class="section-header" id="sectionHeader">
+                <div class="section-info">
+                    <div class="section-icon" id="sectionIcon">📝</div>
+                    <div class="section-details">
+                        <h3 id="sectionTitle">Section 1: Fundamentals</h3>
+                        <p class="section-subtitle" id="sectionSubtitle">Basic concepts and theory</p>
+                    </div>
+                </div>
+                <div class="section-progress" id="sectionProgress">
+                    <span>Question <span id="sectionQuestionNum">1</span> of <span id="sectionTotal">5</span></span>
+                </div>
+            </div>
+            
+            <div class="question-card">
+                <div class="question-header">
+                    <h2 class="question-title">
+                        Question <span id="questionNumber">1</span>
+                        <span class="randomization-badge" id="randomBadge">
+                            <span class="randomization-icon">🔀</span>
+                            Randomized
+                        </span>
+                    </h2>
+                    <div class="question-xp" id="questionXP">+25 XP</div>
+                </div>
+
+                <div class="question-content">
+                    <p class="question-text" id="questionText">Loading question...</p>
+                </div>
+
+                <div class="hint-section" id="hintSection" style="display: none;">
+                    <div class="hint-box">
+                        <div class="hint-header">💡 Hint</div>
+                        <p class="hint-text" id="hintText"></p>
+                    </div>
+                </div>
+
+                <div class="options-container" id="optionsContainer">
+                </div>
+
+                <div class="question-actions">
+                    <button class="btn btn-secondary" id="hintBtn">
+                        <span class="btn-icon">💡</span>
+                        Use Hint
+                    </button>
+                    <button class="btn btn-secondary" id="reviewBtn" style="display: none;">
+                        <span class="btn-icon">📋</span>
+                        Review Answers
+                    </button>
+                    <button class="btn btn-primary" id="nextBtn" disabled>
+                        Next Question
+                        <span class="btn-icon">→</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="feedback-overlay" id="feedbackOverlay">
+                <div class="feedback-content" id="feedbackContent">
+                    <div class="feedback-icon" id="feedbackIcon"></div>
+                    <div class="feedback-title" id="feedbackTitle"></div>
+                    <div class="feedback-xp" id="feedbackXP"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="level-up-modal" id="levelUpModal">
+        <div class="level-up-content">
+            <div class="level-up-animation">
+                <div class="level-up-icon">🎉</div>
+                <h2 class="level-up-title">LEVEL UP!</h2>
+                <div class="level-display">
+                    <span class="old-level" id="oldLevel">1</span>
+                    <span class="level-arrow">→</span>
+                    <span class="new-level" id="newLevel">2</span>
+                </div>
+                <p class="level-up-message">You've reached a new milestone!</p>
+                <button class="btn btn-primary" id="levelUpClose">Continue Quest</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Review Modal -->
+    <div class="review-modal" id="reviewModal">
+        <div class="review-content">
+            <div class="review-header">
+                <div class="review-title">
+                    <span class="review-icon">📋</span>
+                    <div>
+                        <h2>Review Your Answers</h2>
+                        <p style="margin: 0; color: var(--gray-light); font-size: 0.9rem;">Check your responses before final submission</p>
+                    </div>
+                </div>
+                <div class="review-stats">
+                    <div class="review-stat">
+                        <div class="review-stat-value" id="reviewAnswered">0</div>
+                        <div class="review-stat-label">Answered</div>
+                    </div>
+                    <div class="review-stat">
+                        <div class="review-stat-value" id="reviewUnanswered">0</div>
+                        <div class="review-stat-label">Unanswered</div>
+                    </div>
+                    <div class="review-stat">
+                        <div class="review-stat-value" id="reviewTotal">0</div>
+                        <div class="review-stat-label">Total</div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-body" id="reviewBody">
+                <!-- Review content will be populated here -->
+            </div>
+            <div class="review-footer">
+                <div class="review-warning" id="reviewWarning" style="display: none;">
+                    <span>⚠️</span>
+                    <span>You have unanswered questions</span>
+                </div>
+                <div class="review-actions">
+                    <button class="btn btn-secondary" id="continueExamBtn">Continue Exam</button>
+                    <button class="btn btn-primary" id="finalSubmitBtn">Submit Final Answers</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Auto-submit Warning Modal -->
+    <div class="auto-submit-warning" id="autoSubmitWarning">
+        <div class="warning-content">
+            <div class="warning-icon">⚠️</div>
+            <h2 class="warning-title">Time Almost Up!</h2>
+            <p class="warning-message">
+                Your exam will be automatically submitted in:
+            </p>
+            <div class="warning-countdown" id="warningCountdown">10</div>
+            <div class="complete-actions">
+                <button class="btn btn-primary" id="continueExam">Continue Exam</button>
+                <button class="btn btn-secondary" id="submitNow">Submit Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Analytics Modal -->
+    <div class="analytics-modal" id="analyticsModal">
+        <div class="analytics-content">
+            <div class="analytics-header">
+                <div class="analytics-title">
+                    <span class="analytics-icon">📈</span>
+                    <div>
+                        <h2>Performance Analytics</h2>
+                        <p class="analytics-subtitle">Detailed analysis of your exam performance</p>
+                    </div>
+                </div>
+            </div>
+            <div class="analytics-body">
+                <div class="grade-display" id="gradeDisplay">
+                    <div class="grade-letter" id="gradeLetter">A+</div>
+                    <div class="grade-description" id="gradeDescription">Excellent Performance!</div>
+                </div>
+                
+                <div class="results-summary" id="resultsSummary">
+                    <!-- Results summary will be populated here -->
+                </div>
+                
+                <div class="analytics-grid">
+                    <div class="analytics-card">
+                        <div class="analytics-card-header">
+                            <div class="analytics-card-icon">🎯</div>
+                            <div class="analytics-card-title">Performance Metrics</div>
+                        </div>
+                        <div class="performance-metrics" id="performanceMetrics">
+                            <!-- Performance metrics will be populated here -->
+                        </div>
+                    </div>
+                    
+                    <div class="analytics-card">
+                        <div class="analytics-card-header">
+                            <div class="analytics-card-icon">⏱️</div>
+                            <div class="analytics-card-title">Time Analysis</div>
+                        </div>
+                        <div class="time-analytics" id="timeAnalytics">
+                            <!-- Time analytics will be populated here -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="analytics-card">
+                    <div class="analytics-card-header">
+                        <div class="analytics-card-icon">📊</div>
+                        <div class="analytics-card-title">Section Performance</div>
+                    </div>
+                    <div class="section-analytics" id="sectionAnalytics">
+                        <!-- Section analytics will be populated here -->
+                    </div>
+                </div>
+                
+                <div class="recommendations" id="recommendations">
+                    <div class="recommendations-header">
+                        <span class="recommendations-icon">💡</span>
+                        <span class="recommendations-title">Recommendations</span>
+                    </div>
+                    <div id="recommendationsList">
+                        <!-- Recommendations will be populated here -->
+                    </div>
+                </div>
+            </div>
+            <div class="analytics-footer">
+                <div>
+                    <span style="color: var(--gray-light);" id="examCompletionInfo">Exam completed</span>
+                </div>
+                <div class="analytics-actions">
+                    <button class="btn btn-secondary" id="closeAnalytics">Close</button>
+                    <button class="btn btn-secondary" onclick="location.href='profile.html'">View Profile</button>
+                    <button class="btn btn-primary" onclick="location.href='dashboard.html'">Back to Dashboard</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="exam-complete-modal" id="examCompleteModal">
+        <div class="complete-content">
+            <div class="complete-header">
+                <div class="complete-icon">🏆</div>
+                <h2>Quest Complete!</h2>
+            </div>
+            <div class="complete-stats">
+                <div class="complete-stat">
+                    <div class="stat-label">Total XP Earned</div>
+                    <div class="stat-value-large" id="finalXP">0</div>
+                </div>
+                <div class="complete-stat">
+                    <div class="stat-label">Accuracy</div>
+                    <div class="stat-value-large" id="accuracy">0%</div>
+                </div>
+                <div class="complete-stat">
+                    <div class="stat-label">Time Taken</div>
+                    <div class="stat-value-large" id="timeTaken">0:00</div>
+                </div>
+            </div>
+            <div class="complete-actions">
+                <button class="btn btn-primary" id="viewAnalytics">
+                    📈 View Analytics
+                </button>
+                <button class="btn btn-secondary" onclick="location.href='profile.html'">
+                    View Profile
+                </button>
+                <button class="btn btn-secondary" onclick="location.href='dashboard.html'">
+                    Back to Dashboard
+                </button>
+                <button class="btn btn-primary" id="retryExam">
+                    Retry Quest
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/proctoring.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/exam.js"></script>
+
+    <!-- Floating Camera Widget -->
+    <div id="cameraWidget" style="position:fixed;bottom:20px;right:20px;z-index:9999;cursor:move;user-select:none;">
+        <video id="proctoringVideo" autoplay muted style="width:160px;height:120px;border-radius:12px;border:2px solid var(--primary);display:block;object-fit:cover;"></video>
+        <div style="position:absolute;top:4px;left:6px;font-size:10px;color:#fff;background:rgba(0,0,0,0.5);padding:2px 6px;border-radius:4px;">🔴 Live</div>
+    </div>
+
+    <script>
+        const widget = document.getElementById('cameraWidget');
+        let dragging = false, ox = 0, oy = 0;
+        widget.addEventListener('mousedown', e => {
+            dragging = true;
+            ox = e.clientX - widget.getBoundingClientRect().left;
+            oy = e.clientY - widget.getBoundingClientRect().top;
+        });
+        document.addEventListener('mousemove', e => {
+            if (!dragging) return;
+            widget.style.left = (e.clientX - ox) + 'px';
+            widget.style.top = (e.clientY - oy) + 'px';
+            widget.style.right = 'auto';
+            widget.style.bottom = 'auto';
+        });
+        document.addEventListener('mouseup', () => dragging = false);
+    </script>
+</body>
+</html>

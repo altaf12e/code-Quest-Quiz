@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which React feature allows hydration of server-rendered markup?",
+    "options": ["Suspense","hydrateRoot","StrictMode","Portals"],
+    "correctAnswerIndex": 1,
+    "hint": "hydrateRoot attaches event listeners to server-rendered HTML."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```jsx\nconst [val,setVal] = useState(1);\nuseEffect(()=>{setVal(val+1)},[val]);\nconsole.log(val);\n```",
+    "options": ["1","2","Error","Infinite loop"],
+    "correctAnswerIndex": 3,
+    "hint": "Effect depends on val, causing infinite loop."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which React feature allows streaming updates from server components?",
+    "options": ["Suspense","Streaming SSR","hydrateRoot","Portals"],
+    "correctAnswerIndex": 1,
+    "hint": "Streaming SSR streams HTML chunks progressively."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which hook is used to schedule non-urgent updates?",
+    "options": ["useTransition","useDeferredValue","useEffect","useMemo"],
+    "correctAnswerIndex": 0,
+    "hint": "useTransition schedules non-urgent updates."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```jsx\nconst [flag,setFlag] = useState(false);\nuseEffect(()=>{setFlag(true)},[]);\nconsole.log(flag);\n```",
+    "options": ["false","true","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "Effect runs after render; logs initial false."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which React feature allows concurrent rendering of multiple roots?",
+    "options": ["Concurrent Rendering","Automatic Batching","Error Boundaries","Portals"],
+    "correctAnswerIndex": 0,
+    "hint": "Concurrent rendering supports multiple roots."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which hook is used to optimize function references?",
+    "options": ["useMemo","useCallback","useEffect","useState"],
+    "correctAnswerIndex": 1,
+    "hint": "useCallback memoizes functions."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which React feature allows error recovery during rendering?",
+    "options": ["Error Boundaries","Suspense","StrictMode","Profiler"],
+    "correctAnswerIndex": 0,
+    "hint": "Error Boundaries catch and recover from errors."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```jsx\nconst [num,setNum] = useState(5);\nuseEffect(()=>{setNum(num*2)},[]);\nconsole.log(num);\n```",
+    "options": ["5","10","Error","undefined"],
+    "correctAnswerIndex": 2,
+    "hint": "Effect runs after render; logs initial 5."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which React feature allows profiling render performance?",
+    "options": ["Profiler API","Suspense","StrictMode","Portals"],
+    "correctAnswerIndex": 2,
+    "hint": "Profiler API measures rendering performance."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which hook is used to synchronize external stores?",
+    "options": ["useSyncExternalStore","useEffect","useState","useRef"],
+    "correctAnswerIndex": 2,
+    "hint": "useSyncExternalStore syncs external sources."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which React feature allows lazy loading of components?",
+    "options": ["React.lazy","Suspense","Portals","StrictMode"],
+    "correctAnswerIndex": 2,
+    "hint": "React.lazy enables lazy loading."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```jsx\nconst [x,setX] = useState(3);\nsetX(x+2);\nconsole.log(x);\n```",
+    "options": ["3","5","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "State updates are async; logs old value."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which algorithm does React use for efficient DOM updates?",
+    "options": ["BFS","DFS","Reconciliation (Fiber)","Hashing"],
+    "correctAnswerIndex": 2,
+    "hint": "React Fiber reconciliation updates DOM efficiently."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which React feature allows concurrent rendering with prioritization?",
+    "options": ["Concurrent Rendering","Automatic Batching","useTransition","Profiler"],
+    "correctAnswerIndex": 3,
+    "hint": "Concurrent rendering prioritizes updates."
+  }
+]

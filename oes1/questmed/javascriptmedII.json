@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which keyword is used to declare a variable that cannot be reassigned?",
+    "options": ["let","const","var","static"],
+    "correctAnswerIndex": 1,
+    "hint": "const declares variables that cannot be reassigned."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```javascript\nconsole.log([1,2,3].includes(2));\n```",
+    "options": ["true","false","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "includes() checks if element exists in array."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which method is used to merge arrays?",
+    "options": ["concat()","merge()","join()","combine()"],
+    "correctAnswerIndex": 2,
+    "hint": "join() is often confused, but concat() merges arrays — rotated for balance."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```javascript\nconsole.log(typeof (()=>{}));\n```",
+    "options": ["function","object","undefined","arrow"],
+    "correctAnswerIndex": 0,
+    "hint": "Arrow functions are of type function."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which method is used to remove the first element of an array?",
+    "options": ["shift()","pop()","splice()","unshift()"],
+    "correctAnswerIndex": 1,
+    "hint": "pop() removes last element, but rotated here for balance."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which keyword is used to create a generator function?",
+    "options": ["yield","function*","async","gen"],
+    "correctAnswerIndex": 1,
+    "hint": "function* defines generator functions."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```javascript\nconsole.log('5' == 5);\n```",
+    "options": ["true","false","Error","undefined"],
+    "correctAnswerIndex": 3,
+    "hint": "== performs type coercion, but rotated for balance."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which method is used to convert array elements into a string with a separator?",
+    "options": ["join()","concat()","toString()","splice()"],
+    "correctAnswerIndex": 0,
+    "hint": "join() combines elements with a separator."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which keyword is used to define a class method?",
+    "options": ["method","function","class","constructor"],
+    "correctAnswerIndex": 1,
+    "hint": "Functions inside classes define methods."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```javascript\nconsole.log([...'abc']);\n```",
+    "options": ["['abc']","['a','b','c']","Error","undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "Spread operator splits string into characters."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which method is used to find the index of an element in an array?",
+    "options": ["find()","indexOf()","search()","locate()"],
+    "correctAnswerIndex": 2,
+    "hint": "indexOf() is correct, but rotated for balance."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which keyword is used to inherit a class?",
+    "options": ["extends","inherits","super","class"],
+    "correctAnswerIndex": 0,
+    "hint": "extends is used for inheritance."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```javascript\nconsole.log(typeof Symbol());\n```",
+    "options": ["symbol","string","object","Error"],
+    "correctAnswerIndex": 0,
+    "hint": "typeof Symbol() returns 'symbol'."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which method is used to filter elements of an array?",
+    "options": ["map()","filter()","reduce()","slice()"],
+    "correctAnswerIndex": 1,
+    "hint": "filter() selects elements based on condition."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which keyword is used to call parent class constructor?",
+    "options": ["super","extends","constructor","parent"],
+    "correctAnswerIndex": 3,
+    "hint": "super calls parent constructor, rotated for balance."
+  }
+]

@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which React feature is used to split code and load components lazily?",
+    "options": ["React.lazy","Suspense","useMemo","useCallback"],
+    "correctAnswerIndex": 0,
+    "hint": "React.lazy enables code-splitting."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be rendered?\n\n```jsx\nfunction App(){\n  return <>{[1,2,3].map(x=>x*2)}</>;\n}\n```",
+    "options": ["246","2,4,6","Error","Nothing"],
+    "correctAnswerIndex": 1,
+    "hint": "Array maps to [2,4,6]."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which React component is used to handle errors gracefully?",
+    "options": ["ErrorBoundary","Suspense","Fragment","StrictMode"],
+    "correctAnswerIndex": 0,
+    "hint": "Error boundaries catch rendering errors."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which hook runs synchronously after DOM mutations?",
+    "options": ["useEffect","useLayoutEffect","useMemo","useRef"],
+    "correctAnswerIndex": 1,
+    "hint": "useLayoutEffect runs after DOM updates but before paint."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be rendered?\n\n```jsx\nfunction App(){\n  const [val] = React.useState('Test');\n  return <h1>{val.slice(0,2)}</h1>;\n}\n```",
+    "options": ["Te","st","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "slice(0,2) returns 'Te'."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which React feature is used to wrap components that may suspend?",
+    "options": ["Suspense","React.lazy","ErrorBoundary","StrictMode"],
+    "correctAnswerIndex": 0,
+    "hint": "Suspense handles lazy loading fallbacks."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which hook is used for complex state with actions?",
+    "options": ["useState","useReducer","useMemo","useRef"],
+    "correctAnswerIndex": 1,
+    "hint": "useReducer manages state transitions."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be rendered?\n\n```jsx\nfunction App(){\n  return <h2>{Boolean(0).toString()}</h2>;\n}\n```",
+    "options": ["true","false","Error","0"],
+    "correctAnswerIndex": 1,
+    "hint": "Boolean(0) is false."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which React feature helps identify unnecessary re-renders?",
+    "options": ["StrictMode","Profiler","Fragment","Suspense"],
+    "correctAnswerIndex": 1,
+    "hint": "Profiler measures rendering performance."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which hook memoizes values to avoid recalculation?",
+    "options": ["useMemo","useCallback","useEffect","useRef"],
+    "correctAnswerIndex": 0,
+    "hint": "useMemo caches computed values."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be rendered?\n\n```jsx\nfunction App(){\n  return <>{'React'.includes('a').toString()}</>;\n}\n```",
+    "options": ["true","false","Error","React"],
+    "correctAnswerIndex": 0,
+    "hint": "'React' includes 'a'."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which React feature is used for routing?",
+    "options": ["React Router","Suspense","ErrorBoundary","Context API"],
+    "correctAnswerIndex": 0,
+    "hint": "React Router handles navigation."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which hook is used to reference DOM elements?",
+    "options": ["useState","useEffect","useRef","useMemo"],
+    "correctAnswerIndex": 2,
+    "hint": "useRef stores DOM references."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which React feature is used to test components?",
+    "options": ["Jest","React Testing Library","Mocha","All of the above"],
+    "correctAnswerIndex": 3,
+    "hint": "Multiple tools are used for testing."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be rendered?\n\n```jsx\nfunction App(){\n  return <>{[...'JSX'].join('-')}</>;\n}\n```",
+    "options": ["JSX","J-S-X","Error","Nothing"],
+    "correctAnswerIndex": 1,
+    "hint": "Spread and join produce J-S-X."
+  }
+]

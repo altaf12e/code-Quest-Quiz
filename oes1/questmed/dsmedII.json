@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which data structure is used to detect cycles in a graph using DFS?",
+    "options": ["Queue","Stack","Hash Set","Heap"],
+    "correctAnswerIndex": 2,
+    "hint": "Visited sets help detect cycles."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```cpp\nvector<int> v = {1,2,3};\ncout << v.size();\n```",
+    "options": ["2","3","Error","0"],
+    "correctAnswerIndex": 1,
+    "hint": "size() returns number of elements."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which traversal of binary tree visits nodes level by level?",
+    "options": ["Inorder","Preorder","Postorder","Level Order"],
+    "correctAnswerIndex": 3,
+    "hint": "Level Order uses a queue."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which hashing technique uses multiple hash functions?",
+    "options": ["Chaining","Open Addressing","Double Hashing","Linear Probing"],
+    "correctAnswerIndex": 2,
+    "hint": "Double hashing uses two functions."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```cpp\nstack<int> s;\ns.push(5);\ns.push(10);\ns.pop();\ncout << s.top();\n```",
+    "options": ["5","10","Error","0"],
+    "correctAnswerIndex": 0,
+    "hint": "pop() removes last element, leaving 5."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which data structure is used to implement function call tracking?",
+    "options": ["Queue","Stack","Array","Tree"],
+    "correctAnswerIndex": 1,
+    "hint": "Function calls use stack frames."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which traversal of binary tree visits left, right, then root?",
+    "options": ["Inorder","Preorder","Postorder","Level Order"],
+    "correctAnswerIndex": 2,
+    "hint": "Postorder visits left-right-root."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which data structure is used to implement adjacency list in graphs?",
+    "options": ["Array","Linked List","Stack","Queue"],
+    "correctAnswerIndex": 1,
+    "hint": "Adjacency lists use linked lists."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```cpp\nqueue<int> q;\nq.push(1);\nq.push(2);\nq.pop();\ncout << q.front();\n```",
+    "options": ["1","2","Error","0"],
+    "correctAnswerIndex": 1,
+    "hint": "After pop, front is 2."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which data structure is used to implement breadth-first search?",
+    "options": ["Stack","Queue","Heap","Graph"],
+    "correctAnswerIndex": 1,
+    "hint": "Queue is used in BFS."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which hashing technique resolves collisions by linear search?",
+    "options": ["Chaining","Open Addressing","Double Hashing","Linear Probing"],
+    "correctAnswerIndex": 3,
+    "hint": "Linear probing searches sequentially."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which traversal of binary tree visits root, right, then left?",
+    "options": ["Inorder","Preorder","Postorder","Reverse Preorder"],
+    "correctAnswerIndex": 3,
+    "hint": "Reverse preorder visits root-right-left."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which data structure is used to evaluate infix expressions?",
+    "options": ["Queue","Stack","Array","Tree"],
+    "correctAnswerIndex": 1,
+    "hint": "Stack is used for infix evaluation."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```cpp\nvector<int> v = {10,20,30};\nv.pop_back();\ncout << v.back();\n```",
+    "options": ["10","20","30","Error"],
+    "correctAnswerIndex": 1,
+    "hint": "After pop_back, last element is 20."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which data structure is used to implement depth-first search?",
+    "options": ["Queue","Stack","Heap","Graph"],
+    "correctAnswerIndex": 1,
+    "hint": "Stack is used in DFS."
+  }
+]

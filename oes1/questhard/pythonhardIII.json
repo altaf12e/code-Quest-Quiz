@@ -1,0 +1,147 @@
+[
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which Python feature allows customizing instance creation?",
+    "options": ["__new__","__init__","__call__","__del__"],
+    "correctAnswerIndex": 0,
+    "hint": "__new__ controls object creation before __init__."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```python\nprint(0.1 + 0.2 == 0.3)\n```",
+    "options": ["True","False","Error","None"],
+    "correctAnswerIndex": 1,
+    "hint": "Floating-point precision makes it False."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which Python module provides access to interpreter internals?",
+    "options": ["sys","inspect","gc","os"],
+    "correctAnswerIndex": 0,
+    "hint": "sys exposes interpreter internals."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which Python feature allows defining custom string representation?",
+    "options": ["__repr__","__format__","__doc__","__str__"],
+    "correctAnswerIndex": 3,
+    "hint": "__str__ defines user-friendly string output."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```python\nx = {i:i*i for i in range(3)}\nprint(x[2])\n```",
+    "options": ["Error","4","None","2"],
+    "correctAnswerIndex": 1,
+    "hint": "2 squared is 4."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which Python feature allows defining asynchronous functions?",
+    "options": ["yield","await","async def","lambda"],
+    "correctAnswerIndex": 2,
+    "hint": "async def defines coroutines."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which Python module provides object serialization?",
+    "options": ["json","marshal","pickle","struct"],
+    "correctAnswerIndex": 2,
+    "hint": "pickle serializes Python objects."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```python\nprint(bool(''))\n```",
+    "options": ["True","Error","None","False"],
+    "correctAnswerIndex": 3,
+    "hint": "Empty string is falsy."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which Python feature allows defining custom attribute deletion?",
+    "options": ["__delete__","__exit__","__delattr__","__del__"],
+    "correctAnswerIndex": 2,
+    "hint": "__delattr__ handles attribute deletion."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which Python module provides symbolic math?",
+    "options": ["decimal","fractions","sympy","math"],
+    "correctAnswerIndex": 2,
+    "hint": "sympy supports symbolic mathematics."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```python\nx = [1,2,3]\nprint(x*0)\n```",
+    "options": ["[]","[0,0,0]","Error","None"],
+    "correctAnswerIndex": 0,
+    "hint": "Multiplying list by 0 gives empty list."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which Python feature allows defining custom context managers without classes?",
+    "options": ["decorator","contextlib.contextmanager","__enter__","generator"],
+    "correctAnswerIndex": 1,
+    "hint": "contextlib.contextmanager decorator creates context managers."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which Python module provides random number generation?",
+    "options": ["math","random","statistics","numpy"],
+    "correctAnswerIndex": 1,
+    "hint": "random generates pseudo-random numbers."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which Python feature allows defining custom comparison operators?",
+    "options": ["__eq__","__cmp__","__lt__","__gt__"],
+    "correctAnswerIndex": 0,
+    "hint": "__eq__ defines equality comparison."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```python\nprint(type(type))\n```",
+    "options": ["<class 'type'>","<class 'object'>","Error","None"],
+    "correctAnswerIndex": 0,
+    "hint": "type itself is an instance of type."
+  },
+{
+  "subject": "python",
+  "difficulty": "hard",
+  "subLevel": "III",
+  "question": "What will be printed?\n\n```python\nprint(type(type))\n```",
+  "options": ["<class 'object'>","Error","None","<class 'type'>"],
+  "correctAnswerIndex": 3,
+  "hint": "type itself is an instance of type."
+}
+
+]

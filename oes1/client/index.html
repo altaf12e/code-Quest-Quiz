@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeQuest - Master the Code</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/admin-link.css">
+</head>
+<body class="homepage">
+    <div class="animated-bg">
+        <div class="floating-code">{"}</div>
+        <div class="floating-code">&lt;/&gt;</div>
+        <div class="floating-code">[ ]</div>
+        <div class="floating-code">( )</div>
+    </div>
+
+    <div class="top-decorations">
+        <div class="geometric-shape triangle-1"></div>
+        <div class="geometric-shape circle-1"></div>
+        <div class="geometric-shape hexagon-1"></div>
+        <div class="geometric-shape diamond-1"></div>
+        <div class="code-pattern pattern-1">{ }</div>
+        <div class="code-pattern pattern-2">&lt; /&gt;</div>
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+    </div>
+
+    <div class="container">
+        <header class="hero-section">
+            <div class="logo-container">
+                <div class="logo-icon">⚔️</div>
+                <h1 class="game-title">
+                    <span class="title-main">CODE</span>
+                    <span class="title-sub">QUEST</span>
+                </h1>
+            </div>
+            <p class="tagline">Embark on an Epic Programming Journey</p>
+        </header>
+
+        <div class="home-content">
+            <div class="main-card">
+                <h2 class="section-title">⚡ Challenge Yourself</h2>
+                <p class="description">Battle through coding challenges, earn XP, level up, and conquer the leaderboard!</p>
+                
+                <div class="cta-buttons">
+                    <button class="btn btn-primary pulse" onclick="handleQuestStart()">
+                        <span class="btn-icon">🚀</span>
+                        Start Your Quest
+                    </button>
+                </div>
+            </div>
+
+
+
+            <!-- How It Works Section -->
+            <div class="how-it-works">
+                <h2 class="section-title">🎮 How CodeQuest Works</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">📝</div>
+                        <h3>Choose Your Quest</h3>
+                        <p>Select from Java, Python, C++, JavaScript, Data Structures, or Algorithms</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">⚔️</div>
+                        <h3>Battle Challenges</h3>
+                        <p>Answer timed questions, use hints wisely, and build your coding streak</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">🏆</div>
+                        <h3>Level Up & Dominate</h3>
+                        <p>Earn XP, unlock achievements, and climb the global leaderboard</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card subjects-preview">
+                    <h3 class="card-title">📚 Available Quests</h3>
+                    <div class="subject-badges">
+                        <div class="subject-badge java">
+                            <span class="badge-icon">☕</span>
+                            <span>Java</span>
+                        </div>
+                        <div class="subject-badge cpp">
+                            <span class="badge-icon">⚙️</span>
+                            <span>C++</span>
+                        </div>
+                        <div class="subject-badge python">
+                            <span class="badge-icon">🐍</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="subject-badge javascript">
+                            <span class="badge-icon">⚡</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="subject-badge data">
+                            <span class="badge-icon">🗄️</span>
+                            <span>Data Structures</span>
+                        </div>
+                        <div class="subject-badge algorithms">
+                            <span class="badge-icon">🧮</span>
+                            <span>Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card leaderboard-preview">
+                    <h3 class="card-title">🏆 Top Warriors</h3>
+                    <div class="leaderboard-list">
+                        <div class="loading-text">Loading leaderboard...</div>
+                    </div>
+                </div>
+
+                <div class="info-card features">
+                    <h3 class="card-title">✨ Features</h3>
+                    <ul class="features-list">
+                        <li><span class="feature-icon">🎯</span> Real-time XP & Leveling System</li>
+                        <li><span class="feature-icon">🔥</span> Daily Streaks & Challenges</li>
+                        <li><span class="feature-icon">⏱️</span> Timed Coding Battles</li>
+                        <li><span class="feature-icon">🎨</span> Avatar Customization</li>
+                        <li><span class="feature-icon">🏅</span> Achievement Unlocks</li>
+                        <li><span class="feature-icon">💡</span> Smart Hints System</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Call to Action -->
+        <div class="final-cta">
+            <h2>Ready to Start Your Coding Adventure?</h2>
+            <p>Join thousands of developers improving their skills through gamified learning</p>
+            <button class="btn btn-primary btn-large pulse" onclick="handleQuestStart()">
+                <span class="btn-icon">🚀</span>
+                Begin Your Quest Now
+            </button>
+        </div>
+
+        <footer class="home-footer">
+            <p>© 2026 CodeQuest. Forge Your Coding Legacy. by Altaf Hussain</p>
+            <div class="admin-link" id="adminLink" style="display: none;">
+                <a href="admin.html" class="admin-access">👑 Admin Panel</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which React feature provides global state without prop drilling?",
+    "options": ["Redux","Context API","useReducer","useMemo"],
+    "correctAnswerIndex": 1,
+    "hint": "Context API avoids prop drilling."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which hook persists values across renders without causing re-renders?",
+    "options": ["useRef","useState","useEffect","useMemo"],
+    "correctAnswerIndex": 0,
+    "hint": "useRef holds mutable values that don't trigger re-renders."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which hook memoizes a callback to avoid re-creation on every render?",
+    "options": ["useMemo","useEffect","useCallback","useRef"],
+    "correctAnswerIndex": 2,
+    "hint": "useCallback memoizes functions based on dependencies."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Where do you place cleanup logic for side effects?",
+    "options": ["useState","useMemo","useRef","useEffect"],
+    "correctAnswerIndex": 3,
+    "hint": "Return a function from useEffect to clean up."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which hook delays rendering of non-urgent updates?",
+    "options": ["Redux","useDeferredValue","useTransition","useMemo"],
+    "correctAnswerIndex": 1,
+    "hint": "useDeferredValue defers re-rendering derived values."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be rendered?\n\n```jsx\nfunction App(){\n  const [count,setCount] = React.useState(0);\n  return <button onClick={()=>setCount(count+1)}>{count}</button>;\n}\n```",
+    "options": ["0","1","Error","Nothing"],
+    "correctAnswerIndex": 0,
+    "hint": "Initial render shows 0; clicking changes it."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which approach is best to sync state with localStorage?",
+    "options": ["useEffect","useRef","Custom hook","useMemo"],
+    "correctAnswerIndex": 2,
+    "hint": "A custom hook encapsulates read/write and effects."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which hook memoizes expensive calculations?",
+    "options": ["useEffect","useState","useMemo","useRef"],
+    "correctAnswerIndex": 2,
+    "hint": "useMemo caches computed values until deps change."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be rendered?\n\n```jsx\nfunction App(){\n  const inputRef = React.useRef();\n  return <input ref={inputRef} defaultValue=\"Hello\" />;\n}\n```",
+    "options": ["Hello","undefined","Error","Nothing"],
+    "correctAnswerIndex": 0,
+    "hint": "defaultValue sets initial input content."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which hook manages reducer-style state?",
+    "options": ["useState","useReducer","useMemo","useEffect"],
+    "correctAnswerIndex": 1,
+    "hint": "useReducer is ideal for complex state transitions."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be rendered?\n\n```jsx\nfunction App(){\n  const [val,setVal] = React.useState('React');\n  return <h1>{val.toLowerCase()}</h1>;\n}\n```",
+    "options": ["React","undefined","Error","react"],
+    "correctAnswerIndex": 3,
+    "hint": "The lowercase of 'React' is 'react'."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which hook can store the previous value across renders?",
+    "options": ["useMemo","useEffect","useState","useRef"],
+    "correctAnswerIndex": 3,
+    "hint": "Store previous values in a ref and update it in effects."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which tool prevents functions from being recreated unless dependencies change?",
+    "options": ["React.memo","useCallback","useMemo","useEffect"],
+    "correctAnswerIndex": 1,
+    "hint": "useCallback memoizes function references."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "Which attribute applies CSS classes in JSX?",
+    "options": ["className","class","style","css"],
+    "correctAnswerIndex": 0,
+    "hint": "Use className instead of HTML's class."
+  },
+  {
+    "subject": "react",
+    "difficulty": "medium",
+    "subLevel": "II",
+    "question": "What will be rendered?\n\n```jsx\nfunction App(){\n  const id = React.useId();\n  return <span>{typeof id}</span>;\n}\n```",
+    "options": ["number","object","string","undefined"],
+    "correctAnswerIndex": 2,
+    "hint": "useId returns a stable string; typeof is 'string'."
+  }
+]

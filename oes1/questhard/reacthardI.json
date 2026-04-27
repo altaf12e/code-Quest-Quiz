@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which hook is used to optimize performance by memoizing values?",
+    "options": ["useEffect","useState","useMemo","useRef"],
+    "correctAnswerIndex": 2,
+    "hint": "useMemo memoizes expensive calculations."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```jsx\nconst [count,setCount] = useState(0);\nuseEffect(()=>{setCount(count+1)},[]);\nconsole.log(count);\n```",
+    "options": ["0","1","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "Effect runs once, sets count to 1 but logs old value first."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which React feature allows concurrent rendering for better responsiveness?",
+    "options": ["StrictMode","Concurrent Mode","Context","Portals"],
+    "correctAnswerIndex": 1,
+    "hint": "Concurrent Mode improves responsiveness."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which hook is used to persist mutable values across renders without causing re-renders?",
+    "options": ["useState","useMemo","useEffect","useRef"],
+    "correctAnswerIndex": 3,
+    "hint": "useRef stores mutable values."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```jsx\nconst [val,setVal] = useState(\"A\");\nsetVal(\"B\");\nconsole.log(val);\n```",
+    "options": ["A","B","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "State updates are async; logs old value."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which React API is used for code-splitting and lazy loading?",
+    "options": ["Suspense","React.lazy","Context","useReducer"],
+    "correctAnswerIndex": 1,
+    "hint": "React.lazy enables code-splitting."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which hook is used for complex state management with reducers?",
+    "options": ["useState","useEffect","useReducer","useMemo"],
+    "correctAnswerIndex": 2,
+    "hint": "useReducer handles complex state logic."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which React feature allows rendering children into a DOM node outside parent hierarchy?",
+    "options": ["Context","Fragments","StrictMode","Portals"],
+    "correctAnswerIndex": 3,
+    "hint": "Portals render outside parent hierarchy."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```jsx\nconst [x,setX] = useState(5);\nuseEffect(()=>{setX(x*2)},[x]);\nconsole.log(x);\n```",
+    "options": ["5","10","Error","Infinite loop"],
+    "correctAnswerIndex": 3,
+    "hint": "Effect depends on x, causes infinite loop."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which hook is used to handle side effects?",
+    "options": ["useState","useMemo","useEffect","useRef"],
+    "correctAnswerIndex": 2,
+    "hint": "useEffect handles side effects."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which React feature improves rendering by skipping unchanged subtrees?",
+    "options": ["Context","Suspense","React.memo","Portals"],
+    "correctAnswerIndex": 2,
+    "hint": "React.memo skips re-rendering unchanged components."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which hook is used to access context values?",
+    "options": ["useState","useEffect","useContext","useRef"],
+    "correctAnswerIndex": 2,
+    "hint": "useContext reads context values."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which React feature allows streaming server-rendered components?",
+    "options": ["StrictMode","Suspense","Portals","Server Components"],
+    "correctAnswerIndex": 3,
+    "hint": "Server Components allow streaming rendering."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```jsx\nconst [flag,setFlag] = useState(false);\nuseEffect(()=>{setFlag(true)},[]);\nconsole.log(flag);\n```",
+    "options": ["false","true","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "State update is async; logs false."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which algorithm does React use for efficient DOM updates?",
+    "options": ["BFS","DFS","Reconciliation (Fiber)","Hashing"],
+    "correctAnswerIndex": 2,
+    "hint": "React Fiber reconciliation updates DOM efficiently."
+  }
+]

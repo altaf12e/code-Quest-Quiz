@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which language is Node.js built on?",
+    "options": ["Python", "Java", "JavaScript", "C++"],
+    "correctAnswerIndex": 2,
+    "hint": "Node.js runs JavaScript outside the browser."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which engine powers Node.js?",
+    "options": ["SpiderMonkey", "V8", "Rhino", "Chakra"],
+    "correctAnswerIndex": 1,
+    "hint": "Node.js uses Google’s V8 engine."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword is used to import modules in Node.js?",
+    "options": ["import", "require", "include", "use"],
+    "correctAnswerIndex": 1,
+    "hint": "require() loads modules."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword is used to export modules in Node.js?",
+    "options": ["export", "module.exports", "return", "default"],
+    "correctAnswerIndex": 1,
+    "hint": "module.exports makes code reusable."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which module is used to create a web server?",
+    "options": ["http", "fs", "net", "url"],
+    "correctAnswerIndex": 0,
+    "hint": "http module creates servers."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which module is used to work with the file system?",
+    "options": ["http", "fs", "net", "url"],
+    "correctAnswerIndex": 1,
+    "hint": "fs module handles files."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which module is used to work with URLs?",
+    "options": ["http", "fs", "net", "url"],
+    "correctAnswerIndex": 3,
+    "hint": "url module parses URLs."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which module is used to work with streams?",
+    "options": ["stream", "http", "fs", "net"],
+    "correctAnswerIndex": 0,
+    "hint": "stream module handles data flow."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which module is used to work with events?",
+    "options": ["events", "http", "fs", "net"],
+    "correctAnswerIndex": 0,
+    "hint": "events module manages event emitters."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which method is used to print output to console?",
+    "options": ["print()", "console.log()", "write()", "output()"],
+    "correctAnswerIndex": 1,
+    "hint": "console.log() prints output."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which method is used to read input from command line?",
+    "options": ["process.stdin", "console.read()", "input()", "readline()"],
+    "correctAnswerIndex": 0,
+    "hint": "process.stdin reads input."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which method is used to exit a Node.js process?",
+    "options": ["exit()", "process.exit()", "quit()", "stop()"],
+    "correctAnswerIndex": 1,
+    "hint": "process.exit() terminates process."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which method is used to get current working directory?",
+    "options": ["cwd()", "process.cwd()", "dir()", "getDir()"],
+    "correctAnswerIndex": 1,
+    "hint": "process.cwd() returns directory."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which method is used to schedule code execution after delay?",
+    "options": ["setTimeout()", "setInterval()", "delay()", "wait()"],
+    "correctAnswerIndex": 0,
+    "hint": "setTimeout() runs code after delay."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which method is used to schedule repeated code execution?",
+    "options": ["setTimeout()", "setInterval()", "repeat()", "loop()"],
+    "correctAnswerIndex": 1,
+    "hint": "setInterval() runs code repeatedly."
+  }
+]

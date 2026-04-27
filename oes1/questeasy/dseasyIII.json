@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which data structure is used to implement heapsort?",
+    "options": ["Stack", "Heap", "Queue", "Array"],
+    "correctAnswerIndex": 1,
+    "hint": "Heap is the basis of heapsort."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which data structure is used to implement binary search?",
+    "options": ["Array", "Linked List", "Queue", "Stack"],
+    "correctAnswerIndex": 0,
+    "hint": "Binary search requires random access arrays."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which data structure is used to implement merge sort?",
+    "options": ["Array", "Linked List", "Queue", "Stack"],
+    "correctAnswerIndex": 0,
+    "hint": "Merge sort splits arrays recursively."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which data structure is used to implement quicksort?",
+    "options": ["Stack", "Queue", "Array", "Heap"],
+    "correctAnswerIndex": 2,
+    "hint": "Quicksort partitions arrays."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which data structure is used to implement radix sort?",
+    "options": ["Queue", "Stack", "Array", "Heap"],
+    "correctAnswerIndex": 0,
+    "hint": "Radix sort uses queues for buckets."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which data structure is used to implement depth-limited search?",
+    "options": ["Stack", "Queue", "Array", "Heap"],
+    "correctAnswerIndex": 0,
+    "hint": "Stack supports depth-first traversal."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which data structure is used to implement breadth-limited search?",
+    "options": ["Stack", "Queue", "Array", "Heap"],
+    "correctAnswerIndex": 1,
+    "hint": "Queue supports breadth-first traversal."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which data structure is used to implement balanced binary search trees?",
+    "options": ["AVL Tree", "Heap", "Graph", "Queue"],
+    "correctAnswerIndex": 0,
+    "hint": "AVL Tree maintains balance."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which data structure is used to implement red-black trees?",
+    "options": ["Tree", "Balanced Tree", "Red-Black Tree", "Heap"],
+    "correctAnswerIndex": 2,
+    "hint": "Red-Black Tree is a self-balancing BST."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which data structure is used to implement trie?",
+    "options": ["Tree", "Graph", "Array", "Stack"],
+    "correctAnswerIndex": 0,
+    "hint": "Trie is a tree-like structure for strings."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which data structure is used to implement disjoint sets?",
+    "options": ["Union-Find", "Queue", "Stack", "Array"],
+    "correctAnswerIndex": 0,
+    "hint": "Union-Find supports disjoint sets."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which data structure is used to implement adjacency list in graphs?",
+    "options": ["Array", "Linked List", "Queue", "Stack"],
+    "correctAnswerIndex": 1,
+    "hint": "Linked List stores neighbors."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which data structure is used to implement adjacency matrix in graphs?",
+    "options": ["Array", "Linked List", "Queue", "Stack"],
+    "correctAnswerIndex": 0,
+    "hint": "Matrix uses arrays."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which data structure is used to implement minimum spanning tree?",
+    "options": ["Heap", "Disjoint Set", "Queue", "Stack"],
+    "correctAnswerIndex": 1,
+    "hint": "Disjoint Set supports Kruskal’s algorithm."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which data structure is used to implement maximum heap?",
+    "options": ["Heap", "Tree", "Array", "Stack"],
+    "correctAnswerIndex": 0,
+    "hint": "Heap maintains max element at root."
+  }
+]

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - CodeQuest</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/profile-fix.css">
+</head>
+<body class="profile-page">
+    <div class="animated-bg">
+        <div class="floating-code">{"}</div>
+        <div class="floating-code">&lt;/&gt;</div>
+        <div class="floating-code">[ ]</div>
+        <div class="floating-code">( )</div>
+        <div class="floating-code">{ }</div>
+        <div class="floating-code">;</div>
+    </div>
+
+    <div class="container">
+        <header class="page-header">
+            <div class="nav-bar">
+                <div class="logo-small">
+                    <span class="logo-icon">⚔️</span>
+                    <span class="logo-text">CodeQuest</span>
+                </div>
+                <nav class="nav-links">
+                    <a href="dashboard.html" class="nav-link">Dashboard</a>
+                    <a href="history.html" class="nav-link">History</a>
+                    <a href="profile.html" class="nav-link active">Profile</a>
+                    <button class="btn btn-small" onclick="logout()">Logout</button>
+                </nav>
+            </div>
+        </header>
+
+        <div class="profile-content">
+            <div class="profile-header">
+                <div class="profile-avatar-section">
+                    <div class="avatar-container">
+                        <div class="avatar-display" id="userAvatar">👤</div>
+                        <button class="edit-avatar-btn" id="editAvatarBtn">✏️</button>
+                    </div>
+                    <div class="profile-basic">
+                        <div class="name-container">
+                            <h1 class="profile-name" id="userName">Loading...</h1>
+                            <button class="edit-name-btn" id="editNameBtn">✏️</button>
+                        </div>
+                        <div class="edit-name-form" id="editNameForm" style="display: none;">
+                            <input type="text" id="newUsernameInput" placeholder="Enter new username" maxlength="20">
+                            <div class="name-actions">
+                                <button class="btn btn-small btn-primary" id="saveNameBtn">Save</button>
+                                <button class="btn btn-small btn-secondary" id="cancelNameBtn">Cancel</button>
+                            </div>
+                            <div class="name-error" id="nameError"></div>
+                        </div>
+                        <p class="profile-email" id="userEmail">Loading...</p>
+                        <div class="level-badge" id="userLevel">Level 1</div>
+                        <div class="level-progress-container">
+                            <div class="level-progress-header">
+                                <span class="level-progress-label">Level Progress</span>
+                                <span class="level-progress-text"><span id="currentLevelXP">0</span> / <span id="nextLevelXP">200</span> XP</span>
+                            </div>
+                            <div class="level-progress-bar">
+                                <div class="level-progress-fill" id="levelProgressFill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-stats">
+                    <div class="stat-card">
+                        <div class="stat-value" id="totalXP">0</div>
+                        <div class="stat-label">Total XP</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="currentStreak">0</div>
+                        <div class="stat-label">Current Streak</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="totalExams">0</div>
+                        <div class="stat-label">Exams Taken</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="userRank">#-</div>
+                        <div class="stat-label">Global Rank</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-details">
+                <div class="detail-card">
+                    <h3 class="card-title">📊 Performance Overview</h3>
+                    <div class="performance-grid">
+                        <div class="performance-item">
+                            <span class="perf-label">Questions Answered:</span>
+                            <span class="perf-value" id="totalQuestions">0</span>
+                        </div>
+                        <div class="performance-item">
+                            <span class="perf-label">Correct Answers:</span>
+                            <span class="perf-value" id="correctAnswers">0</span>
+                        </div>
+                        <div class="performance-item">
+                            <span class="perf-label">Accuracy Rate:</span>
+                            <span class="perf-value" id="accuracyRate">0%</span>
+                        </div>
+                        <div class="performance-item">
+                            <span class="perf-label">Best Streak:</span>
+                            <span class="perf-value" id="bestStreak">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <h3 class="card-title">🎯 Subject Performance</h3>
+                    <div class="subject-performance" id="subjectStats">
+                        <div class="loading-text">Loading subject statistics...</div>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <h3 class="card-title">📈 Recent Activity</h3>
+                    <div class="activity-list" id="recentActivity">
+                        <div class="loading-text">Loading recent activity...</div>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <h3 class="card-title">🏆 Achievements</h3>
+                    <div class="achievements-grid" id="userAchievements">
+                        <div class="loading-text">Loading achievements...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Avatar Edit Modal -->
+    <div class="avatar-modal" id="avatarModal">
+        <div class="avatar-modal-content">
+            <div class="modal-header">
+                <h3>Edit Avatar</h3>
+                <button class="modal-close" id="closeAvatarModal">×</button>
+            </div>
+            <div class="avatar-options">
+                <div class="avatar-section">
+                    <h4>Choose Emoji Avatar</h4>
+                    <div class="emoji-grid">
+                        <div class="emoji-option" data-avatar="👨‍💻">👨‍💻</div>
+                        <div class="emoji-option" data-avatar="👩‍💻">👩‍💻</div>
+                        <div class="emoji-option" data-avatar="🤖">🤖</div>
+                        <div class="emoji-option" data-avatar="👨‍🎓">👨‍🎓</div>
+                        <div class="emoji-option" data-avatar="👩‍🎓">👩‍🎓</div>
+                        <div class="emoji-option" data-avatar="🧑‍💼">🧑‍💼</div>
+                        <div class="emoji-option" data-avatar="👨‍🔬">👨‍🔬</div>
+                        <div class="emoji-option" data-avatar="👩‍🔬">👩‍🔬</div>
+                        <div class="emoji-option" data-avatar="🥷">🥷</div>
+                        <div class="emoji-option" data-avatar="😎">😎</div>
+                        <div class="emoji-option" data-avatar="🤓">🤓</div>
+                        <div class="emoji-option" data-avatar="👾">👾</div>
+                    </div>
+                </div>
+                <div class="avatar-section">
+                    <h4>Upload Custom Image</h4>
+                    <div class="image-upload">
+                        <input type="file" id="avatarImageInput" accept="image/*" style="display: none;">
+                        <button class="btn btn-secondary" onclick="document.getElementById('avatarImageInput').click()">
+                            📷 Choose Image
+                        </button>
+                        <div class="image-preview" id="imagePreview"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-primary" id="saveAvatarBtn">Save Avatar</button>
+                <button class="btn btn-secondary" id="cancelAvatarBtn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>

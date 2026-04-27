@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to refer to the current object inside a class?",
+    "options": ["this", "self", "me", "current"],
+    "correctAnswerIndex": 0,
+    "hint": "this is a pointer to the current object."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "What is the special member function that initializes objects when they are created?",
+    "options": ["constructor", "initializer", "builder", "creator"],
+    "correctAnswerIndex": 0,
+    "hint": "Constructors have the same name as the class."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword prevents a member function from modifying data members?",
+    "options": ["final", "const", "static", "protected"],
+    "correctAnswerIndex": 1,
+    "hint": "const after the function signature enforces no modification."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which operator is used to overload for printing custom types with cout?",
+    "options": ["operator<<", "operator>>", "operator()", "operator[]"],
+    "correctAnswerIndex": 0,
+    "hint": "Streams use << for insertion (output)."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword introduces a named scope to avoid name collisions?",
+    "options": ["package", "namespace", "module", "scope"],
+    "correctAnswerIndex": 1,
+    "hint": "namespace groups related identifiers."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "What is the null pointer literal in modern C++?",
+    "options": ["NULL", "0", "nullptr", "nil"],
+    "correctAnswerIndex": 2,
+    "hint": "nullptr is type-safe compared to NULL."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which container provides dynamic resizing and contiguous storage?",
+    "options": ["list", "vector", "map", "queue"],
+    "correctAnswerIndex": 1,
+    "hint": "std::vector stores elements contiguously and resizes automatically."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which loop form iterates directly over elements of a container?",
+    "options": ["classic for", "while", "range-based for", "do-while"],
+    "correctAnswerIndex": 2,
+    "hint": "for (auto x : container) is range-based for."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which type safely represents scoped enumerations?",
+    "options": ["enum", "enum class", "typedef enum", "scoped enum"],
+    "correctAnswerIndex": 1,
+    "hint": "enum class avoids implicit conversions."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which header provides standard algorithms like sort?",
+    "options": ["<algorithm>", "<vector>", "<utility>", "<iterator>"],
+    "correctAnswerIndex": 0,
+    "hint": "std::sort is in <algorithm>."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "How do you pass a variable by reference to allow modification in a function?",
+    "options": ["Use pointer", "Use reference &", "Use const reference", "Use copy"],
+    "correctAnswerIndex": 1,
+    "hint": "void f(int& x) passes by reference."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which standard type holds two values as a pair?",
+    "options": ["tuple", "array", "pair", "vector2"],
+    "correctAnswerIndex": 2,
+    "hint": "std::pair<T, U> stores two related values."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which queue-like container provides FIFO operations?",
+    "options": ["stack", "queue", "deque", "priority_queue"],
+    "correctAnswerIndex": 1,
+    "hint": "std::queue uses push/pop front/back internally."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which declaration creates an alias for a type in modern C++?",
+    "options": ["typedef", "using", "alias", "define"],
+    "correctAnswerIndex": 1,
+    "hint": "using Alias = ExistingType; is preferred over typedef."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword begins an exception handling block to catch thrown exceptions?",
+    "options": ["try", "catch", "throw", "handle"],
+    "correctAnswerIndex": 0,
+    "hint": "try encloses code that may throw; catch handles it."
+  }
+]

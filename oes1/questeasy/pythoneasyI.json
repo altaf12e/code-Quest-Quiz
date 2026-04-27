@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword is used to define a function?",
+    "options": ["func", "def", "function", "lambda"],
+    "correctAnswerIndex": 1,
+    "hint": "def starts a function block."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which symbol denotes a comment?",
+    "options": ["//", "#", "/* */", "<!-- -->"],
+    "correctAnswerIndex": 1,
+    "hint": "Hash is used for comments."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which collection is ordered and mutable?",
+    "options": ["tuple", "set", "list", "frozenset"],
+    "correctAnswerIndex": 2,
+    "hint": "Lists use [] and are mutable."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "What is the output of len('Hello')?",
+    "options": ["4", "5", "6", "error"],
+    "correctAnswerIndex": 1,
+    "hint": "'Hello' has five characters."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword creates an anonymous function?",
+    "options": ["def", "lambda", "anon", "func"],
+    "correctAnswerIndex": 1,
+    "hint": "lambda creates inline functions."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which function converts a string '123' to integer?",
+    "options": ["str()", "int()", "float()", "toInt()"],
+    "correctAnswerIndex": 1,
+    "hint": "int('123') → 123."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which operator is used for exponentiation?",
+    "options": ["^", "**", "pow", "exp"],
+    "correctAnswerIndex": 1,
+    "hint": "** is the exponent operator."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which method adds an item to the end of a list?",
+    "options": ["add()", "append()", "push()", "insert()"],
+    "correctAnswerIndex": 1,
+    "hint": "append adds to end."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "What is the index of the first element in lists?",
+    "options": ["1", "0", "-1", "None"],
+    "correctAnswerIndex": 1,
+    "hint": "Python uses 0-based indexing."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword is used for looping over items?",
+    "options": ["loop", "for", "iterate", "repeat"],
+    "correctAnswerIndex": 1,
+    "hint": "for iterates over collections."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which data type is immutable?",
+    "options": ["list", "dict", "tuple", "set"],
+    "correctAnswerIndex": 2,
+    "hint": "Tuples are immutable."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which built-in function prints to console?",
+    "options": ["echo()", "print()", "console()", "write()"],
+    "correctAnswerIndex": 1,
+    "hint": "print outputs to console."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "What file extension is used for Python files?",
+    "options": [".py", ".java", ".js", ".txt"],
+    "correctAnswerIndex": 0,
+    "hint": ".py is standard."
+  },
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword is used to import modules?",
+    "options": ["include", "import", "require", "using"],
+    "correctAnswerIndex": 1,
+    "hint": "import brings in modules."
+  }
+{
+  "subject": "python",
+  "difficulty": "easy",
+  "subLevel": "I",
+  "question": "Which built-in type represents text values?",
+  "options": ["str", "int", "bytes", "char"],
+  "correctAnswerIndex": 0,
+  "hint": "Use str for strings."
+}
+]

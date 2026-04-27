@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which data structure is used in Tarjan’s algorithm for strongly connected components?",
+    "options": ["Queue","Heap","HashMap","Stack"],
+    "correctAnswerIndex": 3,
+    "hint": "Tarjan’s algorithm uses a stack."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```cpp\nvector<int> v = {1,2,3};\ncout << v.at(2);\n```",
+    "options": ["1","2","3","Error"],
+    "correctAnswerIndex": 2,
+    "hint": "Index 2 is the third element (3)."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which data structure is used in Bellman-Ford algorithm?",
+    "options": ["Stack","Queue","Array","Priority Queue"],
+    "correctAnswerIndex": 2,
+    "hint": "Bellman-Ford uses arrays for distance updates."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which tree guarantees O(log n) search, insert, delete?",
+    "options": ["AVL Tree","Binary Tree","Trie","Heap"],
+    "correctAnswerIndex": 0,
+    "hint": "AVL Tree is height-balanced."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```cpp\ndeque<int> d;\nd.push_back(5);\nd.push_front(10);\ncout << d.front();\n```",
+    "options": ["5","10","Error","undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "Front element is 10."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which data structure is used in Aho-Corasick string matching?",
+    "options": ["Trie","Heap","Stack","Queue"],
+    "correctAnswerIndex": 0,
+    "hint": "Aho-Corasick builds a trie with failure links."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which data structure is used in Edmonds-Karp algorithm?",
+    "options": ["Stack","Heap","Queue","Array"],
+    "correctAnswerIndex": 2,
+    "hint": "Edmonds-Karp uses BFS with a queue."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```cpp\nset<int> s = {1,2,3};\ncout << *s.begin();\n```",
+    "options": ["1","2","3","Error"],
+    "correctAnswerIndex": 0,
+    "hint": "begin() points to smallest element."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which data structure is used in Johnson’s algorithm for all-pairs shortest path?",
+    "options": ["Stack","Queue","Heap","HashMap"],
+    "correctAnswerIndex": 2,
+    "hint": "Johnson’s algorithm uses min-heap for Dijkstra."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which data structure is used in Ford-Fulkerson algorithm?",
+    "options": ["Queue","Array","Stack","Linked List"],
+    "correctAnswerIndex": 3,
+    "hint": "DFS stack is used in Ford-Fulkerson."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```cpp\nmap<int,int> m;\nm[1]=100;\nm[2]=200;\ncout << m[2];\n```",
+    "options": ["100","200","Error","undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "m[2] is 200."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which data structure is used in KMP algorithm?",
+    "options": ["Array","Stack","Queue","Heap"],
+    "correctAnswerIndex": 0,
+    "hint": "KMP uses prefix array (LPS)."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which data structure is used in Fibonacci heap operations?",
+    "options": ["Array","Stack","Queue","Linked List"],
+    "correctAnswerIndex": 1,
+    "hint": "Fibonacci heap uses circular linked lists."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which data structure is used in Kosaraju’s algorithm?",
+    "options": ["Queue","Heap","Stack","Array"],
+    "correctAnswerIndex": 2,
+    "hint": "Kosaraju’s uses stack for finishing times."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```cpp\nunordered_map<int,int> um;\num[5]=50;\ncout << um[5];\n```",
+    "options": ["0","Error","undefined","50"],
+    "correctAnswerIndex": 3,
+    "hint": "um[5] is 50."
+  }
+]

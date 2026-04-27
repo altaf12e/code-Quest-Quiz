@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Python feature allows creating classes that control class creation?",
+    "options": ["Decorators","Metaclasses","Descriptors","Generators"],
+    "correctAnswerIndex": 1,
+    "hint": "Metaclasses define how classes behave."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```python\nx = [1,2,3]\nprint(x[::-1])\n```",
+    "options": ["[3,2,1]","[1,2,3]","Error","None"],
+    "correctAnswerIndex": 0,
+    "hint": "Slicing with -1 reverses the list."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Python module provides access to garbage collector?",
+    "options": ["gc","os","sys","resource"],
+    "correctAnswerIndex": 0,
+    "hint": "gc module controls garbage collection."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Python feature allows delaying evaluation until iteration?",
+    "options": ["List comprehension","Decorator","Context manager","Generator"],
+    "correctAnswerIndex": 3,
+    "hint": "Generators yield values lazily."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```python\ndef func(a, b=[]):\n    b.append(a)\n    return b\nprint(func(1))\nprint(func(2))\n```",
+    "options": ["[1] [2]","[1] [1,2]","Error","None"],
+    "correctAnswerIndex": 1,
+    "hint": "Default mutable arguments persist across calls."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Python feature allows intercepting attribute access?",
+    "options": ["__slots__","__getattr__","__dict__","__init__"],
+    "correctAnswerIndex": 1,
+    "hint": "__getattr__ is called when attribute not found."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Python keyword ensures resources are released properly?",
+    "options": ["finally","yield","assert","with"],
+    "correctAnswerIndex": 3,
+    "hint": "with ensures proper cleanup via context managers."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```python\nprint(bool('False'))\n```",
+    "options": ["True","False","Error","None"],
+    "correctAnswerIndex": 0,
+    "hint": "Non-empty strings are truthy."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Python feature allows creating anonymous functions?",
+    "options": ["def","map","lambda","filter"],
+    "correctAnswerIndex": 2,
+    "hint": "lambda defines anonymous functions."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Python module provides precise decimal arithmetic?",
+    "options": ["math","fractions","numbers","decimal"],
+    "correctAnswerIndex": 3,
+    "hint": "decimal avoids floating-point errors."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```python\nx = (i for i in range(3))\nprint(list(x))\nprint(list(x))\n```",
+    "options": ["Error","None","[0,1,2] []","[0,1,2] [0,1,2]"],
+    "correctAnswerIndex": 2,
+    "hint": "Generators are exhausted after one iteration."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Python feature restricts dynamic attribute creation?",
+    "options": ["__dict__","__getattr__","__slots__","__init__"],
+    "correctAnswerIndex": 2,
+    "hint": "__slots__ prevents creation of arbitrary attributes."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Python module provides thread-safe queues?",
+    "options": ["threading","queue","multiprocessing","asyncio"],
+    "correctAnswerIndex": 1,
+    "hint": "queue module provides thread-safe queues."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which Python feature allows decorating functions with reusable behavior?",
+    "options": ["lambda","generator","decorator","context manager"],
+    "correctAnswerIndex": 2,
+    "hint": "Decorators wrap functions with extra logic."
+  },
+  {
+    "subject": "python",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```python\nprint(type(int))\n```",
+    "options": ["<class 'type'>","<class 'int'>","Error","None"],
+    "correctAnswerIndex": 0,
+    "hint": "Classes in Python are instances of type."
+  }
+]

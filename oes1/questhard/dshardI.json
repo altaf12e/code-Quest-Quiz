@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which data structure is used to implement recursion?",
+    "options": ["Queue","Stack","Heap","Graph"],
+    "correctAnswerIndex": 1,
+    "hint": "Recursion uses the call stack."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```cpp\nstack<int> s;\ns.push(1);\ns.push(2);\ncout << s.top();\n```",
+    "options": ["1","2","Error","undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "Stack top is the last pushed element."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which data structure is used in Dijkstra’s algorithm?",
+    "options": ["Stack","Priority Queue","Hash Table","Linked List"],
+    "correctAnswerIndex": 1,
+    "hint": "Priority queue selects minimum distance vertex."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which traversal visits nodes in non-decreasing order in a BST?",
+    "options": ["Preorder","Postorder","Inorder","Level order"],
+    "correctAnswerIndex": 2,
+    "hint": "Inorder traversal of BST yields sorted order."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```cpp\nqueue<int> q;\nq.push(10);\nq.push(20);\ncout << q.front();\n```",
+    "options": ["10","20","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "Queue front is the first pushed element."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which data structure is used in DFS?",
+    "options": ["Queue","Stack","Heap","Array"],
+    "correctAnswerIndex": 1,
+    "hint": "DFS uses stack (explicit or implicit)."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which data structure is used to detect cycles in a graph?",
+    "options": ["Stack","Queue","Heap","Disjoint Set"],
+    "correctAnswerIndex": 3,
+    "hint": "Union-Find detects cycles efficiently."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```cpp\nint arr[5] = {1,2,3,4,5};\ncout << *(arr+3);\n```",
+    "options": ["3","4","Error","undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "Pointer arithmetic gives 4."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which data structure is used in Kruskal’s algorithm?",
+    "options": ["Stack","Queue","Heap","Disjoint Set"],
+    "correctAnswerIndex": 3,
+    "hint": "Disjoint Set (Union-Find) detects cycles."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which data structure is used in Huffman coding?",
+    "options": ["Stack","Queue","Array","Priority Queue"],
+    "correctAnswerIndex": 3,
+    "hint": "Priority queue builds Huffman tree."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```cpp\nlist<int> l = {1,2,3};\nauto it = l.begin();\n++it;\ncout << *it;\n```",
+    "options": ["1","2","3","Error"],
+    "correctAnswerIndex": 1,
+    "hint": "Iterator points to second element."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which data structure is used in Prim’s algorithm?",
+    "options": ["Stack","Queue","Array","Priority Queue"],
+    "correctAnswerIndex": 3,
+    "hint": "Prim’s algorithm uses priority queue."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which data structure is used in LRU cache?",
+    "options": ["Stack","Queue","Heap","HashMap + LinkedList"],
+    "correctAnswerIndex": 3,
+    "hint": "LRU uses HashMap + Doubly LinkedList."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which data structure is used in BFS?",
+    "options": ["Stack","Queue","Heap","Array"],
+    "correctAnswerIndex": 1,
+    "hint": "BFS uses queue."
+  },
+  {
+    "subject": "data structures",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```cpp\npriority_queue<int> pq;\npq.push(5);\npq.push(10);\ncout << pq.top();\n```",
+    "options": ["5","10","Error","undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "Priority queue top is maximum element."
+  }
+]

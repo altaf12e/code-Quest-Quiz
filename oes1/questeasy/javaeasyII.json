@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which method is called before garbage collection?",
+    "options": ["finalize()", "dispose()", "clean()", "destroy()"],
+    "correctAnswerIndex": 0,
+    "hint": "finalize() is invoked by GC."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to implement an interface?",
+    "options": ["extends", "implements", "interface", "abstract"],
+    "correctAnswerIndex": 1,
+    "hint": "implements binds interface."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to call parent constructor?",
+    "options": ["super", "this", "parent", "base"],
+    "correctAnswerIndex": 0,
+    "hint": "super calls parent."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which collection allows duplicates?",
+    "options": ["Set", "List", "Map", "Queue"],
+    "correctAnswerIndex": 1,
+    "hint": "List allows duplicates."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to stop method execution?",
+    "options": ["stop", "break", "return", "end"],
+    "correctAnswerIndex": 2,
+    "hint": "return exits method."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to handle exceptions?",
+    "options": ["catch", "error", "handle", "except"],
+    "correctAnswerIndex": 0,
+    "hint": "catch block handles exceptions."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to define a package?",
+    "options": ["import", "package", "namespace", "pkg"],
+    "correctAnswerIndex": 1,
+    "hint": "package groups classes."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to import a package?",
+    "options": ["import", "include", "use", "require"],
+    "correctAnswerIndex": 0,
+    "hint": "import brings classes."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which wrapper class is used for int?",
+    "options": ["Integer", "Int", "Number", "ObjInt"],
+    "correctAnswerIndex": 0,
+    "hint": "Integer wraps int."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which operator increments a value?",
+    "options": ["++", "--", "+=", "-="],
+    "correctAnswerIndex": 0,
+    "hint": "++ increases by 1."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which operator performs logical OR?",
+    "options": ["&&", "||", "or", "|"],
+    "correctAnswerIndex": 1,
+    "hint": "|| is logical OR."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which class stores text?",
+    "options": ["Text", "String", "CharArray", "Chars"],
+    "correctAnswerIndex": 1,
+    "hint": "String stores text."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to exit from a switch block?",
+    "options": ["stop", "break", "return", "end"],
+    "correctAnswerIndex": 1,
+    "hint": "break exits switch."
+  },
+  {
+    "subject": "java",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which keyword is used to prevent inheritance of a class?",
+    "options": ["final", "static", "sealed", "abstract"],
+    "correctAnswerIndex": 0,
+    "hint": "final restricts inheritance."
+  }
+{
+  "subject": "java",
+  "difficulty": "easy",
+  "subLevel": "II",
+  "question": "Which keyword is used to define a subclass of an abstract class?",
+  "options": ["extends", "implements", "inherits", "super"],
+  "correctAnswerIndex": 0,
+  "hint": "extends is used to create a subclass."
+}
+]

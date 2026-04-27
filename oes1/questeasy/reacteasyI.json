@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which library is React primarily used for?",
+    "options": ["Data Science", "UI Development", "Game Development", "Networking"],
+    "correctAnswerIndex": 1,
+    "hint": "React builds user interfaces."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which company developed React?",
+    "options": ["Google", "Facebook", "Microsoft", "Amazon"],
+    "correctAnswerIndex": 1,
+    "hint": "React was created at Facebook."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "What is the smallest building block in React?",
+    "options": ["Component", "Module", "Class", "Function"],
+    "correctAnswerIndex": 0,
+    "hint": "Components are the core building blocks."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which syntax is used to write HTML inside JavaScript?",
+    "options": ["JSX", "HTML", "XML", "DOM"],
+    "correctAnswerIndex": 0,
+    "hint": "JSX allows mixing HTML with JS."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which hook is used to manage state in functional components?",
+    "options": ["useEffect", "useState", "useContext", "useReducer"],
+    "correctAnswerIndex": 1,
+    "hint": "useState manages local state."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which hook is used to perform side effects?",
+    "options": ["useEffect", "useState", "useContext", "useReducer"],
+    "correctAnswerIndex": 0,
+    "hint": "useEffect handles side effects."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword is used to export a component?",
+    "options": ["export", "module", "return", "default"],
+    "correctAnswerIndex": 0,
+    "hint": "export makes components reusable."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which keyword is used to import a component?",
+    "options": ["import", "require", "include", "use"],
+    "correctAnswerIndex": 0,
+    "hint": "import brings in components."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which method is used to render React elements into the DOM?",
+    "options": ["ReactDOM.render()", "render()", "display()", "mount()"],
+    "correctAnswerIndex": 0,
+    "hint": "ReactDOM.render() mounts components."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which attribute is used to give unique identity to elements?",
+    "options": ["id", "class", "key", "name"],
+    "correctAnswerIndex": 2,
+    "hint": "key helps React identify elements."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which hook is used to access context values?",
+    "options": ["useState", "useEffect", "useContext", "useReducer"],
+    "correctAnswerIndex": 2,
+    "hint": "useContext accesses context."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which hook is used for complex state management?",
+    "options": ["useState", "useEffect", "useContext", "useReducer"],
+    "correctAnswerIndex": 3,
+    "hint": "useReducer manages complex state."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which hook is used to create a reference to DOM elements?",
+    "options": ["useRef", "useState", "useEffect", "useContext"],
+    "correctAnswerIndex": 0,
+    "hint": "useRef creates mutable references."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which hook is used to memoize values?",
+    "options": ["useMemo", "useEffect", "useState", "useContext"],
+    "correctAnswerIndex": 0,
+    "hint": "useMemo caches computed values."
+  },
+  {
+    "subject": "react",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which hook is used to memoize functions?",
+    "options": ["useCallback", "useMemo", "useEffect", "useState"],
+    "correctAnswerIndex": 0,
+    "hint": "useCallback memoizes functions."
+  }
+]

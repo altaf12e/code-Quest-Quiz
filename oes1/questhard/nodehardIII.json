@@ -1,0 +1,107 @@
+[
+  {
+    "subject": "nodejs","difficulty":"hard","subLevel":"III",
+    "question":"Which Node.js feature allows async context propagation across callbacks?",
+    "options":["AsyncLocalStorage","SharedArrayBuffer","events","perf_hooks"],
+    "correctAnswerIndex":0,
+    "hint":"AsyncLocalStorage maintains context across async calls."
+  },
+  {
+    "subject":"nodejs","difficulty":"hard","subLevel":"III",
+    "question":"What will be the output?\n\n```js\nsetImmediate(()=>console.log('A'));\nsetTimeout(()=>console.log('B'),0);\nconsole.log('C');\n```",
+    "options":["A B C","C A B","C B A","B C A"],
+    "correctAnswerIndex":1,
+    "hint":"Logs C first, then timer B, then setImmediate A."
+  },
+  {
+    "subject":"nodejs","difficulty":"hard","subLevel":"III",
+    "question":"Which Node.js module provides worker thread pools?",
+    "options":["worker_threads","cluster","child_process","events"],
+    "correctAnswerIndex":2,
+    "hint":"worker_threads can create thread pools."
+  },
+  {
+    "subject":"nodejs","difficulty":"hard","subLevel":"III",
+    "question":"Which Node.js feature helps handle stream backpressure?",
+    "options":["pipe","pause","resume","drain"],
+    "correctAnswerIndex":3,
+    "hint":"The 'drain' event signals writable stream readiness."
+  },
+  {
+    "subject":"nodejs","difficulty":"hard","subLevel":"III",
+    "question":"What will be the output?\n\n```js\nconsole.log('1');\nPromise.resolve().then(()=>console.log('2'));\nprocess.nextTick(()=>console.log('3'));\nconsole.log('4');\n```",
+    "options":["1 2 3 4","1 4 3 2","1 4 2 3","1 3 4 2"],
+    "correctAnswerIndex":1,
+    "hint":"Logs 1,4 sync, then nextTick 3, then promise 2."
+  },
+  {
+    "subject":"nodejs","difficulty":"hard","subLevel":"III",
+    "question":"Which Node.js module resolves module paths?",
+    "options":["module","path","fs","os"],
+    "correctAnswerIndex":2,
+    "hint":"The module system resolves paths internally."
+  },
+  {
+    "subject":"nodejs","difficulty":"hard","subLevel":"III",
+    "question":"Which Node.js feature allows measuring event loop delays?",
+    "options":["perf_hooks","async_hooks","events","timers"],
+    "correctAnswerIndex":0,
+    "hint":"perf_hooks can measure event loop delays."
+  },
+  {
+    "subject":"nodejs","difficulty":"hard","subLevel":"III",
+    "question":"Which Node.js module provides VM sandboxing?",
+    "options":["vm","crypto","net","tls"],
+    "correctAnswerIndex":2,
+    "hint":"The vm module provides sandboxed execution."
+  },
+  {
+    "subject":"nodejs","difficulty":"hard","subLevel":"III",
+    "question":"What will be the output?\n\n```js\n(async()=>{\n  await new Promise(res=>setTimeout(res,0));\n  console.log('X');\n})();\nconsole.log('Y');\n```",
+    "options":["X Y","Y X","Error","undefined"],
+    "correctAnswerIndex":1,
+    "hint":"Logs Y first, then X after timeout."
+  },
+  {
+    "subject":"nodejs","difficulty":"hard","subLevel":"III",
+    "question":"Which Node.js feature allows detecting unhandled promise rejections?",
+    "options":["process.on('unhandledRejection')","events","async_hooks","perf_hooks"],
+    "correctAnswerIndex":2,
+    "hint":"process.on('unhandledRejection') detects unhandled rejections."
+  },
+  {
+    "subject":"nodejs","difficulty":"hard","subLevel":"III",
+    "question":"Which Node.js module provides inspector debugging?",
+    "options":["inspector","util","assert","events"],
+    "correctAnswerIndex":2,
+    "hint":"The inspector module provides debugging APIs."
+  },
+  {
+    "subject":"nodejs","difficulty":"hard","subLevel":"III",
+    "question":"Which Node.js feature allows aborting async operations?",
+    "options":["AbortController","events","async_hooks","perf_hooks"],
+    "correctAnswerIndex":3,
+    "hint":"AbortController can cancel async operations."
+  },
+  {
+    "subject":"nodejs","difficulty":"hard","subLevel":"III",
+    "question":"What will be the output?\n\n```js\nconsole.log(Buffer.from('A').toString('base64'));\n```",
+    "options":["QQ==","A","Error","undefined"],
+    "correctAnswerIndex":0,
+    "hint":"Buffer encodes 'A' to base64 'QQ=='."
+  },
+  {
+    "subject":"nodejs","difficulty":"hard","subLevel":"III",
+    "question":"Which Node.js module provides QUIC protocol support?",
+    "options":["quic","http2","net","tls"],
+    "correctAnswerIndex":2,
+    "hint":"The quic module supports QUIC protocol."
+  },
+  {
+    "subject":"nodejs","difficulty":"hard","subLevel":"III",
+    "question":"Which Node.js feature allows detecting deprecated APIs?",
+    "options":["process.emitWarning","events","util","assert"],
+    "correctAnswerIndex":3,
+    "hint":"process.emitWarning can flag deprecated APIs."
+  }
+]

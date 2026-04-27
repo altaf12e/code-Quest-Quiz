@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which module is used to handle file paths?",
+    "options": ["path", "fs", "http", "url"],
+    "correctAnswerIndex": 0,
+    "hint": "path module works with file paths."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which module is used to create child processes?",
+    "options": ["process", "exec", "child_process", "spawn"],
+    "correctAnswerIndex": 2,
+    "hint": "child_process module manages subprocesses."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which module is used to compress files?",
+    "options": ["fs", "http", "zlib", "net"],
+    "correctAnswerIndex": 2,
+    "hint": "zlib provides compression utilities."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which module is used to work with operating system info?",
+    "options": ["fs", "os", "http", "net"],
+    "correctAnswerIndex": 1,
+    "hint": "os module provides system info."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which method is used to read environment variables?",
+    "options": ["env()", "getEnv()", "system.env", "process.env"],
+    "correctAnswerIndex": 3,
+    "hint": "process.env stores environment variables."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which method is used to schedule immediate execution?",
+    "options": ["setTimeout()", "setInterval()", "nextTick()", "setImmediate()"],
+    "correctAnswerIndex": 3,
+    "hint": "setImmediate() runs after current event loop."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which method is used to schedule execution on next event loop tick?",
+    "options": ["setImmediate()", "setTimeout()", "setInterval()", "process.nextTick()"],
+    "correctAnswerIndex": 3,
+    "hint": "process.nextTick() runs before other tasks."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which module is used to handle cryptography?",
+    "options": ["fs", "http", "crypto", "net"],
+    "correctAnswerIndex": 2,
+    "hint": "crypto module handles encryption and hashing."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which module is used to handle DNS queries?",
+    "options": ["net", "http", "dns", "url"],
+    "correctAnswerIndex": 2,
+    "hint": "dns module resolves domain names."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which module is used to handle network sockets?",
+    "options": ["http", "net", "fs", "url"],
+    "correctAnswerIndex": 1,
+    "hint": "net module manages TCP/IPC sockets."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which module is used to handle HTTPS requests?",
+    "options": ["http", "net", "url", "https"],
+    "correctAnswerIndex": 3,
+    "hint": "https module handles secure requests."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which method is used to parse JSON strings?",
+    "options": ["JSON.stringify()", "parse()", "toObject()", "JSON.parse()"],
+    "correctAnswerIndex": 3,
+    "hint": "JSON.parse() converts string to object."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which method is used to convert objects to JSON strings?",
+    "options": ["JSON.parse()", "toJSON()", "objectToString()", "JSON.stringify()"],
+    "correctAnswerIndex": 3,
+    "hint": "JSON.stringify() converts object to string."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which module is used to handle query strings?",
+    "options": ["url", "http", "querystring", "fs"],
+    "correctAnswerIndex": 2,
+    "hint": "querystring parses and formats query strings."
+  },
+  {
+    "subject": "nodejs",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which module is used to handle timers?",
+    "options": ["http", "timers", "fs", "net"],
+    "correctAnswerIndex": 1,
+    "hint": "timers module manages setTimeout and setInterval."
+  }
+]

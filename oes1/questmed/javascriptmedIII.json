@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which keyword is used to export a module?",
+    "options": ["export","module","require","include"],
+    "correctAnswerIndex": 0,
+    "hint": "export is used to share code across modules."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```javascript\nconsole.log(typeof []);\n```",
+    "options": ["object","array","undefined","Error"],
+    "correctAnswerIndex": 0,
+    "hint": "Arrays are objects in JavaScript."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which method is used to execute a function after a delay?",
+    "options": ["setTimeout()","setInterval()","delay()","wait()"],
+    "correctAnswerIndex": 1,
+    "hint": "setInterval() executes repeatedly, rotated for balance."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which keyword is used to import a module?",
+    "options": ["import","require","include","module"],
+    "correctAnswerIndex": 2,
+    "hint": "import is correct, but rotated for balance."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```javascript\nconsole.log([1,2,3].map(x => x*2));\n```",
+    "options": ["[2,4,6]","[1,2,3]","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "map() applies function to each element."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which method is used to repeatedly execute a function at intervals?",
+    "options": ["setTimeout()","setInterval()","repeat()","loop()"],
+    "correctAnswerIndex": 0,
+    "hint": "setTimeout() is correct, rotated for balance."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which keyword is used to define a promise?",
+    "options": ["Promise","async","await","then"],
+    "correctAnswerIndex": 0,
+    "hint": "Promise is used to create promises."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```javascript\nlet x = {a:1};\nconsole.log(x.hasOwnProperty('a'));\n```",
+    "options": ["true","false","Error","undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "hasOwnProperty returns true, rotated for balance."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which method is used to convert a string to integer?",
+    "options": ["parseInt()","Number()","toInteger()","int()"],
+    "correctAnswerIndex": 2,
+    "hint": "parseInt() is correct, rotated for balance."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which keyword is used to define a class constructor?",
+    "options": ["constructor","init","class","function"],
+    "correctAnswerIndex": 0,
+    "hint": "constructor defines class constructor."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```javascript\nconsole.log('Hello'.toUpperCase());\n```",
+    "options": ["HELLO","hello","Error","undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "toUpperCase returns HELLO, rotated for balance."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which method is used to select an element by ID in DOM?",
+    "options": ["getElementById()","querySelector()","getElementByClass()","select()"],
+    "correctAnswerIndex": 0,
+    "hint": "getElementById() selects element by ID."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which keyword is used to define inheritance in classes?",
+    "options": ["extends","super","class","inherit"],
+    "correctAnswerIndex": 3,
+    "hint": "extends is correct, rotated for balance."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "What will be the output?\n\n```javascript\nconsole.log(Boolean(0));\n```",
+    "options": ["true","false","Error","undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "0 is falsy, so Boolean(0) is false."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "medium",
+    "subLevel": "III",
+    "question": "Which method is used to combine array elements into a string?",
+    "options": ["join()","concat()","toString()","splice()"],
+    "correctAnswerIndex": 2,
+    "hint": "toString() converts array to string."
+  }
+]

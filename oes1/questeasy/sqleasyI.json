@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which SQL command is used to retrieve data from a database?",
+    "options": ["SELECT", "INSERT", "UPDATE", "DELETE"],
+    "correctAnswerIndex": 0,
+    "hint": "SELECT is used to query data."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which SQL command is used to add new data?",
+    "options": ["UPDATE", "DELETE", "INSERT", "SELECT"],
+    "correctAnswerIndex": 2,
+    "hint": "INSERT adds new rows."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which SQL command is used to modify existing data?",
+    "options": ["DELETE", "UPDATE", "INSERT", "SELECT"],
+    "correctAnswerIndex": 1,
+    "hint": "UPDATE changes existing rows."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which SQL command is used to remove data?",
+    "options": ["UPDATE", "INSERT", "DELETE", "SELECT"],
+    "correctAnswerIndex": 2,
+    "hint": "DELETE removes rows."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which SQL clause is used to filter results?",
+    "options": ["GROUP BY", "ORDER BY", "WHERE", "HAVING"],
+    "correctAnswerIndex": 2,
+    "hint": "WHERE filters rows."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which SQL clause is used to sort results?",
+    "options": ["GROUP BY", "ORDER BY", "WHERE", "HAVING"],
+    "correctAnswerIndex": 1,
+    "hint": "ORDER BY sorts rows."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which SQL clause is used to group rows?",
+    "options": ["ORDER BY", "GROUP BY", "WHERE", "HAVING"],
+    "correctAnswerIndex": 1,
+    "hint": "GROUP BY groups rows."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which SQL clause is used to filter groups?",
+    "options": ["WHERE", "GROUP BY", "ORDER BY", "HAVING"],
+    "correctAnswerIndex": 3,
+    "hint": "HAVING filters groups."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which SQL keyword is used to remove duplicate rows?",
+    "options": ["UNIQUE", "DELETE", "DISTINCT", "FILTER"],
+    "correctAnswerIndex": 2,
+    "hint": "DISTINCT removes duplicates."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which SQL operator is used to combine multiple conditions?",
+    "options": ["OR", "NOT", "BETWEEN", "AND"],
+    "correctAnswerIndex": 3,
+    "hint": "AND combines conditions."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which SQL operator is used to match a pattern?",
+    "options": ["IN", "BETWEEN", "LIKE", "EXISTS"],
+    "correctAnswerIndex": 2,
+    "hint": "LIKE matches patterns with wildcards."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which SQL operator is used to check if a value exists in a list?",
+    "options": ["LIKE", "BETWEEN", "EXISTS", "IN"],
+    "correctAnswerIndex": 3,
+    "hint": "IN checks membership in a list."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which SQL operator is used to check if a value exists in a subquery?",
+    "options": ["IN", "LIKE", "BETWEEN", "EXISTS"],
+    "correctAnswerIndex": 3,
+    "hint": "EXISTS checks subquery results."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which SQL operator is used to check if a value is within a range?",
+    "options": ["IN", "LIKE", "BETWEEN", "EXISTS"],
+    "correctAnswerIndex": 2,
+    "hint": "BETWEEN checks ranges."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which SQL keyword is used to rename a column or table?",
+    "options": ["RENAME", "ALIAS", "CHANGE", "AS"],
+    "correctAnswerIndex": 3,
+    "hint": "AS creates an alias."
+  }
+]

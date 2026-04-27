@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which traversal visits nodes level by level in a tree?",
+    "options": ["Inorder", "Preorder", "Postorder", "Level-order"],
+    "correctAnswerIndex": 3,
+    "hint": "Level-order uses a queue."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which traversal visits left subtree, root, then right subtree?",
+    "options": ["Inorder", "Preorder", "Postorder", "Level-order"],
+    "correctAnswerIndex": 0,
+    "hint": "Inorder is LNR."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which traversal visits root, left, then right?",
+    "options": ["Inorder", "Preorder", "Postorder", "Level-order"],
+    "correctAnswerIndex": 1,
+    "hint": "Preorder is NLR."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which traversal visits left, right, then root?",
+    "options": ["Inorder", "Preorder", "Postorder", "Level-order"],
+    "correctAnswerIndex": 2,
+    "hint": "Postorder is LRN."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which data structure is used to implement adjacency matrix?",
+    "options": ["Array", "Linked List", "Stack", "Queue"],
+    "correctAnswerIndex": 0,
+    "hint": "Matrix uses 2D arrays."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which data structure is used to detect cycles in a graph?",
+    "options": ["Stack", "Queue", "Disjoint Set", "Array"],
+    "correctAnswerIndex": 2,
+    "hint": "Union-Find detects cycles."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which data structure is used to implement Dijkstra’s algorithm?",
+    "options": ["Stack", "Queue", "Priority Queue", "Array"],
+    "correctAnswerIndex": 2,
+    "hint": "Priority Queue selects minimum distance."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which data structure is used to implement Kruskal’s algorithm?",
+    "options": ["Stack", "Queue", "Disjoint Set", "Array"],
+    "correctAnswerIndex": 2,
+    "hint": "Disjoint Set supports union-find."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which data structure is used to implement Prim’s algorithm?",
+    "options": ["Stack", "Queue", "Priority Queue", "Array"],
+    "correctAnswerIndex": 2,
+    "hint": "Priority Queue selects minimum edge."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which data structure is used to implement Huffman coding?",
+    "options": ["Stack", "Queue", "Heap", "Array"],
+    "correctAnswerIndex": 2,
+    "hint": "Heap builds optimal tree."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which data structure is used to implement balanced search trees?",
+    "options": ["AVL Tree", "Heap", "Graph", "Queue"],
+    "correctAnswerIndex": 0,
+    "hint": "AVL Tree maintains balance."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which data structure is used to implement LRU cache?",
+    "options": ["Stack", "Queue", "Linked List + HashMap", "Array"],
+    "correctAnswerIndex": 2,
+    "hint": "Linked List + HashMap supports O(1) operations."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which data structure is used to implement call stack?",
+    "options": ["Queue", "Stack", "Array", "Heap"],
+    "correctAnswerIndex": 1,
+    "hint": "Stack stores function calls."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which data structure is used to implement BFS in graphs?",
+    "options": ["Stack", "Queue", "Array", "Heap"],
+    "correctAnswerIndex": 1,
+    "hint": "Queue supports BFS."
+  },
+  {
+    "subject": "data-structures",
+    "difficulty": "easy",
+    "subLevel": "II",
+    "question": "Which data structure is used to implement DFS in graphs?",
+    "options": ["Stack", "Queue", "Array", "Heap"],
+    "correctAnswerIndex": 0,
+    "hint": "Stack supports DFS."
+  }
+]

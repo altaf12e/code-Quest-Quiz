@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to declare a pure virtual function?",
+    "options": ["virtual = 0", "abstract", "pure", "override"],
+    "correctAnswerIndex": 0,
+    "hint": "virtual ... = 0 makes a function pure virtual."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to inherit from a base class?",
+    "options": ["extends", "inherits", ":", "super"],
+    "correctAnswerIndex": 2,
+    "hint": "class Derived : public Base."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which operator is overloaded to access array elements?",
+    "options": ["operator()", "operator[]", "operator->", "operator*"],
+    "correctAnswerIndex": 1,
+    "hint": "operator[] accesses elements."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which STL container maintains sorted unique elements?",
+    "options": ["vector", "set", "list", "map"],
+    "correctAnswerIndex": 1,
+    "hint": "std::set stores unique sorted elements."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to handle exceptions?",
+    "options": ["try", "catch", "throw", "error"],
+    "correctAnswerIndex": 0,
+    "hint": "try encloses risky code."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to throw an exception?",
+    "options": ["throw", "throws", "raise", "error"],
+    "correctAnswerIndex": 0,
+    "hint": "throw generates an exception."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to override a virtual function?",
+    "options": ["override", "virtual", "final", "super"],
+    "correctAnswerIndex": 0,
+    "hint": "override ensures correct overriding."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword prevents further inheritance of a class?",
+    "options": ["final", "sealed", "private", "const"],
+    "correctAnswerIndex": 0,
+    "hint": "final prevents inheritance."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to define templates?",
+    "options": ["template", "generic", "typename", "class"],
+    "correctAnswerIndex": 0,
+    "hint": "template<typename T> defines templates."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which container provides key-value pairs with unique keys?",
+    "options": ["map", "multimap", "unordered_map", "pair"],
+    "correctAnswerIndex": 0,
+    "hint": "std::map stores unique keys."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which container allows duplicate keys?",
+    "options": ["map", "multimap", "unordered_map", "set"],
+    "correctAnswerIndex": 1,
+    "hint": "multimap allows duplicates."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which container is used for priority-based retrieval?",
+    "options": ["stack", "queue", "priority_queue", "deque"],
+    "correctAnswerIndex": 2,
+    "hint": "priority_queue retrieves largest element first."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to define a destructor?",
+    "options": ["~", "delete", "destroy", "finalize"],
+    "correctAnswerIndex": 0,
+    "hint": "Destructor uses ~ClassName()."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to stop exception propagation?",
+    "options": ["catch", "throw", "try", "terminate"],
+    "correctAnswerIndex": 3,
+    "hint": "std::terminate stops propagation."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to define a static member function?",
+    "options": ["static", "const", "final", "shared"],
+    "correctAnswerIndex": 0,
+    "hint": "static defines class-level functions."
+  }
+]

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam History - CodeQuest</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="history-page">
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo-small">⚔️</div>
+            <span class="nav-brand">CodeQuest</span>
+        </div>
+        <div class="nav-right">
+            <button class="nav-btn" onclick="location.href='dashboard.html'">📊 Dashboard</button>
+            <button class="nav-btn" onclick="location.href='profile.html'">👤 Profile</button>
+        </div>
+    </nav>
+
+    <div class="history-container">
+        <div class="history-header">
+            <div class="history-title">
+                <span class="history-icon">📚</span>
+                <div>
+                    <h1>Exam History</h1>
+                    <p class="history-subtitle">Track your progress and review past performances</p>
+                </div>
+            </div>
+            <div class="history-stats" id="historyStats">
+                <div class="history-stat">
+                    <div class="stat-value" id="totalExams">0</div>
+                    <div class="stat-label">Total Exams</div>
+                </div>
+                <div class="history-stat">
+                    <div class="stat-value" id="avgAccuracy">0%</div>
+                    <div class="stat-label">Avg Accuracy</div>
+                </div>
+                <div class="history-stat">
+                    <div class="stat-value" id="totalXP">0</div>
+                    <div class="stat-label">Total XP</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="history-filters">
+            <div class="filter-group">
+                <label>Subject:</label>
+                <select id="subjectFilter">
+                    <option value="all">All Subjects</option>
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="cpp">C++</option>
+                    <option value="data-structures">Data Structures</option>
+                    <option value="algorithms">Algorithms</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Difficulty:</label>
+                <select id="difficultyFilter">
+                    <option value="all">All Levels</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                    <option value="marathon">Marathon</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Sort by:</label>
+                <select id="sortFilter">
+                    <option value="date">Date (Newest)</option>
+                    <option value="accuracy">Accuracy</option>
+                    <option value="xp">XP Earned</option>
+                    <option value="time">Time Taken</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="history-content">
+            <div class="exam-list" id="examList">
+                <!-- Exam history items will be populated here -->
+            </div>
+            
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <div class="empty-icon">📝</div>
+                <h3>No Exam History Found</h3>
+                <p>Start taking exams to see your progress here!</p>
+                <button class="btn btn-primary" onclick="location.href='dashboard.html'">Take Your First Exam</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detailed View Modal -->
+    <div class="exam-detail-modal" id="examDetailModal">
+        <div class="exam-detail-content">
+            <div class="exam-detail-header">
+                <div class="exam-detail-title">
+                    <span class="exam-detail-icon">📊</span>
+                    <div>
+                        <h2 id="examDetailTitle">Exam Details</h2>
+                        <p id="examDetailSubtitle">Detailed performance analysis</p>
+                    </div>
+                </div>
+                <button class="close-btn" id="closeDetailModal">✕</button>
+            </div>
+            <div class="exam-detail-body" id="examDetailBody">
+                <!-- Detailed exam information will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/config.js"></script>
+
+    <script src="js/history.js"></script>
+</body>
+</html>

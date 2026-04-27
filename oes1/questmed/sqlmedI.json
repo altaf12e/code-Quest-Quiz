@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which SQL clause is used to filter rows after grouping?",
+    "options": ["WHERE","HAVING","GROUP BY","ORDER BY"],
+    "correctAnswerIndex": 1,
+    "hint": "HAVING filters groups post-aggregation."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```sql\nSELECT COUNT(*) FROM Employees WHERE Salary > 50000;\n```",
+    "options": ["Number of employees","Salary value","Error","NULL"],
+    "correctAnswerIndex": 0,
+    "hint": "COUNT(*) returns the number of matching rows."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which join returns all rows when there is a match in either left or right table (with non-matching rows included)?",
+    "options": ["INNER JOIN","LEFT JOIN","RIGHT JOIN","FULL JOIN"],
+    "correctAnswerIndex": 3,
+    "hint": "FULL OUTER JOIN includes unmatched rows from both sides."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which SQL constraint ensures a column cannot have NULL values?",
+    "options": ["PRIMARY KEY","NOT NULL","UNIQUE","CHECK"],
+    "correctAnswerIndex": 1,
+    "hint": "NOT NULL prevents nulls in the column."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```sql\nSELECT AVG(Salary) FROM Employees;\n```",
+    "options": ["Average salary","Total salary","Error","NULL"],
+    "correctAnswerIndex": 0,
+    "hint": "AVG computes the average of a numeric column."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which SQL statement is used to remove a table?",
+    "options": ["DELETE","DROP","TRUNCATE","REMOVE"],
+    "correctAnswerIndex": 1,
+    "hint": "DROP removes the table and its metadata."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```sql\nSELECT MIN(Salary) FROM Employees;\n```",
+    "options": ["Lowest salary","Highest salary","Error","NULL"],
+    "correctAnswerIndex": 0,
+    "hint": "MIN returns the smallest value in the column."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which set operator removes duplicates by default?",
+    "options": ["INTERSECT","UNION ALL","EXCEPT","UNION"],
+    "correctAnswerIndex": 3,
+    "hint": "UNION (without ALL) eliminates duplicates."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which SQL constraint ensures all values in a column are different?",
+    "options": ["PRIMARY KEY","NOT NULL","UNIQUE","CHECK"],
+    "correctAnswerIndex": 2,
+    "hint": "UNIQUE enforces distinct values in a column."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which clause filters rows before grouping?",
+    "options": ["HAVING","WHERE","GROUP BY","ORDER BY"],
+    "correctAnswerIndex": 1,
+    "hint": "WHERE applies to rows prior to GROUP BY."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "What will be the output?\n\n```sql\nSELECT MAX(Salary) FROM Employees;\n```",
+    "options": ["Highest salary","Lowest salary","Error","NULL"],
+    "correctAnswerIndex": 0,
+    "hint": "MAX returns the largest value in the column."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which SQL statement removes all rows but keeps the table structure?",
+    "options": ["DELETE","DROP","TRUNCATE","REMOVE"],
+    "correctAnswerIndex": 2,
+    "hint": "TRUNCATE is a DDL operation that clears rows fast."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which SQL keyword combines results of two queries (removing duplicates)?",
+    "options": ["JOIN","CONNECT","UNION","MERGE"],
+    "correctAnswerIndex": 2,
+    "hint": "UNION merges result sets and removes duplicates."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which database object improves query performance by enabling faster lookups?",
+    "options": ["VIEW","SEQUENCE","INDEX","TRIGGER"],
+    "correctAnswerIndex": 2,
+    "hint": "INDEXes speed up reads by organizing keys."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "medium",
+    "subLevel": "I",
+    "question": "Which transaction isolation level is the strictest?",
+    "options": ["READ UNCOMMITTED","READ COMMITTED","REPEATABLE READ","SERIALIZABLE"],
+    "correctAnswerIndex": 3,
+    "hint": "SERIALIZABLE prevents phantom, non-repeatable, and dirty reads."
+  }
+]

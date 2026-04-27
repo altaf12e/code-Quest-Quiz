@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which SQL function is used to count rows?",
+    "options": ["SUM()", "COUNT()", "AVG()", "MAX()"],
+    "correctAnswerIndex": 1,
+    "hint": "COUNT() returns the number of rows."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which SQL function is used to calculate average?",
+    "options": ["SUM()", "COUNT()", "AVG()", "MIN()"],
+    "correctAnswerIndex": 2,
+    "hint": "AVG() computes average values."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which SQL function is used to find maximum value?",
+    "options": ["MIN()", "MAX()", "SUM()", "AVG()"],
+    "correctAnswerIndex": 1,
+    "hint": "MAX() finds the largest value."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which SQL function is used to find minimum value?",
+    "options": ["MAX()", "SUM()", "AVG()", "MIN()"],
+    "correctAnswerIndex": 3,
+    "hint": "MIN() finds the smallest value."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which SQL function is used to add values?",
+    "options": ["SUM()", "COUNT()", "AVG()", "MAX()"],
+    "correctAnswerIndex": 0,
+    "hint": "SUM() adds numeric values."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which SQL keyword is used to combine rows from two tables based on a condition?",
+    "options": ["JOIN", "UNION", "INTERSECT", "EXCEPT"],
+    "correctAnswerIndex": 0,
+    "hint": "JOIN combines rows from multiple tables."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which SQL keyword is used to remove a database?",
+    "options": ["DROP DATABASE", "DELETE DATABASE", "REMOVE DATABASE", "TRUNCATE DATABASE"],
+    "correctAnswerIndex": 0,
+    "hint": "DROP DATABASE deletes the entire database."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which SQL keyword is used to create a database?",
+    "options": ["CREATE DATABASE", "NEW DATABASE", "ADD DATABASE", "INIT DATABASE"],
+    "correctAnswerIndex": 0,
+    "hint": "CREATE DATABASE defines a new database."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which SQL keyword is used to grant permissions?",
+    "options": ["GRANT", "REVOKE", "ALLOW", "PERMIT"],
+    "correctAnswerIndex": 0,
+    "hint": "GRANT gives privileges to users."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which SQL keyword is used to remove permissions?",
+    "options": ["GRANT", "REVOKE", "DENY", "REMOVE"],
+    "correctAnswerIndex": 1,
+    "hint": "REVOKE removes privileges."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which SQL keyword is used to change user password?",
+    "options": ["ALTER USER", "UPDATE USER", "CHANGE USER", "MODIFY USER"],
+    "correctAnswerIndex": 0,
+    "hint": "ALTER USER can change password."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which SQL keyword is used to remove all rows from a table permanently?",
+    "options": ["DELETE", "TRUNCATE", "DROP", "REMOVE"],
+    "correctAnswerIndex": 2,
+    "hint": "DROP removes table and data."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which SQL keyword is used to remove only rows but keep table structure?",
+    "options": ["DELETE", "TRUNCATE", "DROP", "REMOVE"],
+    "correctAnswerIndex": 1,
+    "hint": "TRUNCATE clears rows but keeps structure."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which SQL keyword is used to remove specific rows?",
+    "options": ["DELETE", "TRUNCATE", "DROP", "REMOVE"],
+    "correctAnswerIndex": 0,
+    "hint": "DELETE removes selected rows."
+  },
+  {
+    "subject": "sql",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which SQL keyword is used to rollback a transaction?",
+    "options": ["COMMIT", "SAVEPOINT", "ROLLBACK", "UNDO"],
+    "correctAnswerIndex": 2,
+    "hint": "ROLLBACK undoes a transaction."
+  }
+]

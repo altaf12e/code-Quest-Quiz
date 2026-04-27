@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which React feature allows components to catch errors in child components?",
+    "options": ["Suspense","Error Boundaries","StrictMode","Portals"],
+    "correctAnswerIndex": 1,
+    "hint": "Error Boundaries catch rendering errors in child components."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```jsx\nfunction App(){\n  const [val,setVal] = useState(0);\n  setVal(val+1);\n  console.log(val);\n  return <div>{val}</div>;\n}\n```",
+    "options": ["0","1","Error","Infinite loop"],
+    "correctAnswerIndex": 3,
+    "hint": "State update inside render causes infinite loop."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which hook is used to create custom reusable logic?",
+    "options": ["useState","useEffect","Custom Hooks","useMemo"],
+    "correctAnswerIndex": 2,
+    "hint": "Custom hooks encapsulate reusable logic."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which React feature allows suspending rendering until data is ready?",
+    "options": ["Suspense","Context","Portals","StrictMode"],
+    "correctAnswerIndex": 0,
+    "hint": "Suspense lets components wait for data."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```jsx\nconst ref = useRef(0);\nref.current++;\nconsole.log(ref.current);\n```",
+    "options": ["0","1","Error","undefined"],
+    "correctAnswerIndex": 1,
+    "hint": "useRef persists mutable values; logs 1."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which hook is used to defer expensive calculations until needed?",
+    "options": ["useMemo","useDeferredValue","useEffect","useState"],
+    "correctAnswerIndex": 1,
+    "hint": "useDeferredValue defers updates for performance."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which React feature allows batching multiple state updates?",
+    "options": ["Concurrent Rendering","Automatic Batching","Error Boundaries","Portals"],
+    "correctAnswerIndex": 1,
+    "hint": "Automatic batching groups multiple updates."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which hook is used to transition UI states without blocking?",
+    "options": ["useTransition","useEffect","useMemo","useState"],
+    "correctAnswerIndex": 0,
+    "hint": "useTransition enables concurrent rendering transitions."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```jsx\nconst [num,setNum] = useState(2);\nuseEffect(()=>{setNum(num*2)},[]);\nconsole.log(num);\n```",
+    "options": ["2","4","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "Effect runs after render; logs initial 2."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which React feature allows streaming server-rendered HTML?",
+    "options": ["Suspense","Server Components","Streaming SSR","Portals"],
+    "correctAnswerIndex": 2,
+    "hint": "Streaming SSR streams HTML chunks."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which hook is used to synchronize external values with React state?",
+    "options": ["useSyncExternalStore","useEffect","useState","useRef"],
+    "correctAnswerIndex": 0,
+    "hint": "useSyncExternalStore syncs external sources."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which React feature allows profiling performance?",
+    "options": ["Profiler API","StrictMode","Suspense","Error Boundaries"],
+    "correctAnswerIndex": 0,
+    "hint": "Profiler API measures rendering performance."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "What will be the output?\n\n```jsx\nconst [flag,setFlag] = useState(false);\nuseEffect(()=>{setFlag(!flag)},[]);\nconsole.log(flag);\n```",
+    "options": ["false","true","Error","undefined"],
+    "correctAnswerIndex": 0,
+    "hint": "Effect runs after render; logs initial false."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which hook is used to optimize rendering by skipping updates?",
+    "options": ["useMemo","useCallback","useEffect","useState"],
+    "correctAnswerIndex": 1,
+    "hint": "useCallback memoizes functions."
+  },
+  {
+    "subject": "react",
+    "difficulty": "hard",
+    "subLevel": "II",
+    "question": "Which React feature allows concurrent rendering of multiple roots?",
+    "options": ["Concurrent Rendering","Automatic Batching","Portals","StrictMode"],
+    "correctAnswerIndex": 3,
+    "hint": "Concurrent rendering supports multiple roots."
+  }
+]

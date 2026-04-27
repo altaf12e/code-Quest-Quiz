@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which C++ feature allows partial specialization of templates?",
+    "options": ["Macros","Inheritance","Partial template specialization","Virtual functions"],
+    "correctAnswerIndex": 2,
+    "hint": "Partial specialization customizes templates for specific cases."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main(){\n  int x = 10;\n  cout << x/3;\n}\n```",
+    "options": ["3","3.33","Error","null"],
+    "correctAnswerIndex": 0,
+    "hint": "Integer division truncates result to 3."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which STL container provides constant-time insertion/removal at both ends and random access?",
+    "options": ["vector","deque","list","stack"],
+    "correctAnswerIndex": 1,
+    "hint": "deque supports both ends and random access."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which operator cannot be overloaded in C++?",
+    "options": ["+","->","::","[]"],
+    "correctAnswerIndex": 2,
+    "hint": "Scope resolution (::) cannot be overloaded."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main(){\n  string s = \"abc\";\n  cout << s[1];\n}\n```",
+    "options": ["a","b","c","Error"],
+    "correctAnswerIndex": 1,
+    "hint": "Index 1 is 'b'."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which C++11 feature allows thread-safe lazy initialization?",
+    "options": ["mutex","atomic","future","call_once"],
+    "correctAnswerIndex": 3,
+    "hint": "call_once ensures initialization runs once safely."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which STL container is implemented as a hash table?",
+    "options": ["map","unordered_map","set","deque"],
+    "correctAnswerIndex": 1,
+    "hint": "unordered_map uses hashing."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main(){\n  int arr[2] = {5};\n  cout << arr[1];\n}\n```",
+    "options": ["0","5","Error","Garbage"],
+    "correctAnswerIndex": 0,
+    "hint": "Uninitialized int defaults to 0."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which smart pointer breaks cyclic references?",
+    "options": ["unique_ptr","shared_ptr","weak_ptr","auto_ptr"],
+    "correctAnswerIndex": 2,
+    "hint": "weak_ptr avoids cycles with shared_ptr."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which C++ feature allows compile-time constant expressions?",
+    "options": ["constexpr","inline","static","volatile"],
+    "correctAnswerIndex": 0,
+    "hint": "constexpr evaluates at compile time."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main(){\n  const char* p = \"XYZ\";\n  cout << *(p+2);\n}\n```",
+    "options": ["X","Y","Error","Z"],
+    "correctAnswerIndex": 3,
+    "hint": "Pointer arithmetic moves to 'Z'."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which STL container provides unique sorted elements?",
+    "options": ["vector","list","deque","set"],
+    "correctAnswerIndex": 3,
+    "hint": "set stores unique sorted elements."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which C++ feature allows runtime polymorphism?",
+    "options": ["Templates","Inheritance","Virtual functions","Macros"],
+    "correctAnswerIndex": 2,
+    "hint": "Virtual functions enable runtime polymorphism."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "Which STL container provides LIFO behavior?",
+    "options": ["queue","stack","deque","list"],
+    "correctAnswerIndex": 1,
+    "hint": "stack is LIFO."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "III",
+    "question": "What will be printed?\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main(){\n  cout << (nullptr == 0);\n}\n```",
+    "options": ["true","false","Error","null"],
+    "correctAnswerIndex": 0,
+    "hint": "nullptr equals 0 in comparisons."
+  }
+]

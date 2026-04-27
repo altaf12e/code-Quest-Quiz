@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to create a class?",
+    "options": ["class", "object", "struct", "define"],
+    "correctAnswerIndex": 0,
+    "hint": "class introduces a new class."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to inherit from another class?",
+    "options": ["extends", "inherits", "super", "base"],
+    "correctAnswerIndex": 0,
+    "hint": "extends is used for inheritance."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword calls the parent class constructor?",
+    "options": ["super", "base", "parent", "constructor"],
+    "correctAnswerIndex": 0,
+    "hint": "super() calls parent constructor."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which method is used to check if an array includes a value?",
+    "options": ["contains()", "includes()", "has()", "in()"],
+    "correctAnswerIndex": 1,
+    "hint": "includes() checks membership."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which method returns the index of the first occurrence of a value?",
+    "options": ["findIndex()", "indexOf()", "search()", "position()"],
+    "correctAnswerIndex": 1,
+    "hint": "indexOf() returns position."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which method returns the index of the last occurrence of a value?",
+    "options": ["lastIndexOf()", "indexOf()", "findLast()", "search()"],
+    "correctAnswerIndex": 0,
+    "hint": "lastIndexOf() finds last match."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which method converts a string to an integer?",
+    "options": ["parseInt()", "Number()", "toInt()", "int()"],
+    "correctAnswerIndex": 0,
+    "hint": "parseInt() parses integers."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which method converts a string to a floating-point number?",
+    "options": ["parseFloat()", "Number()", "toFloat()", "float()"],
+    "correctAnswerIndex": 0,
+    "hint": "parseFloat() parses floats."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which object is used for mathematical operations?",
+    "options": ["Math", "Number", "Calc", "Arithmetic"],
+    "correctAnswerIndex": 0,
+    "hint": "Math provides constants and functions."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which method returns the current date and time?",
+    "options": ["Date.now()", "new Date()", "getDate()", "time()"],
+    "correctAnswerIndex": 1,
+    "hint": "new Date() creates date object."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to define asynchronous functions?",
+    "options": ["async", "await", "promise", "defer"],
+    "correctAnswerIndex": 0,
+    "hint": "async defines async functions."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which keyword is used to wait for asynchronous results?",
+    "options": ["wait", "await", "pause", "async"],
+    "correctAnswerIndex": 1,
+    "hint": "await pauses until result is ready."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which object is used to handle asynchronous operations?",
+    "options": ["Promise", "Future", "Async", "Task"],
+    "correctAnswerIndex": 0,
+    "hint": "Promise represents async results."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which method executes code after a delay?",
+    "options": ["setTimeout()", "setInterval()", "delay()", "wait()"],
+    "correctAnswerIndex": 0,
+    "hint": "setTimeout() runs code after delay."
+  },
+  {
+    "subject": "javascript",
+    "difficulty": "easy",
+    "subLevel": "III",
+    "question": "Which method repeatedly executes code at intervals?",
+    "options": ["setTimeout()", "setInterval()", "repeat()", "loop()"],
+    "correctAnswerIndex": 1,
+    "hint": "setInterval() runs code repeatedly."
+  }
+]

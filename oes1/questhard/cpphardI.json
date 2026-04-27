@@ -1,0 +1,137 @@
+[
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which C++ feature allows functions to accept arguments of different types using a single definition?",
+    "options": ["Inheritance","Polymorphism","Templates","Macros"],
+    "correctAnswerIndex": 2,
+    "hint": "Templates enable generic programming."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main(){\n  int x = 5;\n  cout << x++ + ++x;\n}\n```",
+    "options": ["10","11","12","Error"],
+    "correctAnswerIndex": 2,
+    "hint": "x++ (5) + ++x (7) = 12."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which C++ operator cannot be overloaded?",
+    "options": ["+","=","[]","::"],
+    "correctAnswerIndex": 3,
+    "hint": "Scope resolution (::) cannot be overloaded."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which STL container provides constant-time insertion and deletion at both ends?",
+    "options": ["vector","list","stack","deque"],
+    "correctAnswerIndex": 3,
+    "hint": "deque supports fast insertion/removal at both ends."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main(){\n  string s = \"Hello\";\n  s.append(\"World\");\n  cout << s;\n}\n```",
+    "options": ["Hello","World","Error","HelloWorld"],
+    "correctAnswerIndex": 3,
+    "hint": "append modifies the string."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which C++ keyword is used to prevent inheritance?",
+    "options": ["static","final","sealed","private"],
+    "correctAnswerIndex": 1,
+    "hint": "final prevents class inheritance."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which C++11 feature allows functions to return multiple values easily?",
+    "options": ["pair","tuple","initializer_list","array"],
+    "correctAnswerIndex": 1,
+    "hint": "tuple can hold multiple values of different types."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main(){\n  int arr[3] = {};\n  cout << arr[0];\n}\n```",
+    "options": ["0","Error","Garbage","null"],
+    "correctAnswerIndex": 0,
+    "hint": "Default initialization sets ints to 0."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which C++ feature ensures only one instance of a class exists?",
+    "options": ["Adapter","Singleton","Prototype","Factory"],
+    "correctAnswerIndex": 1,
+    "hint": "Singleton restricts instantiation to one object."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which C++11 feature allows lambda functions to capture variables by value or reference?",
+    "options": ["auto","decltype","lambda capture","bind"],
+    "correctAnswerIndex": 2,
+    "hint": "Lambda capture syntax [=] or [&] controls capture."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main(){\n  const char* p = \"C++\";\n  cout << *p;\n}\n```",
+    "options": ["C","++","Error","null"],
+    "correctAnswerIndex": 0,
+    "hint": "Pointer dereference prints first character."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which C++ feature allows runtime type identification?",
+    "options": ["Templates","RTTI","Macros","Overloading"],
+    "correctAnswerIndex": 1,
+    "hint": "RTTI enables dynamic_cast and typeid."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which STL container is implemented as a balanced binary tree?",
+    "options": ["unordered_map","map","vector","deque"],
+    "correctAnswerIndex": 1,
+    "hint": "map is typically a Red-Black tree."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "Which C++11 feature allows moving resources instead of copying?",
+    "options": ["smart pointers","rvalue references","auto","constexpr"],
+    "correctAnswerIndex": 1,
+    "hint": "rvalue references enable move semantics."
+  },
+  {
+    "subject": "cpp",
+    "difficulty": "hard",
+    "subLevel": "I",
+    "question": "What will be printed?\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main(){\n  int* p = nullptr;\n  cout << (p == 0);\n}\n```",
+    "options": ["true","false","Error","null"],
+    "correctAnswerIndex": 0,
+    "hint": "nullptr equals 0 in comparisons."
+  }
+]
