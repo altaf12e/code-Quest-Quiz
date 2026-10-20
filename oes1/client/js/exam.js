@@ -47,12 +47,7 @@ function loadUserData() {
 }
 
 async function initializeExam() {
-    const proctoringStarted = await startProctoring();
-    if (!proctoringStarted) {
-        alert('Exam requires camera access and fullscreen mode.');
-        window.location.href = 'dashboard.html';
-        return;
-    }
+    await startProctoring();
     
     document.getElementById('examSubject').textContent = capitalizeFirst(examData.subject.replace('-', ' '));
     const difficultyText = examData.subLevel ? 
@@ -62,8 +57,15 @@ async function initializeExam() {
     
     try {
         const questionLimit = examData.difficulty === 'marathon' ? 30 : 10;
-        const subLevelParam = examData.subLevel ? `&subLevel=${examData.subLevel}` : '';
-        const data = await api.get(`/exam/questions?subject=${examData.subject}&difficulty=${examData.difficulty}${subLevelParam}&limit=${questionLimit}`);
+        const subLevelParam = (examData.subLevel && examData.subLevel !== 'undefined' && examData.subLevel !== 'null') ? `&subLevel=${examData.subLevel}` : '';
+        const subject = examData.subject || 'java';
+        const difficulty = examData.difficulty || 'medium';
+        const data = await api.get(`/exam/questions?subject=${subject}&difficulty=${difficulty}${subLevelParam}&limit=${questionLimit}`);
+        
+        if (!data || !data.questions || data.questions.length === 0) {
+            throw new Error('No questions found for this configuration');
+        }
+
         questions = data.questions;
         sections = data.sections || {};
         
@@ -87,7 +89,8 @@ async function initializeExam() {
         attachAutoSubmitListeners();
     } catch (error) {
         console.error('Error loading questions:', error);
-        alert('Failed to load questions. Redirecting to dashboard...');
+        stopProctoring();
+        alert('Failed to load questions: ' + (error.message || 'Server error') + '. Redirecting to dashboard...');
         window.location.href = 'dashboard.html';
     }
 }
@@ -431,6 +434,7 @@ function attachEventListeners() {
     const quitBtn = document.getElementById('quitExam');
     quitBtn.addEventListener('click', () => {
         if (confirm('Are you sure you want to quit? Progress will be lost.')) {
+            stopProctoring();
             window.location.href = 'dashboard.html';
         }
     });

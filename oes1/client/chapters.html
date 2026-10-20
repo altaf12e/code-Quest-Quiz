@@ -45,7 +45,6 @@
                 <span class="progress-label">Overall Progress</span>
             </div>
 
-            <p style="text-align: center; color: #888; font-size: 1.1rem; margin-bottom: 1rem;">Coming Soon...</p>
             <div class="chapters-grid" id="chaptersGrid">
                 <!-- Chapters will be loaded here -->
             </div>
@@ -57,7 +56,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h3 id="modalChapterTitle">Chapter Details</h3>
-                <button class="modal-close" id="modalClose">&times;</button>
+                <button class="modal-close" id="modalClose" onclick="closeChapterModal()">&times;</button>
             </div>
             <div class="modal-body">
                 <p id="modalChapterDescription"></p>
@@ -85,14 +84,14 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-secondary" id="modalCancel">Cancel</button>
-                <button class="btn btn-primary" id="modalStart">Start Chapter</button>
+                <button class="btn btn-secondary" id="modalCancel" onclick="closeChapterModal()">Cancel</button>
+                <button class="btn btn-primary" id="modalStart" onclick="startChapter()">Start Chapter</button>
             </div>
         </div>
     </div>
 
-    <script src="js/config.js"></script>
-    <script src="js/game.js"></script>
-    <script src="js/chapters.js"></script>
+    <script src="js/config.js?v=2.2"></script>
+    <script src="js/game.js?v=2.2"></script>
+    <script src="js/chapters.js?v=2.2"></script>
 </body>
 </html>

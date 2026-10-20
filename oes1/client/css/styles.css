@@ -3277,24 +3277,65 @@ body {
     margin-top: 1rem;
     padding-top: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+    align-items: stretch;
+}
+
+.start-quiz-btn {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: #ffffff;
+    border: none;
+    padding: 0.7rem 0.4rem;
+    border-radius: 10px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
+    transition: all 0.25s ease;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.start-quiz-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(16, 185, 129, 0.4);
+    background: linear-gradient(135deg, #059669, #047857);
 }
 
 .learning-path-btn {
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    color: var(--white);
-    border: 2px solid rgba(139, 92, 246, 0.3);
-    padding: 0.8rem 1.5rem;
-    border-radius: 12px;
-    font-size: 0.9rem;
+    background: rgba(139, 92, 246, 0.15);
+    color: #e0e7ff;
+    border: 1.5px solid rgba(139, 92, 246, 0.4);
+    padding: 0.7rem 0.4rem;
+    border-radius: 10px;
+    font-size: 0.88rem;
     font-weight: 600;
     cursor: pointer;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.35rem;
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15);
+    transition: all 0.25s ease;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.learning-path-btn:hover {
+    background: rgba(139, 92, 246, 0.3);
+    border-color: rgba(139, 92, 246, 0.8);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(139, 92, 246, 0.35);
+    color: #ffffff;
 }
 
 
@@ -5645,4 +5686,200 @@ body {
     .diff-reward {
         font-size: 0.75rem;
     }
+}
+
+/* ==========================================================
+   🔒 Exam Screen Lock & Anti-Cheat Styles
+   ========================================================== */
+
+/* Navbar indicator */
+.screen-lock-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid rgba(16, 185, 129, 0.4);
+    padding: 0.35rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #6ee7b7;
+    margin-left: 0.8rem;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
+}
+
+.lock-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #10b981;
+    display: inline-block;
+    box-shadow: 0 0 8px #10b981;
+    animation: lockDotPulse 1.5s infinite;
+}
+
+@keyframes lockDotPulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.8); }
+}
+
+/* Screen Lock Modal Overlay */
+.screen-lock-overlay {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(5, 8, 18, 0.98);
+    backdrop-filter: blur(25px);
+    z-index: 2147483647;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    animation: lockFadeIn 0.3s ease;
+}
+
+.screen-lock-overlay.hidden {
+    display: none !important;
+}
+
+@keyframes lockFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.screen-lock-modal {
+    background: rgba(15, 23, 42, 0.98);
+    border: 2px solid rgba(239, 68, 68, 0.6);
+    border-radius: 24px;
+    padding: 3rem 2.5rem;
+    max-width: 520px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.8), 0 0 40px rgba(239, 68, 68, 0.35);
+    animation: lockModalPop 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes lockModalPop {
+    from { opacity: 0; transform: scale(0.85); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.lock-icon-glow {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    animation: lockGlowAnim 2s infinite alternate;
+}
+
+@keyframes lockGlowAnim {
+    from { filter: drop-shadow(0 0 10px rgba(239, 68, 68, 0.6)); }
+    to { filter: drop-shadow(0 0 25px rgba(239, 68, 68, 1)); }
+}
+
+.screen-lock-modal h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 0.8rem;
+    background: linear-gradient(135deg, #ef4444, #f59e0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+}
+
+.screen-lock-modal p {
+    color: #cbd5e1;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.lock-alert {
+    background: rgba(239, 68, 68, 0.2);
+    border: 1px solid rgba(239, 68, 68, 0.5);
+    color: #fca5a5;
+    padding: 0.8rem 1.2rem;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.screen-unlock-btn {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    border: none;
+    padding: 1.1rem 2.2rem;
+    border-radius: 14px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    transition: all 0.3s ease;
+    width: 100%;
+    justify-content: center;
+}
+
+.screen-unlock-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(16, 185, 129, 0.6);
+    background: linear-gradient(135deg, #059669, #047857);
+}
+
+/* User Selection Prevention during Exam */
+body.quiz-locked {
+    user-select: none !important;
+    -webkit-user-select: none !important;
+}
+
+/* Toast Notifications */
+.toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 99999999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    pointer-events: none;
+}
+
+.custom-toast {
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    transform: translateX(120%);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    pointer-events: auto;
+}
+
+.custom-toast.toast-show {
+    transform: translateX(0);
+}
+
+.custom-toast.toast-error {
+    border-left: 4px solid #ef4444;
+    color: #fca5a5;
+}
+
+.custom-toast.toast-info {
+    border-left: 4px solid #3b82f6;
+    color: #93c5fd;
+}
+
+.custom-toast.toast-success {
+    border-left: 4px solid #10b981;
+    color: #6ee7b7;
 }

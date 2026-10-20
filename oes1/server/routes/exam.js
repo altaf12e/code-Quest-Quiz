@@ -3,17 +3,41 @@ const router = express.Router();
 const { protect } = require('../middleware/auth');
 const Question = require('../models/Question');
 
-router.get('/questions', protect, async (req, res) => {
+// GET /api/exam/questions - Fetch questions with multi-level fallback
+router.get('/questions', async (req, res) => {
     try {
         const { subject, difficulty, subLevel, limit = 10 } = req.query;
         const questionLimit = parseInt(limit) || 10;
 
         const query = {};
-        if (subject) query.subject = subject;
-        if (difficulty) query.difficulty = difficulty;
-        if (subLevel) query.subLevel = subLevel;
+        if (subject && subject !== 'undefined' && subject !== 'null' && subject.trim() !== '') {
+            query.subject = subject.toLowerCase().trim();
+        }
+        if (difficulty && difficulty !== 'undefined' && difficulty !== 'null' && difficulty !== 'marathon' && difficulty.trim() !== '') {
+            query.difficulty = difficulty.toLowerCase().trim();
+        }
+        if (subLevel && subLevel !== 'undefined' && subLevel !== 'null' && subLevel.trim() !== '') {
+            query.subLevel = subLevel.trim();
+        }
 
         let questions = await Question.find(query).select('_id question options correctAnswer hint xpValue section').lean();
+
+        // Fallback 1: Remove subLevel filter if 0 found
+        if (questions.length === 0 && query.subLevel) {
+            delete query.subLevel;
+            questions = await Question.find(query).select('_id question options correctAnswer hint xpValue section').lean();
+        }
+
+        // Fallback 2: Remove difficulty filter if 0 found (e.g. marathon mode)
+        if (questions.length === 0 && query.difficulty) {
+            delete query.difficulty;
+            questions = await Question.find(query).select('_id question options correctAnswer hint xpValue section').lean();
+        }
+
+        // Fallback 3: Return any questions from DB if subject is empty
+        if (questions.length === 0) {
+            questions = await Question.find({}).limit(questionLimit * 2).select('_id question options correctAnswer hint xpValue section').lean();
+        }
 
         if (questions.length === 0) {
             return res.status(404).json({ 
@@ -92,7 +116,7 @@ function shuffleArray(array) {
     return newArray;
 }
 
-router.post('/check-answer', protect, async (req, res) => {
+router.post('/check-answer', async (req, res) => {
     try {
         const { questionId, selectedAnswer, correctAnswerIndex } = req.body;
 
@@ -121,7 +145,7 @@ router.post('/check-answer', protect, async (req, res) => {
     }
 });
 
-router.get('/hint/:questionId', protect, async (req, res) => {
+router.get('/hint/:questionId', async (req, res) => {
     try {
         let actualQuestionId = req.params.questionId;
         if (actualQuestionId.includes('_')) {

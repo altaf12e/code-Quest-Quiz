@@ -124,7 +124,7 @@
     "options": ["Standard Template Library", "Simple Template List", "Standard Type Library", "System Template List"],
     "correctAnswerIndex": 0,
     "hint": "STL contains containers and algorithms."
-  }
+  },
 {
   "subject": "cpp",
   "difficulty": "easy",

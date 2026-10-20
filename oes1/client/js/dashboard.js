@@ -269,7 +269,7 @@ function attachEventListeners() {
             selectedSubject = card.getAttribute('data-subject');
             
             // Check if learning path button was clicked
-            if (e.target.classList.contains('learning-path-btn')) {
+            if (e.target.closest && e.target.closest('.learning-path-btn')) {
                 e.stopPropagation();
                 window.location.href = `chapters.html?subject=${selectedSubject}`;
                 return;

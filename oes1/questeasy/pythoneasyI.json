@@ -124,7 +124,7 @@
     "options": ["include", "import", "require", "using"],
     "correctAnswerIndex": 1,
     "hint": "import brings in modules."
-  }
+  },
 {
   "subject": "python",
   "difficulty": "easy",

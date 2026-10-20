@@ -20,7 +20,7 @@ const QuizRoomSchema = new mongoose.Schema({
         subject: {
             type: String,
             required: true,
-            enum: ['java', 'cpp', 'python', 'javascript', 'data-structures', 'algorithms']
+            enum: ['java', 'cpp', 'python', 'javascript', 'data-structures', 'algorithms', 'react', 'node', 'sql']
         },
         difficulty: {
             type: String,
@@ -54,11 +54,19 @@ const QuizRoomSchema = new mongoose.Schema({
         },
         username: String,
         avatar: String,
+        isConnected: {
+            type: Boolean,
+            default: true
+        },
         joinedAt: {
             type: Date,
             default: Date.now
         },
         score: {
+            type: Number,
+            default: 0
+        },
+        streak: {
             type: Number,
             default: 0
         },
@@ -114,13 +122,11 @@ QuizRoomSchema.methods.generateRoomCode = function() {
 };
 
 QuizRoomSchema.methods.calculateWinners = function() {
-    const sortedParticipants = this.participants
-        .filter(p => p.answers.length > 0)
-        .sort((a, b) => {
-            if (b.score !== a.score) return b.score - a.score;
-            if (b.correctAnswers !== a.correctAnswers) return b.correctAnswers - a.correctAnswers;
-            return a.timeSpent - b.timeSpent;
-        });
+    const sortedParticipants = [...this.participants].sort((a, b) => {
+        if (b.score !== a.score) return b.score - a.score;
+        if (b.correctAnswers !== a.correctAnswers) return b.correctAnswers - a.correctAnswers;
+        return a.timeSpent - b.timeSpent;
+    });
 
     const winners = [];
     const xpRewards = [200, 150, 100]; // 1st, 2nd, 3rd place rewards
@@ -131,6 +137,7 @@ QuizRoomSchema.methods.calculateWinners = function() {
             position: i + 1,
             user: participant.user,
             username: participant.username,
+            avatar: participant.avatar || '👤',
             score: participant.score,
             xpReward: xpRewards[i]
         });

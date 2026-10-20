@@ -86,6 +86,103 @@ router.delete('/question/:id', protect, adminOnly, async (req, res) => {
     }
 });
 
+// Helper to normalize question object
+function normalizeQuestionPayload(q) {
+    let subject = (q.subject || '').toLowerCase().trim();
+    if (subject === 'nodejs') subject = 'node';
+    if (subject === 'data structures') subject = 'data-structures';
+
+    const difficulty = (q.difficulty || 'easy').toLowerCase().trim();
+    const correctAns = q.correctAnswer !== undefined ? q.correctAnswer : q.correctAnswerIndex;
+
+    return {
+        subject,
+        difficulty,
+        subLevel: q.subLevel || 'I',
+        section: q.section || 'fundamentals',
+        chapter: q.chapter || (difficulty === 'easy' ? 1 : difficulty === 'medium' ? 2 : 3),
+        question: (q.question || '').trim(),
+        options: Array.isArray(q.options) ? q.options.map(opt => String(opt).trim()) : [],
+        correctAnswer: Number(correctAns),
+        hint: (q.hint || 'Think carefully about concepts.').trim(),
+        xpValue: Number(q.xpValue) || (difficulty === 'easy' ? 10 : difficulty === 'medium' ? 25 : 50)
+    };
+}
+
+// Add single question
+router.post('/question', protect, adminOnly, async (req, res) => {
+    try {
+        const payload = normalizeQuestionPayload(req.body);
+        
+        if (!payload.subject || !payload.question) {
+            return res.status(400).json({ success: false, message: 'Subject and Question text are required' });
+        }
+        if (!payload.options || payload.options.length !== 4) {
+            return res.status(400).json({ success: false, message: 'Question must have exactly 4 options' });
+        }
+        if (isNaN(payload.correctAnswer) || payload.correctAnswer < 0 || payload.correctAnswer > 3) {
+            return res.status(400).json({ success: false, message: 'Correct answer index must be 0, 1, 2, or 3' });
+        }
+
+        const newQuestion = await Question.create(payload);
+        res.json({ 
+            success: true, 
+            message: 'Question added successfully', 
+            question: newQuestion 
+        });
+    } catch (error) {
+        console.error('Error adding question:', error);
+        res.status(500).json({ success: false, message: error.message });
+    }
+});
+
+// Bulk add multiple questions
+router.post('/questions/bulk', protect, adminOnly, async (req, res) => {
+    try {
+        const { questions } = req.body;
+        if (!Array.isArray(questions) || questions.length === 0) {
+            return res.status(400).json({ success: false, message: 'A non-empty questions array is required' });
+        }
+
+        const normalizedQuestions = [];
+        for (let i = 0; i < questions.length; i++) {
+            const raw = questions[i];
+            const q = normalizeQuestionPayload(raw);
+
+            if (!q.subject || !q.question) {
+                return res.status(400).json({ 
+                    success: false, 
+                    message: `Question at item #${i + 1} is missing subject or question text` 
+                });
+            }
+            if (!q.options || q.options.length !== 4) {
+                return res.status(400).json({ 
+                    success: false, 
+                    message: `Question at item #${i + 1} ("${q.question.substring(0, 30)}...") must have exactly 4 options` 
+                });
+            }
+            if (isNaN(q.correctAnswer) || q.correctAnswer < 0 || q.correctAnswer > 3) {
+                return res.status(400).json({ 
+                    success: false, 
+                    message: `Question at item #${i + 1} has an invalid correctAnswer (must be 0, 1, 2, or 3)` 
+                });
+            }
+
+            normalizedQuestions.push(q);
+        }
+
+        const inserted = await Question.insertMany(normalizedQuestions, { ordered: false });
+        res.json({ 
+            success: true, 
+            count: inserted.length, 
+            message: `Successfully added ${inserted.length} questions!` 
+        });
+    } catch (error) {
+        console.error('Error bulk adding questions:', error);
+        res.status(500).json({ success: false, message: error.message });
+    }
+});
+
 // Toggle admin status
 router.put('/user/:id/admin', protect, adminOnly, async (req, res) => {
     try {

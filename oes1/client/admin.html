@@ -131,6 +131,155 @@
         </main>
     </div>
 
+    <!-- Add Question Modal -->
+    <div class="admin-modal-overlay" id="questionModalOverlay">
+        <div class="admin-modal-box">
+            <div class="admin-modal-header">
+                <h3><span>➕</span> Add Questions to CodeQuest</h3>
+                <button class="admin-modal-close" id="closeQuestionModalBtn">&times;</button>
+            </div>
+
+            <div class="admin-modal-tabs">
+                <button class="modal-tab-btn active" id="tabBulkBtn">⚡ Add Multiple Questions (Bulk JSON)</button>
+                <button class="modal-tab-btn" id="tabSingleBtn">📝 Single Question Form</button>
+            </div>
+
+            <!-- Tab 1: Bulk Add -->
+            <div class="modal-tab-content active" id="bulkTabContent">
+                <div class="bulk-actions-bar">
+                    <span class="bulk-status-badge" id="bulkCountStatus">Paste an array of questions or load a sample</span>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <button type="button" class="btn-secondary-alt" id="loadSampleJsonBtn" style="padding: 0.4rem 0.8rem; font-size: 0.85rem;">📋 Load Sample Template</button>
+                        <label class="btn-secondary-alt" style="padding: 0.4rem 0.8rem; font-size: 0.85rem; cursor: pointer; margin: 0;">
+                            📂 Upload JSON File
+                            <input type="file" id="bulkFileInput" accept=".json" style="display: none;">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <textarea class="form-control code-textarea" id="bulkQuestionsInput" placeholder='[
+  {
+    "subject": "python",
+    "difficulty": "easy",
+    "subLevel": "I",
+    "question": "Which function prints output to the console?",
+    "options": ["echo()", "print()", "printf()", "console.log()"],
+    "correctAnswer": 1,
+    "hint": "Python uses print()."
+  }
+]'></textarea>
+                </div>
+
+                <div class="modal-footer-btns">
+                    <button type="button" class="btn-secondary-alt" id="cancelBulkBtn">Cancel</button>
+                    <button type="button" class="btn-success-alt" id="submitBulkBtn">
+                        <span>🚀</span> Import All Questions
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab 2: Single Add Form -->
+            <div class="modal-tab-content" id="singleTabContent">
+                <form id="singleQuestionForm">
+                    <div class="form-row three-col">
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <select class="form-control" id="singleSubject" required>
+                                <option value="java">Java</option>
+                                <option value="cpp">C++</option>
+                                <option value="python">Python</option>
+                                <option value="javascript">JavaScript</option>
+                                <option value="data-structures">Data Structures</option>
+                                <option value="algorithms">Algorithms</option>
+                                <option value="react">React</option>
+                                <option value="node">Node.js</option>
+                                <option value="sql">SQL</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Difficulty</label>
+                            <select class="form-control" id="singleDifficulty" required>
+                                <option value="easy">Easy (+10 XP)</option>
+                                <option value="medium">Medium (+25 XP)</option>
+                                <option value="hard">Hard (+50 XP)</option>
+                                <option value="marathon">Marathon (+100 XP)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Sub-Level</label>
+                            <select class="form-control" id="singleSubLevel">
+                                <option value="I">Level I</option>
+                                <option value="II">Level II</option>
+                                <option value="III">Level III</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Question Text</label>
+                        <textarea class="form-control" id="singleQuestionText" rows="3" placeholder="Enter question description or code snippet..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Options (4 Required)</label>
+                        <div class="options-grid">
+                            <div class="option-input-wrap">
+                                <span class="option-badge">A</span>
+                                <input type="text" class="form-control single-option" placeholder="Option 1" required>
+                            </div>
+                            <div class="option-input-wrap">
+                                <span class="option-badge">B</span>
+                                <input type="text" class="form-control single-option" placeholder="Option 2" required>
+                            </div>
+                            <div class="option-input-wrap">
+                                <span class="option-badge">C</span>
+                                <input type="text" class="form-control single-option" placeholder="Option 3" required>
+                            </div>
+                            <div class="option-input-wrap">
+                                <span class="option-badge">D</span>
+                                <input type="text" class="form-control single-option" placeholder="Option 4" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Correct Answer</label>
+                            <select class="form-control" id="singleCorrectAnswer" required>
+                                <option value="0">Option A</option>
+                                <option value="1">Option B</option>
+                                <option value="2">Option C</option>
+                                <option value="3">Option D</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Section</label>
+                            <select class="form-control" id="singleSection">
+                                <option value="fundamentals">Fundamentals</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                                <option value="practical">Practical</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Hint</label>
+                        <input type="text" class="form-control" id="singleHint" placeholder="Helpful hint for learners" required>
+                    </div>
+
+                    <div class="modal-footer-btns">
+                        <button type="button" class="btn-secondary-alt" id="cancelSingleBtn">Cancel</button>
+                        <button type="submit" class="btn-success-alt">
+                            <span>💾</span> Save Question
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <script src="js/config.js"></script>
     <script src="js/admin.js"></script>
 </body>

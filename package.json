@@ -1,0 +1,13 @@
+{
+  "name": "codequest-workspace",
+  "version": "1.0.0",
+  "description": "CodeQuest Platform Launcher from Root Workspace",
+  "main": "run.js",
+  "scripts": {
+    "start": "node run.js",
+    "dev": "node run.js"
+  },
+  "author": "",
+  "license": "MIT"
+}
+

@@ -187,8 +187,17 @@ function showChapterModal(chapter) {
     playSound('select');
 }
 
+function closeChapterModal() {
+    const modal = document.getElementById('chapterModal');
+    if (modal) modal.classList.remove('active');
+}
+
 function startChapter() {
-    if (!selectedChapter) return;
+    console.log('startChapter called, selectedChapter:', selectedChapter);
+    if (!selectedChapter) {
+        alert('Please select a chapter first.');
+        return;
+    }
 
     localStorage.setItem('currentChapter', JSON.stringify({
         subject: currentSubject,
@@ -196,28 +205,41 @@ function startChapter() {
         startTime: Date.now()
     }));
 
-    playSound('success');
+    if (typeof playSound === 'function') playSound('success');
     window.location.href = 'chapter-quiz.html';
 }
 
+// Make available globally for inline onclick
+window.closeChapterModal = closeChapterModal;
+window.startChapter = startChapter;
+
 function attachEventListeners() {
-    document.getElementById('logoutBtn').addEventListener('click', () => {
-        if (confirm('Are you sure you want to logout?')) {
-            localStorage.removeItem('token');
-            localStorage.removeItem('userData');
-            window.location.href = 'index.html';
-        }
-    });
+    const logoutBtn = document.getElementById('logoutBtn');
+    if (logoutBtn) {
+        logoutBtn.addEventListener('click', () => {
+            if (confirm('Are you sure you want to logout?')) {
+                localStorage.removeItem('token');
+                localStorage.removeItem('userData');
+                window.location.href = 'index.html';
+            }
+        });
+    }
 
-    document.getElementById('modalClose').addEventListener('click', () => {
-        document.getElementById('chapterModal').classList.remove('active');
-    });
+    const modalClose = document.getElementById('modalClose');
+    if (modalClose) modalClose.addEventListener('click', closeChapterModal);
 
-    document.getElementById('modalCancel').addEventListener('click', () => {
-        document.getElementById('chapterModal').classList.remove('active');
-    });
+    const modalCancel = document.getElementById('modalCancel');
+    if (modalCancel) modalCancel.addEventListener('click', closeChapterModal);
 
-    document.getElementById('modalStart').addEventListener('click', startChapter);
+    const modalStart = document.getElementById('modalStart');
+    if (modalStart) modalStart.addEventListener('click', startChapter);
+
+    const modalOverlay = document.getElementById('chapterModal');
+    if (modalOverlay) {
+        modalOverlay.addEventListener('click', (e) => {
+            if (e.target === modalOverlay) closeChapterModal();
+        });
+    }
 }
 
 function showToast(message, type = 'info') {

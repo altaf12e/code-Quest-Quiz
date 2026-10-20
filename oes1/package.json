@@ -1,0 +1,13 @@
+{
+  "name": "codequest-platform",
+  "version": "1.0.0",
+  "description": "CodeQuest Gamified Platform Launcher",
+  "main": "run.js",
+  "scripts": {
+    "start": "node run.js",
+    "dev": "node run.js"
+  },
+  "author": "",
+  "license": "MIT"
+}
+

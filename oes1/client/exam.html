@@ -4,14 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exam - CodeQuest</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=4.0">
+    <script>
+        // Intercept native browser alert to prevent disruptive popups
+        window.alert = function(msg) {
+            console.warn('⚠️ Native alert suppressed by Lockdown Engine:', msg);
+        };
+    </script>
+    <style>
+        /* Strict Lockdown Styles - guaranteed to apply immediately */
+        .screen-lock-overlay {
+            position: fixed !important;
+            inset: 0 !important;
+            width: 100vw !important;
+            height: 100vh !important;
+            background: rgba(5, 8, 18, 0.98) !important;
+            backdrop-filter: blur(25px) !important;
+            z-index: 2147483647 !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            padding: 1.5rem !important;
+        }
+        .screen-lock-overlay.hidden {
+            display: none !important;
+        }
+        .screen-lock-modal {
+            background: rgba(15, 23, 42, 0.99) !important;
+            border: 2px solid rgba(239, 68, 68, 0.8) !important;
+            border-radius: 24px !important;
+            padding: 3rem 2.5rem !important;
+            max-width: 520px !important;
+            width: 100% !important;
+            text-align: center !important;
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.9), 0 0 50px rgba(239, 68, 68, 0.5) !important;
+        }
+        .lock-icon-glow {
+            font-size: 4rem !important;
+            margin-bottom: 1rem !important;
+            display: inline-block !important;
+        }
+        .screen-lock-modal h2 {
+            font-size: 2rem !important;
+            font-weight: 900 !important;
+            margin-bottom: 0.8rem !important;
+            background: linear-gradient(135deg, #ef4444, #f59e0b) !important;
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+        }
+        .screen-lock-modal p {
+            color: #cbd5e1 !important;
+            font-size: 1rem !important;
+            line-height: 1.6 !important;
+            margin-bottom: 1.5rem !important;
+        }
+        .lock-alert {
+            background: rgba(239, 68, 68, 0.25) !important;
+            border: 1px solid rgba(239, 68, 68, 0.6) !important;
+            color: #fca5a5 !important;
+            padding: 0.9rem 1.2rem !important;
+            border-radius: 12px !important;
+            font-size: 0.95rem !important;
+            font-weight: 700 !important;
+            margin-bottom: 2rem !important;
+        }
+        .screen-unlock-btn {
+            background: linear-gradient(135deg, #10b981, #059669) !important;
+            color: white !important;
+            border: none !important;
+            padding: 1.1rem 2.2rem !important;
+            border-radius: 14px !important;
+            font-size: 1.15rem !important;
+            font-weight: 800 !important;
+            cursor: pointer !important;
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.5) !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            gap: 0.6rem !important;
+            width: 100% !important;
+            transition: all 0.3s ease !important;
+        }
+        .screen-unlock-btn:hover {
+            transform: scale(1.02) !important;
+            box-shadow: 0 15px 40px rgba(16, 185, 129, 0.7) !important;
+        }
+    </style>
 </head>
 <body class="exam-page">
+    <!-- Mandatory Screen Lock & Proctoring Modal -->
+    <div class="screen-lock-overlay" id="screenLockOverlay">
+        <div class="screen-lock-modal">
+            <div class="lock-icon-glow">🔒</div>
+            <h2 id="lockModalTitle">EXAM SCREEN LOCKED</h2>
+            <p id="lockModalDesc">This quest exam is conducted in a secure locked environment. All other tabs, windows, and navigation are strictly disabled.</p>
+            <div class="lock-alert" id="lockAlertText">🔒 Click below to lock your screen into Fullscreen Exam Mode.</div>
+            <button class="screen-unlock-btn" id="lockModalBtn" onclick="reEnterFullscreen()">
+                <span class="unlock-btn-icon">🔒</span> Lock Screen & Start Exam
+            </button>
+        </div>
+    </div>
+
     <div class="exam-navbar">
         <div class="nav-left">
             <div class="logo-small">⚔️</div>
             <span class="nav-brand">CodeQuest</span>
-
+            <span class="screen-lock-indicator"><span class="lock-dot"></span> 🔒 Screen Locked</span>
         </div>
         <div class="nav-center">
             <div class="timer-container" id="timerContainer">
@@ -20,7 +118,6 @@
             </div>
         </div>
         <div class="nav-right">
-
             <button class="btn btn-danger btn-small" id="quitExam">Exit Quest</button>
         </div>
     </div>
@@ -385,10 +482,10 @@
         </div>
     </div>
 
-    <script src="js/config.js"></script>
-    <script src="js/proctoring.js"></script>
-    <script src="js/game.js"></script>
-    <script src="js/exam.js"></script>
+    <script src="js/config.js?v=4.0"></script>
+    <script src="js/proctoring.js?v=4.0"></script>
+    <script src="js/game.js?v=4.0"></script>
+    <script src="js/exam.js?v=4.0"></script>
 
     <!-- Floating Camera Widget -->
     <div id="cameraWidget" style="position:fixed;bottom:20px;right:20px;z-index:9999;cursor:move;user-select:none;">
@@ -413,5 +510,8 @@
         });
         document.addEventListener('mouseup', () => dragging = false);
     </script>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="toast-container"></div>
 </body>
 </html>

@@ -8,6 +8,7 @@
   "correctAnswerIndex": 0,
   "hint": "System.exit() ends the program."
 }
+  ,
   {
     "subject": "java",
     "difficulty": "easy",

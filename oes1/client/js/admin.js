@@ -15,9 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, 100);
     
-    document.getElementById('addQuestionBtn').addEventListener('click', () => {
-        alert('Add question feature coming soon!');
-    });
+    setupQuestionModal();
 });
 
 function setupNavigation() {
@@ -269,5 +267,212 @@ async function toggleAdmin(userId, isCurrentlyAdmin) {
         } catch (error) {
             alert('Error updating admin status');
         }
+    }
+}
+
+// ==========================================
+// Question Creation & Bulk Import Logic
+// ==========================================
+function setupQuestionModal() {
+    const overlay = document.getElementById('questionModalOverlay');
+    const openBtn = document.getElementById('addQuestionBtn');
+    const closeBtn = document.getElementById('closeQuestionModalBtn');
+    const cancelBulkBtn = document.getElementById('cancelBulkBtn');
+    const cancelSingleBtn = document.getElementById('cancelSingleBtn');
+    const tabBulkBtn = document.getElementById('tabBulkBtn');
+    const tabSingleBtn = document.getElementById('tabSingleBtn');
+    const bulkTabContent = document.getElementById('bulkTabContent');
+    const singleTabContent = document.getElementById('singleTabContent');
+    const loadSampleBtn = document.getElementById('loadSampleJsonBtn');
+    const bulkFileInput = document.getElementById('bulkFileInput');
+    const bulkTextarea = document.getElementById('bulkQuestionsInput');
+    const bulkStatus = document.getElementById('bulkCountStatus');
+    const submitBulkBtn = document.getElementById('submitBulkBtn');
+    const singleForm = document.getElementById('singleQuestionForm');
+
+    function openModal() {
+        overlay.classList.add('active');
+    }
+
+    function closeModal() {
+        overlay.classList.remove('active');
+    }
+
+    if (openBtn) openBtn.addEventListener('click', openModal);
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (cancelBulkBtn) cancelBulkBtn.addEventListener('click', closeModal);
+    if (cancelSingleBtn) cancelSingleBtn.addEventListener('click', closeModal);
+
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) closeModal();
+    });
+
+    // Tab switching
+    tabBulkBtn.addEventListener('click', () => {
+        tabBulkBtn.classList.add('active');
+        tabSingleBtn.classList.remove('active');
+        bulkTabContent.classList.add('active');
+        singleTabContent.classList.remove('active');
+    });
+
+    tabSingleBtn.addEventListener('click', () => {
+        tabSingleBtn.classList.add('active');
+        tabBulkBtn.classList.remove('active');
+        singleTabContent.classList.add('active');
+        bulkTabContent.classList.remove('active');
+    });
+
+    // Sample JSON template
+    const sampleQuestions = [
+        {
+            "subject": "python",
+            "difficulty": "easy",
+            "subLevel": "I",
+            "question": "Which keyword is used to create a function in Python?",
+            "options": ["func", "def", "function", "lambda"],
+            "correctAnswer": 1,
+            "hint": "def stands for define."
+        },
+        {
+            "subject": "javascript",
+            "difficulty": "easy",
+            "subLevel": "I",
+            "question": "Which symbol is used for strict equality in JavaScript?",
+            "options": ["==", "=", "===", "!=="],
+            "correctAnswer": 2,
+            "hint": "Three equals signs check both value and type."
+        },
+        {
+            "subject": "java",
+            "difficulty": "easy",
+            "subLevel": "I",
+            "question": "Which data type is used to store true or false in Java?",
+            "options": ["bool", "boolean", "BooleanVal", "bit"],
+            "correctAnswer": 1,
+            "hint": "Java uses the full word boolean."
+        }
+    ];
+
+    if (loadSampleBtn) {
+        loadSampleBtn.addEventListener('click', () => {
+            bulkTextarea.value = JSON.stringify(sampleQuestions, null, 2);
+            validateBulkInput();
+        });
+    }
+
+    // File upload
+    if (bulkFileInput) {
+        bulkFileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = (event) => {
+                bulkTextarea.value = event.target.result;
+                validateBulkInput();
+            };
+            reader.readAsText(file);
+        });
+    }
+
+    // Real-time counter
+    function validateBulkInput() {
+        const text = bulkTextarea.value.trim();
+        if (!text) {
+            bulkStatus.textContent = 'Paste an array of questions or load a sample';
+            bulkStatus.style.color = '#94a3b8';
+            return null;
+        }
+        try {
+            const parsed = JSON.parse(text);
+            const arr = Array.isArray(parsed) ? parsed : [parsed];
+            bulkStatus.textContent = `✅ Ready to import ${arr.length} question${arr.length > 1 ? 's' : ''}`;
+            bulkStatus.style.color = '#10b981';
+            return arr;
+        } catch (err) {
+            bulkStatus.textContent = '⚠️ Invalid JSON syntax: ' + err.message;
+            bulkStatus.style.color = '#ef4444';
+            return null;
+        }
+    }
+
+    if (bulkTextarea) {
+        bulkTextarea.addEventListener('input', validateBulkInput);
+    }
+
+    // Submit Bulk Questions
+    if (submitBulkBtn) {
+        submitBulkBtn.addEventListener('click', async () => {
+            const questions = validateBulkInput();
+            if (!questions || questions.length === 0) {
+                alert('Please enter a valid JSON array of questions.');
+                return;
+            }
+
+            submitBulkBtn.disabled = true;
+            submitBulkBtn.innerHTML = '<span>⏳</span> Importing...';
+
+            try {
+                const res = await api.post('/admin/questions/bulk', { questions });
+                if (res.success) {
+                    alert(`🎉 Success! ${res.count} questions added to CodeQuest!`);
+                    bulkTextarea.value = '';
+                    closeModal();
+                    loadQuestions(1);
+                    loadStats();
+                } else {
+                    alert('Failed to import: ' + (res.message || 'Unknown error'));
+                }
+            } catch (err) {
+                console.error('Import error:', err);
+                alert('Error importing questions: ' + err.message);
+            } finally {
+                submitBulkBtn.disabled = false;
+                submitBulkBtn.innerHTML = '<span>🚀</span> Import All Questions';
+            }
+        });
+    }
+
+    // Submit Single Question Form
+    if (singleForm) {
+        singleForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const optionInputs = singleForm.querySelectorAll('.single-option');
+            const options = Array.from(optionInputs).map(inp => inp.value.trim());
+
+            const payload = {
+                subject: document.getElementById('singleSubject').value,
+                difficulty: document.getElementById('singleDifficulty').value,
+                subLevel: document.getElementById('singleSubLevel').value,
+                section: document.getElementById('singleSection').value,
+                question: document.getElementById('singleQuestionText').value.trim(),
+                options: options,
+                correctAnswer: parseInt(document.getElementById('singleCorrectAnswer').value),
+                hint: document.getElementById('singleHint').value.trim()
+            };
+
+            const submitBtn = singleForm.querySelector('button[type="submit"]');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span>⏳</span> Saving...';
+
+            try {
+                const res = await api.post('/admin/question', payload);
+                if (res.success) {
+                    alert('🎉 Question created successfully!');
+                    singleForm.reset();
+                    closeModal();
+                    loadQuestions(1);
+                    loadStats();
+                } else {
+                    alert('Failed to save question: ' + (res.message || 'Unknown error'));
+                }
+            } catch (err) {
+                console.error('Error saving single question:', err);
+                alert('Error saving question: ' + err.message);
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<span>💾</span> Save Question';
+            }
+        });
     }
 }

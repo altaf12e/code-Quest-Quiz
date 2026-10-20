@@ -124,7 +124,7 @@
     "options": ["final", "static", "sealed", "abstract"],
     "correctAnswerIndex": 0,
     "hint": "final restricts inheritance."
-  }
+  },
 {
   "subject": "java",
   "difficulty": "easy",

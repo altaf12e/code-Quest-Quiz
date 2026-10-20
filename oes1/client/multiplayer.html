@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multiplayer Quiz - CodeQuest</title>
+    <title>Multiplayer Quiz Battle - CodeQuest</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/multiplayer.css">
 </head>
@@ -16,26 +16,46 @@
             <span class="nav-brand">CodeQuest Multiplayer</span>
         </div>
         <div class="nav-right">
-            <button class="nav-btn" onclick="location.href='dashboard.html'" title="Dashboard">🏠</button>
+            <span class="user-greeting" id="userGreeting"></span>
+            <button class="nav-btn" onclick="location.href='dashboard.html'" title="Dashboard">🏠 Dashboard</button>
+            <button class="nav-btn logout-nav-btn" id="logoutBtn" title="Logout">🚪 Logout</button>
         </div>
     </nav>
+
+    <!-- Fullscreen Countdown Overlay -->
+    <div class="countdown-overlay hidden" id="countdownOverlay">
+        <div class="countdown-box">
+            <div class="countdown-number" id="countdownNumber">3</div>
+            <div class="countdown-label">GET READY!</div>
+        </div>
+    </div>
+
+    <!-- Screen Lock Overlay Modal -->
+    <div class="screen-lock-overlay hidden" id="screenLockOverlay">
+        <div class="screen-lock-modal">
+            <div class="lock-icon-glow">🔒</div>
+            <h2>SCREEN LOCKED</h2>
+            <p>Battle Quiz is in progress. For security and anti-cheat compliance, the screen must remain in Fullscreen mode.</p>
+            <div class="lock-alert" id="lockAlertText">⚠️ Fullscreen exited! Return to fullscreen to continue answering.</div>
+            <button class="screen-unlock-btn" onclick="reEnterFullscreen()">
+                <span class="unlock-btn-icon">🔓</span> Return to Fullscreen
+            </button>
+        </div>
+    </div>
 
     <div class="multiplayer-container">
         <!-- Create/Join Selection -->
         <div class="selection-screen" id="selectionScreen">
             <div class="selection-card">
                 <h1>🏆 Multiplayer Quiz Battle</h1>
-                <p>Compete with friends in real-time quiz battles!</p>
-                <div class="testing-notice">
-                    <span class="testing-badge">⚠️ Under Testing Phase</span>
-                </div>
+                <p>Challenge your fellow coders to real-time synchronized battles!</p>
                 
                 <div class="action-buttons">
                     <button class="action-btn create-btn" onclick="showCreateForm()">
                         <div class="btn-icon">🎯</div>
                         <div class="btn-text">
                             <h3>Create Quiz</h3>
-                            <p>Start a new multiplayer quiz</p>
+                            <p>Host a private room with custom questions</p>
                         </div>
                     </button>
                     
@@ -43,7 +63,7 @@
                         <div class="btn-icon">🚀</div>
                         <div class="btn-text">
                             <h3>Join Quiz</h3>
-                            <p>Enter room code to join</p>
+                            <p>Enter 6-character room code to join</p>
                         </div>
                     </button>
                 </div>
@@ -59,7 +79,7 @@
                 <form id="createQuizForm">
                     <div class="form-group">
                         <label>Quiz Title</label>
-                        <input type="text" id="quizTitle" placeholder="Enter quiz title" required>
+                        <input type="text" id="quizTitle" placeholder="e.g. Master Coder Showdown" value="CodeQuest Battle" required>
                     </div>
                     
                     <div class="form-row">
@@ -67,10 +87,13 @@
                             <label>Subject</label>
                             <select id="quizSubject" required>
                                 <option value="">Select Subject</option>
+                                <option value="javascript" selected>⚡ JavaScript</option>
+                                <option value="python">🐍 Python</option>
                                 <option value="java">☕ Java</option>
                                 <option value="cpp">⚙️ C++</option>
-                                <option value="python">🐍 Python</option>
-                                <option value="javascript">⚡ JavaScript</option>
+                                <option value="react">⚛️ React</option>
+                                <option value="node">🟢 Node.js</option>
+                                <option value="sql">🗄️ SQL</option>
                                 <option value="data-structures">🗜️ Data Structures</option>
                                 <option value="algorithms">🧮 Algorithms</option>
                             </select>
@@ -81,7 +104,7 @@
                             <select id="quizDifficulty" required>
                                 <option value="">Select Difficulty</option>
                                 <option value="easy">🟢 Easy</option>
-                                <option value="medium">🟡 Medium</option>
+                                <option value="medium" selected>🟡 Medium</option>
                                 <option value="hard">🔴 Hard</option>
                             </select>
                         </div>
@@ -105,10 +128,10 @@
                             <span class="checkmark"></span>
                             Host participates in quiz
                         </label>
-                        <small class="form-hint">Uncheck if you want to moderate without competing</small>
+                        <small class="form-hint">Host competes for points alongside joined players</small>
                     </div>
                     
-                    <button type="submit" class="create-quiz-btn">
+                    <button type="submit" class="create-quiz-btn" id="createSubmitBtn">
                         <span class="btn-icon">🚀</span>
                         Create Quiz Room
                     </button>
@@ -125,10 +148,10 @@
                 <form id="joinQuizForm">
                     <div class="form-group">
                         <label>Room Code</label>
-                        <input type="text" id="roomCode" placeholder="Enter 6-digit room code" maxlength="6" required>
+                        <input type="text" id="roomCode" placeholder="Enter 6-character room code (e.g. AB49XY)" maxlength="6" style="text-transform: uppercase; font-family: monospace; font-size: 1.5rem; letter-spacing: 4px; text-align: center;" required>
                     </div>
                     
-                    <button type="submit" class="join-quiz-btn">
+                    <button type="submit" class="join-quiz-btn" id="joinSubmitBtn">
                         <span class="btn-icon">🎯</span>
                         Join Quiz Room
                     </button>
@@ -136,20 +159,20 @@
             </div>
         </div>
 
-        <!-- Room Created Screen -->
+        <!-- Room Created Screen (Host View) -->
         <div class="room-created-screen hidden" id="roomCreatedScreen">
             <div class="room-card">
                 <h2>🎉 Quiz Room Created!</h2>
                 
                 <div class="room-info">
                     <div class="room-code-display">
-                        <label>Room Code</label>
+                        <label>Share Room Code With Friends</label>
                         <div class="code-value" id="displayRoomCode">------</div>
-                        <button class="copy-btn" onclick="copyRoomCode()">📋 Copy</button>
+                        <button class="copy-btn" onclick="copyRoomCode()">📋 Copy Code</button>
                     </div>
                     
                     <div class="qr-section">
-                        <label>QR Code to Join</label>
+                        <label>Scan QR to Join on Mobile</label>
                         <div class="qr-container">
                             <img id="qrCodeImage" src="" alt="QR Code">
                         </div>
@@ -157,29 +180,29 @@
                 </div>
                 
                 <div class="participants-section">
-                    <h3>👥 Participants (<span id="participantCount">1</span>)</h3>
+                    <h3>👥 Participants In Room (<span id="participantCount">1</span>)</h3>
                     <div class="participants-list" id="participantsList">
-                        <!-- Participants will be added here -->
+                        <!-- Participants will be dynamically populated -->
                     </div>
                 </div>
                 
                 <div class="room-actions">
-                    <button class="start-quiz-btn" id="startQuizBtn" onclick="startQuiz()" disabled>
+                    <button class="start-quiz-btn" id="startQuizBtn" onclick="startQuiz()">
                         <span class="btn-icon">🚀</span>
-                        Start Quiz (Need 2+ players)
+                        Start Quiz Battle
                     </button>
                     <button class="end-room-btn" onclick="endRoom()">
                         <span class="btn-icon">❌</span>
-                        End Room
+                        Close Room
                     </button>
                 </div>
             </div>
         </div>
 
-        <!-- Waiting Room Screen -->
+        <!-- Waiting Room Screen (Participant View) -->
         <div class="waiting-room-screen hidden" id="waitingRoomScreen">
             <div class="waiting-card">
-                <h2>⏳ Waiting for Quiz to Start</h2>
+                <h2>⏳ Waiting for Battle to Start</h2>
                 
                 <div class="room-details">
                     <div class="detail-item">
@@ -193,49 +216,59 @@
                 </div>
                 
                 <div class="participants-section">
-                    <h3>👥 Participants (<span id="waitingParticipantCount">0</span>)</h3>
+                    <h3>👥 Joined Players (<span id="waitingParticipantCount">0</span>)</h3>
                     <div class="participants-grid" id="waitingParticipantsList">
-                        <!-- Participants will be added here -->
+                        <!-- Participants will be dynamically populated -->
                     </div>
                 </div>
                 
                 <div class="waiting-status">
                     <div class="loading-spinner"></div>
-                    <p>Waiting for the host to start the quiz...</p>
+                    <p>The host will start the quiz shortly. Sharpen your blades!</p>
                 </div>
             </div>
         </div>
 
-        <!-- Quiz Screen -->
+        <!-- Authoritative Quiz Screen -->
         <div class="quiz-screen hidden" id="quizScreen">
             <div class="quiz-container">
                 <div class="quiz-header">
                     <div class="progress-info">
-                        <span>Question <span id="currentQuestionNum">1</span> of <span id="totalQuestions">10</span></span>
+                        <span class="badge-question">Question <span id="currentQuestionNum">1</span> / <span id="totalQuestions">10</span></span>
+                        <span class="screen-lock-indicator"><span class="lock-dot"></span> 🔒 Screen Locked</span>
                     </div>
                     <div class="quiz-controls">
                         <button class="stop-quiz-btn" id="stopQuizBtn" onclick="stopQuiz()" style="display: none;">
-                            <span class="btn-icon">⏹️</span>
-                            Stop Quiz
+                            <span class="btn-icon">⏹️</span> Stop Quiz
                         </button>
-                        <div class="timer-container">
+                        <div class="timer-container" id="timerBox">
+                            <span class="timer-icon">⏱️</span>
                             <div class="timer" id="questionTimer">30</div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Timer countdown line bar -->
+                <div class="timer-bar-container">
+                    <div class="timer-bar-fill" id="timerBarFill"></div>
+                </div>
                 
                 <div class="question-container">
                     <h2 id="questionText">Loading question...</h2>
-                    
                     <div class="options-container" id="optionsContainer">
-                        <!-- Options will be added here -->
+                        <!-- Options will be added dynamically -->
                     </div>
+                    <div class="answer-status-pill hidden" id="answerStatusPill"></div>
                 </div>
                 
+                <!-- Live Leaderboard Sidebar / Bottom Board -->
                 <div class="live-leaderboard">
-                    <h3>🏆 Live Leaderboard</h3>
+                    <div class="leaderboard-header">
+                        <h3>🏆 Live Battle Standings</h3>
+                        <span class="answered-badge" id="answeredBadge">0 answered</span>
+                    </div>
                     <div class="leaderboard-list" id="liveLeaderboard">
-                        <!-- Live scores will be shown here -->
+                        <!-- Live scores and ranks populated in real time -->
                     </div>
                 </div>
             </div>
@@ -244,18 +277,19 @@
         <!-- Results Screen -->
         <div class="results-screen hidden" id="resultsScreen">
             <div class="results-container">
-                <h1>🏆 Quiz Complete!</h1>
+                <h1>🏆 Quiz Battle Complete!</h1>
+                <p class="results-subtitle">Congratulations to the CodeQuest Champions!</p>
                 
                 <div class="winners-podium">
                     <div class="podium-places" id="winnersPodium">
-                        <!-- Winners will be displayed here -->
+                        <!-- Winners podium populated here -->
                     </div>
                 </div>
                 
                 <div class="final-results">
-                    <h3>📊 Final Results</h3>
+                    <h3>📊 Full Leaderboard Standings</h3>
                     <div class="results-table" id="finalResultsTable">
-                        <!-- All participants results -->
+                        <!-- Full scoreboard table -->
                     </div>
                 </div>
                 
@@ -270,6 +304,9 @@
             </div>
         </div>
     </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="toast-container"></div>
 
     <script src="https://cdn.socket.io/4.7.4/socket.io.min.js"></script>
     <script src="js/config.js"></script>
