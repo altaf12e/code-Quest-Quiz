@@ -1,7 +1,7 @@
 const api = {
     async get(url) {
         const token = localStorage.getItem('token');
-        const response = await fetch(`http://localhost:5000/api${url}`, {
+        const response = await fetch(`https://code-quest-quiz.onrender.com/api${url}`, {
             headers: {
                 'Authorization': `Bearer ${token}`,
                 'Content-Type': 'application/json'
@@ -12,7 +12,7 @@ const api = {
     
     async post(url, data) {
         const token = localStorage.getItem('token');
-        const response = await fetch(`http://localhost:5000/api${url}`, {
+        const response = await fetch(`https://code-quest-quiz.onrender.com/api${url}`, {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${token}`,
@@ -25,7 +25,7 @@ const api = {
     
     async put(url, data) {
         const token = localStorage.getItem('token');
-        const response = await fetch(`http://localhost:5000/api${url}`, {
+        const response = await fetch(`https://code-quest-quiz.onrender.com/api${url}`, {
             method: 'PUT',
             headers: {
                 'Authorization': `Bearer ${token}`,
@@ -38,7 +38,7 @@ const api = {
     
     async delete(url) {
         const token = localStorage.getItem('token');
-        const response = await fetch(`http://localhost:5000/api${url}`, {
+        const response = await fetch(`https://code-quest-quiz.onrender.com/api${url}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${token}`,
