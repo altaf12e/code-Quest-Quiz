@@ -1,4 +1,7 @@
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = (typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'))
+    ? 'http://localhost:5000/api'
+    : 'https://code-quest-quiz.onrender.com/api';
+const API_FALLBACK_URL = 'https://code-quest-quiz.onrender.com/api';
 
 const api = {
     async request(endpoint, options = {}) {
@@ -16,38 +19,46 @@ const api = {
             config.headers['Authorization'] = `Bearer ${token}`;
         }
 
+        let activeBase = API_BASE_URL;
+
         try {
-            console.log(`🌐 API Request: ${options.method || 'GET'} ${API_BASE_URL}${endpoint}`);
-            if (options.body) {
-                console.log('📤 Request body:', JSON.parse(options.body));
+            console.log(`🌐 API Request: ${options.method || 'GET'} ${activeBase}${endpoint}`);
+            let response = null;
+            try {
+                response = await fetch(`${activeBase}${endpoint}`, config);
+            } catch (netErr) {
+                // If local server failed to connect, try fallback remote URL
+                if (activeBase !== API_FALLBACK_URL) {
+                    console.warn(`Local API at ${activeBase} unreachable, retrying with fallback ${API_FALLBACK_URL}`);
+                    activeBase = API_FALLBACK_URL;
+                    response = await fetch(`${activeBase}${endpoint}`, config);
+                } else {
+                    throw netErr;
+                }
             }
             
-            const response = await fetch(`${API_BASE_URL}${endpoint}`, config);
+            console.log(`📡 Response status: ${response ? response.status : 'null'}`);
             
-            console.log(`📡 Response status: ${response.status}`);
-            
+            if (!response || !response.ok) {
+                let errText = `HTTP ${response ? response.status : 500}`;
+                try {
+                    const errData = await response.json();
+                    if (errData && errData.message) errText = errData.message;
+                } catch (_) {}
+                throw new Error(errText);
+            }
+
             let data;
             try {
                 data = await response.json();
-                console.log('📥 Response data:', data);
             } catch (parseError) {
-                console.error('Failed to parse response as JSON:', parseError);
-                throw new Error('Invalid server response');
-            }
-
-            if (!response.ok) {
-                throw new Error(data.message || `HTTP ${response.status}: ${response.statusText}`);
+                console.warn('Failed to parse response as JSON:', parseError);
+                return { success: false, message: 'Invalid server response' };
             }
 
             return data;
         } catch (error) {
-            console.error('🚨 API Error:', error);
-            
-            // Handle network errors
-            if (error.name === 'TypeError' && error.message.includes('fetch')) {
-                throw new Error('Unable to connect to server. Please check if the server is running.');
-            }
-            
+            console.warn('🚨 API Notice:', error.message);
             throw error;
         }
     },

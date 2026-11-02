@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter Quiz - CodeQuest</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/chapters.css">
+    <link rel="stylesheet" href="css/styles.css?v=5.1">
+    <link rel="stylesheet" href="css/chapters.css?v=5.1">
 </head>
 <body class="exam-page">
     <div class="animated-bg">
@@ -28,7 +28,10 @@
                 <span class="timer-icon">⏰</span>
                 <span class="timer" id="timer">15:00</span>
             </div>
-            <button class="quit-btn" id="quitChapter">Quit</button>
+            <button class="quit-btn" id="quitChapter" title="Quit Quiz">
+                <span class="quit-icon">🚪</span>
+                <span class="quit-text">Quit Quiz</span>
+            </button>
         </div>
     </nav>
 
@@ -151,8 +154,26 @@
         </div>
     </div>
 
-    <script src="js/config.js"></script>
-    <script src="js/game.js"></script>
-    <script src="js/chapter-quiz.js"></script>
+    <!-- Interactive Quit Confirmation Modal -->
+    <div class="modal" id="quitConfirmModal">
+        <div class="modal-content modal-quit-content">
+            <div class="modal-header">
+                <div class="quit-modal-icon">⚠️</div>
+                <h3 style="color: #f87171; margin-top: 0.5rem;">Quit Chapter Quiz?</h3>
+            </div>
+            <div class="modal-body">
+                <p style="color: #cbd5e1; font-size: 1.05rem; line-height: 1.6;">Are you sure you want to quit? Any current answers and XP for this chapter session will not be saved.</p>
+            </div>
+            <div class="modal-footer" style="display: flex; gap: 1rem; justify-content: center; margin-top: 1.2rem;">
+                <button class="btn btn-secondary" id="cancelQuitBtn" style="flex: 1;">Continue Quiz</button>
+                <button class="btn btn-danger-glow" id="confirmQuitBtn" style="flex: 1;">🚪 Yes, Quit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/config.js?v=5.0"></script>
+    <script src="js/chaptersData.js?v=5.0"></script>
+    <script src="js/game.js?v=5.0"></script>
+    <script src="js/chapter-quiz.js?v=5.0"></script>
 </body>
 </html>

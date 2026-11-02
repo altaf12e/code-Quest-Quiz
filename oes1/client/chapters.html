@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Path - CodeQuest</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/chapters.css">
+    <link rel="stylesheet" href="css/styles.css?v=5.2">
+    <link rel="stylesheet" href="css/chapters.css?v=5.2">
 </head>
 <body>
     <div class="animated-bg">
@@ -29,29 +29,193 @@
     </nav>
 
     <div class="container">
-        <div class="page-header">
-            <button onclick="history.back()" class="btn btn-secondary">← Back</button>
-            <h1 id="subjectTitle">Learning Path</h1>
-            <div class="progress-info">
-                <span id="progressText">0% Complete</span>
+        <!-- ========================================================= -->
+        <!-- VIEW 1: CHAPTERS LIST VIEW                                -->
+        <!-- ========================================================= -->
+        <div id="chaptersListView">
+            <div class="page-header">
+                <a href="dashboard.html" class="btn btn-back-dashboard" id="backToDashboardBtn">
+                    <span class="btn-arrow-icon">←</span>
+                    <span class="btn-dash-icon">🏠</span>
+                    <span class="btn-dash-text">Back to Dashboard</span>
+                </a>
+                <h1 id="subjectTitle">Learning Path</h1>
+                <div class="progress-info">
+                    <span id="progressText">0% Complete (0/5)</span>
+                </div>
+            </div>
+
+            <div class="learning-path">
+                <div class="path-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="overallProgress"></div>
+                    </div>
+                    <span class="progress-label" id="progressLabelText">0 of 5 Chapters Completed</span>
+                </div>
+
+                <div class="chapters-grid" id="chaptersGrid">
+                    <!-- 5 Chapters will be loaded dynamically -->
+                </div>
             </div>
         </div>
 
-        <div class="learning-path">
-            <div class="path-progress">
-                <div class="progress-bar">
-                    <div class="progress-fill" id="overallProgress"></div>
+        <!-- ========================================================= -->
+        <!-- VIEW 2: CHAPTER LEARNING CONTENT VIEW                     -->
+        <!-- ========================================================= -->
+        <div id="chapterLearningView" class="chapter-learning-view" style="display: none;">
+            <!-- Top Navigation & Header -->
+            <div class="learning-header">
+                <div class="learning-breadcrumb">
+                    <button class="btn btn-back-dashboard btn-small" id="backToListBtnTop" onclick="showChaptersList()">
+                        <span class="btn-arrow-icon">←</span>
+                        <span class="btn-dash-icon">📋</span>
+                        <span class="btn-dash-text">Back to Chapters</span>
+                    </button>
+                    <span class="breadcrumb-sep">/</span>
+                    <span id="breadcrumbSubject" class="breadcrumb-item">Java</span>
+                    <span class="breadcrumb-sep">/</span>
+                    <span id="breadcrumbChapter" class="breadcrumb-item active">Chapter 1</span>
                 </div>
-                <span class="progress-label">Overall Progress</span>
+
+                <div class="learning-title-wrapper">
+                    <div class="chapter-badge-group">
+                        <span class="badge badge-number" id="learnChapterBadge">Chapter 1</span>
+                        <span class="badge badge-diff" id="learnDifficultyBadge">Beginner</span>
+                        <span class="badge badge-time" id="learnTimeBadge">⏱️ 15 min read</span>
+                        <span class="badge badge-status" id="learnStatusBadge">In Progress</span>
+                    </div>
+                    <h1 class="learning-main-title" id="learnTitle">Chapter Title</h1>
+                </div>
             </div>
 
-            <div class="chapters-grid" id="chaptersGrid">
-                <!-- Chapters will be loaded here -->
+            <!-- Learning Content Body -->
+            <div class="learning-content-card">
+                <!-- 1. Simple Introduction -->
+                <section class="learning-section intro-section">
+                    <div class="section-badge-header">
+                        <span class="section-icon">💡</span>
+                        <h3>Introduction</h3>
+                    </div>
+                    <p class="intro-lead" id="learnIntroText"></p>
+                </section>
+
+                <!-- 2. Detailed Explanation (4-6 Paragraphs) -->
+                <section class="learning-section detailed-section">
+                    <div class="section-badge-header">
+                        <span class="section-icon">📖</span>
+                        <h3>Chapter Concepts & Deep Dive</h3>
+                    </div>
+                    <div class="paragraphs-flow" id="learnParagraphsContainer">
+                        <!-- 4 to 6 easy English paragraphs -->
+                    </div>
+                </section>
+
+                <!-- 3. Important Points -->
+                <section class="learning-section points-section">
+                    <div class="section-badge-header">
+                        <span class="section-icon">⭐</span>
+                        <h3>Important Points to Remember</h3>
+                    </div>
+                    <ul class="important-points-list" id="learnPointsList">
+                        <!-- Key bullet points -->
+                    </ul>
+                </section>
+
+                <!-- 4. Simple Examples and Code -->
+                <section class="learning-section code-section">
+                    <div class="section-badge-header">
+                        <span class="section-icon">💻</span>
+                        <h3>Code Example</h3>
+                        <span class="code-lang-tag" id="codeLangTag">CODE</span>
+                    </div>
+                    <div class="code-terminal-box">
+                        <div class="terminal-bar">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="terminal-filename" id="terminalFileName">Example</span>
+                            <button class="copy-code-btn" id="copyCodeBtn" onclick="copyCurrentCode()">
+                                <span id="copyCodeIcon">📋</span> <span id="copyCodeText">Copy Code</span>
+                            </button>
+                        </div>
+                        <pre class="code-pre"><code id="learnCodeBlock" class="code-snippet"></code></pre>
+                    </div>
+                </section>
+
+                <!-- 5. Explanation of the Code -->
+                <section class="learning-section code-explanation-section">
+                    <div class="section-badge-header">
+                        <span class="section-icon">🔍</span>
+                        <h3>Explanation of the Code</h3>
+                    </div>
+                    <ul class="code-explanation-list" id="learnCodeExplanationList">
+                        <!-- Line by line code explanations -->
+                    </ul>
+                </section>
+
+                <!-- 6. Short Chapter Summary -->
+                <section class="learning-section summary-section">
+                    <div class="section-badge-header">
+                        <span class="section-icon">🎯</span>
+                        <h3>Chapter Summary</h3>
+                    </div>
+                    <div class="summary-box">
+                        <p id="learnSummaryText"></p>
+                    </div>
+                </section>
+
+                <!-- 7. 5 Practice Questions -->
+                <section class="learning-section practice-section">
+                    <div class="section-badge-header">
+                        <span class="section-icon">🧠</span>
+                        <h3>5 Practice Questions</h3>
+                        <span class="practice-counter-pill" id="practiceScorePill">Score: 0 / 5</span>
+                    </div>
+                    <p class="practice-hint-text">Test your understanding right now before attempting the chapter quiz!</p>
+                    <div class="practice-questions-grid" id="learnPracticeQuestionsContainer">
+                        <!-- 5 Interactive practice questions rendered here -->
+                    </div>
+                </section>
+
+                <!-- 8. Next Chapter Unlock & Milestone Action Card -->
+                <div id="nextChapterMilestoneCard" class="next-chapter-milestone-card" style="display: none;">
+                    <!-- Dynamically populated when chapter is completed -->
+                </div>
+            </div>
+
+            <!-- Bottom Navigation Bar (Prev, Mark Completed, Next, Start Quiz) -->
+            <div class="learning-action-bar">
+                <div class="action-bar-left">
+                    <button class="btn btn-secondary" id="prevChapterBtn" onclick="navigateChapter(-1)">
+                        ← Previous Chapter
+                    </button>
+                    <button class="btn btn-back-dashboard btn-small" onclick="showChaptersList()">
+                        <span class="btn-dash-icon">📋</span>
+                        <span class="btn-dash-text">Chapter List</span>
+                    </button>
+                </div>
+
+                <div class="action-bar-center">
+                    <button class="btn btn-success-glow" id="markCompletedBtn" onclick="toggleChapterCompletion()">
+                        ⭐ Mark as Completed
+                    </button>
+                </div>
+
+                <div class="action-bar-right">
+                    <button class="btn btn-secondary" id="nextChapterBtn" onclick="navigateChapter(1)">
+                        Next Chapter →
+                    </button>
+                    <button class="btn btn-primary btn-quiz-pulse" id="startQuizBtn" onclick="startCurrentChapterQuiz()">
+                        🚀 Start Quiz
+                    </button>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Chapter Details Modal -->
+    <!-- Chapter Details Modal (Optional Quick View) -->
     <div class="modal" id="chapterModal">
         <div class="modal-content">
             <div class="modal-header">
@@ -71,27 +235,25 @@
                     </div>
                     <div class="stat">
                         <span class="stat-icon">❓</span>
-                        <span class="stat-text" id="modalQuestionCount">10 questions</span>
+                        <span class="stat-text" id="modalQuestionCount">5 questions</span>
                     </div>
                     <div class="stat" id="modalScoreStat" style="display: none;">
                         <span class="stat-icon">⭐</span>
                         <span class="stat-text" id="modalScore">0%</span>
                     </div>
                 </div>
-                <div class="prerequisites" id="modalPrerequisites" style="display: none;">
-                    <h4>Prerequisites:</h4>
-                    <ul id="prerequisitesList"></ul>
-                </div>
             </div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" id="modalCancel" onclick="closeChapterModal()">Cancel</button>
-                <button class="btn btn-primary" id="modalStart" onclick="startChapter()">Start Chapter</button>
+                <button class="btn btn-secondary" id="modalStartLearning" onclick="openChapterFromModal()">📖 Read Chapter</button>
+                <button class="btn btn-primary" id="modalStart" onclick="startQuizFromModal()">🚀 Start Quiz</button>
             </div>
         </div>
     </div>
 
-    <script src="js/config.js?v=2.2"></script>
-    <script src="js/game.js?v=2.2"></script>
-    <script src="js/chapters.js?v=2.2"></script>
+    <script src="js/config.js?v=5.0"></script>
+    <script src="js/chaptersData.js?v=5.0"></script>
+    <script src="js/game.js?v=5.0"></script>
+    <script src="js/chapters.js?v=5.0"></script>
 </body>
 </html>

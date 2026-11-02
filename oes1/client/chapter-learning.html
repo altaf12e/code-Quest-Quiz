@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter Learning - CodeQuest</title>
+    <link rel="stylesheet" href="css/styles.css?v=4.0">
+    <link rel="stylesheet" href="css/chapters.css?v=4.0">
+</head>
+<body>
+    <script>
+        // Forward query params to chapters.html view
+        const params = new URLSearchParams(window.location.search);
+        const subject = params.get('subject') || 'java';
+        const chapter = params.get('chapter') || '1';
+        window.location.replace(`chapters.html?subject=${encodeURIComponent(subject)}&chapter=${encodeURIComponent(chapter)}`);
+    </script>
+</body>
+</html>
+

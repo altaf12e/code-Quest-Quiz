@@ -36,30 +36,52 @@ function loadUserData() {
 }
 
 async function initializeChapter() {
-    try {
-        const data = await api.get(`/chapters/${chapterData.subject}/${chapterData.chapterNumber}/questions`);
+    const subject = (chapterData.subject || 'java').toLowerCase();
+    const chNum = parseInt(chapterData.chapterNumber) || 1;
 
-        if (data.success) {
-            questions = data.questions;
-            const chapter = data.chapter;
-            
-            console.log('Loaded questions:', questions);
-            
-            document.getElementById('chapterSubject').textContent = capitalizeFirst(chapterData.subject.replace('-', ' '));
-            document.getElementById('chapterTitle').textContent = `Chapter ${chapter.chapterNumber}: ${chapter.title}`;
-            document.getElementById('totalQuestions').textContent = questions.length;
-            
-            const xpValues = { beginner: 20, intermediate: 35, advanced: 50 };
-            const xpPerQuestion = xpValues[chapter.difficulty] || 20;
-            document.getElementById('questionXP').textContent = `+${xpPerQuestion} XP`;
-            
-            loadQuestion();
-            startTimer();
-        } else {
-            throw new Error(data.message);
+    let loadedQuestions = null;
+    let chapterInfo = null;
+
+    // 1. Check local rich chapters bank (all 30 chapters guaranteed!)
+    if (typeof CHAPTERS_DATA !== 'undefined' && CHAPTERS_DATA[subject]) {
+        const ch = CHAPTERS_DATA[subject].find(c => c.chapterNumber === chNum);
+        if (ch && ch.practiceQuestions && ch.practiceQuestions.length > 0) {
+            chapterInfo = ch;
+            loadedQuestions = ch.practiceQuestions.map((q, idx) => ({
+                _id: `ch_${subject}_${chNum}_${idx}`,
+                question: q.question,
+                options: [...q.options],
+                correctAnswer: q.correctAnswer,
+                hint: q.explanation || `Refer to Chapter ${chNum}: ${ch.title}`,
+                xpValue: 20
+            }));
         }
-    } catch (error) {
-        console.error('Error loading chapter:', error);
+    }
+
+    // 2. If not found in local, attempt backend API
+    if (!loadedQuestions) {
+        try {
+            const data = await api.get(`/chapters/${chapterData.subject}/${chapterData.chapterNumber}/questions`);
+            if (data && data.success && data.questions && data.questions.length > 0) {
+                loadedQuestions = data.questions;
+                chapterInfo = data.chapter;
+            }
+        } catch (apiErr) {
+            console.warn('API unavailable for chapter questions, fallback applied:', apiErr);
+        }
+    }
+
+    if (loadedQuestions && loadedQuestions.length > 0) {
+        questions = loadedQuestions;
+        const titleText = chapterInfo ? chapterInfo.title : `Chapter ${chNum}`;
+        document.getElementById('chapterSubject').textContent = capitalizeFirst(subject.replace('-', ' '));
+        document.getElementById('chapterTitle').textContent = `Chapter ${chNum}: ${titleText}`;
+        document.getElementById('totalQuestions').textContent = questions.length;
+        document.getElementById('questionXP').textContent = '+20 XP';
+
+        loadQuestion();
+        startTimer();
+    } else {
         alert('Failed to load chapter. Redirecting to learning path...');
         window.location.href = `chapters.html?subject=${chapterData.subject}`;
     }
@@ -223,11 +245,10 @@ async function useHint() {
     }
     
     try {
-        const questionId = questions[currentQuestionIndex]._id;
+        const q = questions[currentQuestionIndex];
+        let hintText = q.hint || 'Carefully review the code syntax and fundamental rules for this topic.';
         
-        const data = await api.get(`/exam/hint/${questionId}`);
-        
-        document.getElementById('hintText').textContent = data.hint;
+        document.getElementById('hintText').textContent = hintText;
         document.getElementById('hintSection').style.display = 'block';
         
         hintsRemaining--;
@@ -235,8 +256,7 @@ async function useHint() {
         
         playSound('select');
     } catch (error) {
-        console.error('Error fetching hint:', error);
-        alert('Could not fetch hint. Please try again.');
+        console.error('Error displaying hint:', error);
     }
 }
 
@@ -244,7 +264,7 @@ async function endChapter() {
     stopTimer();
     
     const correctCount = answers.filter(a => a.correct).length;
-    const accuracy = Math.round((correctCount / answers.length) * 100);
+    const accuracy = Math.round((correctCount / (answers.length || 1)) * 100);
     const minutes = Math.floor(totalTime / 60);
     const seconds = totalTime % 60;
     
@@ -252,6 +272,27 @@ async function endChapter() {
     document.getElementById('finalXP').textContent = sessionXP;
     document.getElementById('timeTaken').textContent = `${minutes}:${String(seconds).padStart(2, '0')}`;
     
+    const passed = accuracy >= 60;
+
+    // Save chapter completion in localStorage
+    try {
+        const key = 'codequest_chapter_progress';
+        const progress = JSON.parse(localStorage.getItem(key) || '{}');
+        const subj = chapterData.subject;
+        const chNum = chapterData.chapterNumber;
+        if (!progress[subj]) progress[subj] = {};
+        if (passed) {
+            progress[subj][chNum] = {
+                completed: true,
+                score: accuracy,
+                completedAt: Date.now()
+            };
+            localStorage.setItem(key, JSON.stringify(progress));
+        }
+    } catch (storageErr) {
+        console.error('LocalStorage save error:', storageErr);
+    }
+
     try {
         const data = await api.post('/chapters/complete', {
             subject: chapterData.subject,
@@ -261,21 +302,35 @@ async function endChapter() {
             totalQuestions: questions.length
         });
         
-        if (data.leveledUp) {
+        if (data && data.leveledUp) {
             showLevelUp(data.newLevel - 1, data.newLevel);
         }
-        
-        const completionMessage = document.getElementById('completionMessage');
-        if (data.passed) {
-            completionMessage.innerHTML = '<p>🎉 Congratulations! You passed this chapter and unlocked the next one!</p>';
-            document.getElementById('nextChapter').style.display = 'inline-block';
-        } else {
-            completionMessage.innerHTML = '<p>📚 Keep practicing! You need 70% to pass this chapter.</p>';
-            document.getElementById('nextChapter').style.display = 'none';
-        }
-        
     } catch (error) {
-        console.error('Error completing chapter:', error);
+        console.warn('API sync not available for chapter completion, saved locally:', error);
+    }
+
+    const completionMessage = document.getElementById('completionMessage');
+    const nextChapterBtn = document.getElementById('nextChapter');
+    const currentNum = parseInt(chapterData.chapterNumber) || 1;
+    const nextNum = currentNum + 1;
+
+    if (passed) {
+        if (nextNum <= 5) {
+            completionMessage.innerHTML = `<p>🎉 Congratulations! You passed Chapter ${currentNum} and unlocked Chapter ${nextNum} for reading!</p>`;
+            if (nextChapterBtn) {
+                nextChapterBtn.style.display = 'inline-block';
+                nextChapterBtn.textContent = `📖 Read Chapter ${nextNum} →`;
+            }
+        } else {
+            completionMessage.innerHTML = `<p>🏆 Outstanding! You have completed all chapters for ${capitalizeFirst(chapterData.subject)}!</p>`;
+            if (nextChapterBtn) {
+                nextChapterBtn.style.display = 'inline-block';
+                nextChapterBtn.textContent = `📋 View All Chapters`;
+            }
+        }
+    } else {
+        completionMessage.innerHTML = '<p>📚 Keep practicing! You need at least 60% to complete this chapter.</p>';
+        if (nextChapterBtn) nextChapterBtn.style.display = 'none';
     }
     
     document.getElementById('chapterCompleteModal').classList.add('active');
@@ -297,18 +352,60 @@ function attachEventListeners() {
     
     document.getElementById('hintBtn').addEventListener('click', useHint);
     
-    document.getElementById('quitChapter').addEventListener('click', () => {
-        if (confirm('Are you sure you want to quit? Progress will be lost.')) {
+    // Interactive Quit Modal Handlers
+    const quitBtn = document.getElementById('quitChapter');
+    const quitModal = document.getElementById('quitConfirmModal');
+    const cancelQuitBtn = document.getElementById('cancelQuitBtn');
+    const confirmQuitBtn = document.getElementById('confirmQuitBtn');
+
+    if (quitBtn) {
+        quitBtn.addEventListener('click', () => {
+            if (typeof playSound === 'function') playSound('select');
+            if (quitModal) {
+                quitModal.classList.add('active');
+            } else if (confirm('Are you sure you want to quit? Progress will be lost.')) {
+                window.location.href = `chapters.html?subject=${chapterData.subject}`;
+            }
+        });
+    }
+
+    if (cancelQuitBtn) {
+        cancelQuitBtn.addEventListener('click', () => {
+            if (quitModal) quitModal.classList.remove('active');
+            if (typeof playSound === 'function') playSound('select');
+        });
+    }
+
+    if (confirmQuitBtn) {
+        confirmQuitBtn.addEventListener('click', () => {
+            if (typeof playSound === 'function') playSound('select');
             window.location.href = `chapters.html?subject=${chapterData.subject}`;
+        });
+    }
+
+    if (quitModal) {
+        quitModal.addEventListener('click', (e) => {
+            if (e.target === quitModal) quitModal.classList.remove('active');
+        });
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && quitModal && quitModal.classList.contains('active')) {
+            quitModal.classList.remove('active');
         }
     });
-    
+
     document.getElementById('retryChapter').addEventListener('click', () => {
         window.location.reload();
     });
     
     document.getElementById('nextChapter').addEventListener('click', () => {
-        window.location.href = `chapters.html?subject=${chapterData.subject}`;
+        const nextNum = parseInt(chapterData.chapterNumber) + 1;
+        if (nextNum <= 5) {
+            window.location.href = `chapters.html?subject=${chapterData.subject}&chapter=${nextNum}`;
+        } else {
+            window.location.href = `chapters.html?subject=${chapterData.subject}`;
+        }
     });
     
     document.getElementById('backToPath').addEventListener('click', () => {

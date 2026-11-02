@@ -55,11 +55,12 @@ async function initializeExam() {
         capitalizeFirst(examData.difficulty);
     document.getElementById('examDifficulty').textContent = difficultyText;
     
+    const questionLimit = examData.difficulty === 'marathon' ? 30 : 10;
+    const subLevelParam = (examData.subLevel && examData.subLevel !== 'undefined' && examData.subLevel !== 'null') ? `&subLevel=${examData.subLevel}` : '';
+    const subject = examData.subject || 'java';
+    const difficulty = examData.difficulty || 'medium';
+
     try {
-        const questionLimit = examData.difficulty === 'marathon' ? 30 : 10;
-        const subLevelParam = (examData.subLevel && examData.subLevel !== 'undefined' && examData.subLevel !== 'null') ? `&subLevel=${examData.subLevel}` : '';
-        const subject = examData.subject || 'java';
-        const difficulty = examData.difficulty || 'medium';
         const data = await api.get(`/exam/questions?subject=${subject}&difficulty=${difficulty}${subLevelParam}&limit=${questionLimit}`);
         
         if (!data || !data.questions || data.questions.length === 0) {
@@ -68,31 +69,118 @@ async function initializeExam() {
 
         questions = data.questions;
         sections = data.sections || {};
-        
-        console.log('Loaded exam questions:', questions.map(q => ({ id: q._id, correctAnswer: q.correctAnswer })));
-        
-        questionOrder = questions.map((q, index) => ({ originalId: q._id, currentIndex: index }));
-        
-        document.getElementById('totalQuestions').textContent = questions.length;
-        document.getElementById('totalAnswered').textContent = questions.length;
-        
-        const xpValues = { easy: 10, medium: 25, hard: 50, marathon: 100 };
-        const xpPerQuestion = xpValues[examData.difficulty] || 10;
-        document.getElementById('questionXP').textContent = `+${xpPerQuestion} XP`;
-        
-        examStartTime = Date.now();
-        initializeSections();
-        updateProgressBar();
-        showRandomizationEffect();
-        loadQuestion();
-        startTimer();
-        attachAutoSubmitListeners();
     } catch (error) {
-        console.error('Error loading questions:', error);
-        stopProctoring();
-        alert('Failed to load questions: ' + (error.message || 'Server error') + '. Redirecting to dashboard...');
-        window.location.href = 'dashboard.html';
+        console.warn('Backend questions unavailable, loading resilient offline question bank:', error);
+        questions = getFallbackExamQuestions(subject, difficulty, questionLimit);
+        sections = {};
+        questions.forEach(q => {
+            const sec = q.section || 'fundamentals';
+            if (!sections[sec]) sections[sec] = [];
+            sections[sec].push(q);
+        });
     }
+
+    if (!questions || questions.length === 0) {
+        stopProctoring();
+        alert('Failed to load questions. Redirecting to dashboard...');
+        window.location.href = 'dashboard.html';
+        return;
+    }
+
+    console.log('Loaded exam questions:', questions.map(q => ({ id: q._id, correctAnswer: q.correctAnswer })));
+    
+    questionOrder = questions.map((q, index) => ({ originalId: q._id, currentIndex: index }));
+    
+    document.getElementById('totalQuestions').textContent = questions.length;
+    document.getElementById('totalAnswered').textContent = questions.length;
+    
+    const xpValues = { easy: 10, medium: 25, hard: 50, marathon: 100 };
+    const xpPerQuestion = xpValues[examData.difficulty] || 10;
+    document.getElementById('questionXP').textContent = `+${xpPerQuestion} XP`;
+    
+    examStartTime = Date.now();
+    initializeSections();
+    updateProgressBar();
+    showRandomizationEffect();
+    loadQuestion();
+    startTimer();
+    attachAutoSubmitListeners();
+}
+
+function getFallbackExamQuestions(subject, difficulty, limit = 10) {
+    const subjKey = (subject || 'java').toLowerCase().replace(' ', '-');
+    let pool = [];
+
+    if (typeof CHAPTERS_DATA !== 'undefined' && CHAPTERS_DATA[subjKey]) {
+        const sectionNames = ['fundamentals', 'intermediate', 'advanced', 'practical'];
+        CHAPTERS_DATA[subjKey].forEach((ch, chIdx) => {
+            const sec = sectionNames[chIdx % sectionNames.length];
+            (ch.practiceQuestions || []).forEach((pq, pqIdx) => {
+                pool.push({
+                    _id: `fallback_${subjKey}_${ch.chapterNumber}_${pqIdx}`,
+                    question: pq.question,
+                    options: [...pq.options],
+                    correctAnswer: pq.correctAnswer,
+                    hint: pq.explanation || `Concept from Chapter ${ch.chapterNumber}: ${ch.title}`,
+                    xpValue: difficulty === 'hard' ? 50 : (difficulty === 'medium' ? 25 : 10),
+                    section: sec
+                });
+            });
+        });
+    }
+
+    if (pool.length === 0) {
+        pool = [
+            {
+                _id: 'emg_1',
+                question: 'Which of the following is the main entry point of a program in Java?',
+                options: ['start()', 'main()', 'init()', 'run()'],
+                correctAnswer: 1,
+                hint: 'Look for public static void main',
+                xpValue: 10,
+                section: 'fundamentals'
+            },
+            {
+                _id: 'emg_2',
+                question: 'Which loop is guaranteed to execute at least once?',
+                options: ['for loop', 'while loop', 'do-while loop', 'for-each loop'],
+                correctAnswer: 2,
+                hint: 'The loop condition is checked at the bottom.',
+                xpValue: 10,
+                section: 'fundamentals'
+            },
+            {
+                _id: 'emg_3',
+                question: 'What is the time complexity of binary search on a sorted array?',
+                options: ['O(n)', 'O(log n)', 'O(n log n)', 'O(1)'],
+                correctAnswer: 1,
+                hint: 'It divides the search interval in half every step.',
+                xpValue: 10,
+                section: 'intermediate'
+            },
+            {
+                _id: 'emg_4',
+                question: 'Which data structure follows the First-In, First-Out (FIFO) principle?',
+                options: ['Stack', 'Queue', 'Tree', 'Graph'],
+                correctAnswer: 1,
+                hint: 'Think of customers queuing up at a ticket counter.',
+                xpValue: 10,
+                section: 'intermediate'
+            },
+            {
+                _id: 'emg_5',
+                question: 'What is encapsulation in Object-Oriented Programming?',
+                options: ['Inheriting from multiple classes', 'Bundling data and methods together and restricting direct access', 'Overloading function signatures', 'Compiling code to bytecode'],
+                correctAnswer: 1,
+                hint: 'It uses private fields and public getter/setter methods.',
+                xpValue: 10,
+                section: 'advanced'
+            }
+        ];
+    }
+
+    const shuffled = [...pool].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, Math.min(limit, shuffled.length));
 }
 
 function loadQuestion() {
