@@ -138,8 +138,13 @@
                 </form>
             </div>
 
-            <div class="auth-footer">
+            <div class="auth-footer" style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-top: 15px;">
                 <a href="index.html" class="link">← Back to Home</a>
+                <div class="server-status-pill" style="font-size: 0.78rem; color: #94a3b8; display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 999px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                    <span style="width: 7px; height: 7px; border-radius: 50%; background: #10b981; box-shadow: 0 0 6px #10b981; display: inline-block;"></span>
+                    <span id="serverStatusText">API: Cloud Backend</span>
+                    <button type="button" id="apiConfigBtn" title="Change Backend API URL" style="background: none; border: none; color: #a855f7; cursor: pointer; text-decoration: underline; font-size: 0.75rem; padding: 0 2px;">Change</button>
+                </div>
             </div>
         </div>
     </div>

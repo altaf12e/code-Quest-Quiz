@@ -2,6 +2,10 @@ const API_CONFIG = {
     localUrl: 'http://localhost:5000/api',
     remoteUrl: 'https://code-quest-quiz.onrender.com/api',
     getBaseUrl() {
+        const custom = (typeof localStorage !== 'undefined') && (localStorage.getItem('codequest_api_url') || localStorage.getItem('custom_api_url'));
+        if (custom && custom.trim()) {
+            return custom.trim().replace(/\/+$/, '');
+        }
         if (typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
             return this.localUrl;
         }
@@ -10,42 +14,48 @@ const API_CONFIG = {
 };
 
 const api = {
-    async request(url, options = {}) {
-        const token = localStorage.getItem('token');
+    async request(url, options = {}, retries = 2) {
+        const token = (typeof localStorage !== 'undefined') ? localStorage.getItem('token') : null;
         const headers = {
             'Content-Type': 'application/json',
             ...(token ? { 'Authorization': `Bearer ${token}` } : {}),
             ...options.headers
         };
 
-        const primaryBase = API_CONFIG.getBaseUrl();
-        const fallbackBase = primaryBase === API_CONFIG.localUrl ? API_CONFIG.remoteUrl : API_CONFIG.localUrl;
+        const baseUrl = API_CONFIG.getBaseUrl();
 
-        let response = null;
-        try {
-            response = await fetch(`${primaryBase}${url}`, { ...options, headers });
-        } catch (err) {
+        for (let attempt = 1; attempt <= (retries + 1); attempt++) {
             try {
-                response = await fetch(`${fallbackBase}${url}`, { ...options, headers });
-            } catch (fallbackErr) {
-                console.warn('API fetch failed on both endpoints:', url);
-                return { success: false, message: 'Server currently offline' };
+                const response = await fetch(`${baseUrl}${url}`, { ...options, headers });
+                
+                if (!response || !response.ok) {
+                    let errMessage = `HTTP ${response ? response.status : 500}`;
+                    try {
+                        const errData = await response.json();
+                        if (errData && errData.message) errMessage = errData.message;
+                    } catch (_) {}
+
+                    if (response && (response.status === 502 || response.status === 503) && attempt <= retries) {
+                        await new Promise(r => setTimeout(r, 3500));
+                        continue;
+                    }
+
+                    return { success: false, message: errMessage };
+                }
+
+                try {
+                    return await response.json();
+                } catch (jsonErr) {
+                    return { success: false, message: 'Invalid server response' };
+                }
+            } catch (err) {
+                if (attempt <= retries) {
+                    await new Promise(r => setTimeout(r, 3500));
+                    continue;
+                }
+                console.warn('API fetch failed:', url);
+                return { success: false, message: 'Cloud server is waking up from sleep mode. Please try again in 15 seconds.' };
             }
-        }
-
-        if (!response || !response.ok) {
-            let errMessage = `HTTP ${response ? response.status : 500}`;
-            try {
-                const errData = await response.json();
-                if (errData && errData.message) errMessage = errData.message;
-            } catch (_) {}
-            return { success: false, message: errMessage };
-        }
-
-        try {
-            return await response.json();
-        } catch (jsonErr) {
-            return { success: false, message: 'Invalid server response' };
         }
     },
 
@@ -70,6 +80,4 @@ const api = {
     delete(url) {
         return this.request(url, { method: 'DELETE' });
     }
-};
-
 };

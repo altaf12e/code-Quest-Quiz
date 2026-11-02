@@ -24,11 +24,19 @@ const io = socketIo(server, {
 connectDB();
 
 app.use(cors({
-    origin: '*',
+    origin: true,
     credentials: true
 }));
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
+
+// Health check endpoints for Render health checks and wake-up pings
+app.get('/health', (req, res) => {
+    res.status(200).json({ status: 'ok', uptime: process.uptime() });
+});
+app.get('/api/health', (req, res) => {
+    res.status(200).json({ status: 'ok', uptime: process.uptime() });
+});
 
 // REST Routes
 app.use('/api/auth', require('./routes/auth'));
