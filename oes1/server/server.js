@@ -32,10 +32,18 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
 // Health check endpoints for Render health checks and wake-up pings
 app.get('/health', (req, res) => {
-    res.status(200).json({ status: 'ok', uptime: process.uptime() });
+    res.status(200).json({ 
+        status: 'ok', 
+        uptime: process.uptime(),
+        dbConnected: mongoose.connection.readyState === 1 
+    });
 });
 app.get('/api/health', (req, res) => {
-    res.status(200).json({ status: 'ok', uptime: process.uptime() });
+    res.status(200).json({ 
+        status: 'ok', 
+        uptime: process.uptime(),
+        dbConnected: mongoose.connection.readyState === 1 
+    });
 });
 
 // REST Routes

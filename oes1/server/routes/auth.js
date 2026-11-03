@@ -53,9 +53,11 @@ router.post('/signup', [
             user.generateDailyQuests();
             await user.save();
         } catch (error) {
-            console.error('Error generating daily quests:', error);
+            console.warn('Non-fatal error generating daily quests:', error.message);
             user.dailyQuests = [];
-            await user.save();
+            try {
+                await user.save();
+            } catch (_) {}
         }
 
         const token = generateToken(user._id);
@@ -152,17 +154,18 @@ router.post('/login', [
 
         console.log('✅ Password verified, preparing response...');
 
-        // Update last active
-        user.lastActive = Date.now();
-
-        // Initialize missing fields safely
-        if (!user.dailyQuests) user.dailyQuests = [];
-        if (!user.questHistory) user.questHistory = [];
-        if (!user.achievements) user.achievements = [];
-        if (!user.stats) user.stats = {};
-        if (!user.preferences) user.preferences = { theme: 'dark', soundEnabled: true, notifications: true };
-
-        await user.save();
+        // Update last active and initialize missing fields safely
+        try {
+            user.lastActive = Date.now();
+            if (!user.dailyQuests) user.dailyQuests = [];
+            if (!user.questHistory) user.questHistory = [];
+            if (!user.achievements) user.achievements = [];
+            if (!user.stats) user.stats = {};
+            if (!user.preferences) user.preferences = { theme: 'dark', soundEnabled: true, notifications: true };
+            await user.save();
+        } catch (saveError) {
+            console.warn('Non-fatal warning updating user on login:', saveError.message);
+        }
 
         const token = generateToken(user._id);
 
