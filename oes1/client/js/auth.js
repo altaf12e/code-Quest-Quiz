@@ -182,7 +182,9 @@ async function handleLogin(e) {
         const rawMsg = (error && error.message) ? error.message : String(error);
         let errorMessage = 'Login failed. Please try again.';
         
-        if (rawMsg.includes('Failed to fetch') || rawMsg.includes('waking up') || rawMsg.includes('sleep mode') || rawMsg.includes('NetworkError') || rawMsg.includes('offline') || rawMsg.includes('AbortError')) {
+        if (rawMsg.includes('Database is offline') || rawMsg.includes('MongoDB Atlas')) {
+            errorMessage = '⚠️ MongoDB Database is offline: Atlas cluster may be paused. Please unpause in MongoDB Atlas.';
+        } else if (rawMsg.includes('Failed to fetch') || rawMsg.includes('waking up') || rawMsg.includes('sleep mode') || rawMsg.includes('NetworkError') || rawMsg.includes('offline') || rawMsg.includes('AbortError')) {
             errorMessage = '⏳ Cloud server is waking up from sleep mode (~40-50s on Render Free Tier). Please wait 10-20 seconds and click Login again!';
             showWakeupNotice();
         } else if (rawMsg.includes('Invalid') || rawMsg.includes('401') || rawMsg.includes('password') || rawMsg.includes('user')) {
@@ -288,7 +290,9 @@ async function handleSignup(e) {
         const rawMsg = (error && error.message) ? error.message : String(error);
         let errorMessage = rawMsg || 'Signup failed. Please try again.';
 
-        if (rawMsg.includes('Failed to fetch') || rawMsg.includes('waking up') || rawMsg.includes('NetworkError') || rawMsg.includes('AbortError')) {
+        if (rawMsg.includes('Database is offline') || rawMsg.includes('MongoDB Atlas')) {
+            errorMessage = '⚠️ MongoDB Database is offline: Atlas cluster may be paused. Please unpause in MongoDB Atlas.';
+        } else if (rawMsg.includes('Failed to fetch') || rawMsg.includes('waking up') || rawMsg.includes('NetworkError') || rawMsg.includes('AbortError')) {
             errorMessage = '⏳ Cloud server is waking up (~40-50s on Render Free Tier). Please wait 10-20 seconds and click Sign Up again!';
         }
         

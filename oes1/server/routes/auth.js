@@ -17,6 +17,15 @@ router.post('/signup', [
 ], async (req, res) => {
     try {
         console.log('🔐 Signup attempt:', req.body.username);
+
+        // Fail-fast if database is not connected
+        if (mongoose.connection.readyState !== 1) {
+            console.error('❌ Signup rejected: MongoDB is not connected (readyState:', mongoose.connection.readyState, ')');
+            return res.status(503).json({
+                success: false,
+                message: 'Database is offline. MongoDB Atlas cluster may be paused or unlinked in Render.'
+            });
+        }
         
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
@@ -124,6 +133,15 @@ router.post('/login', [
 ], async (req, res) => {
     try {
         console.log('🔐 Login attempt for:', req.body.username);
+
+        // Fail-fast if database is not connected
+        if (mongoose.connection.readyState !== 1) {
+            console.error('❌ Login rejected: MongoDB is not connected (readyState:', mongoose.connection.readyState, ')');
+            return res.status(503).json({
+                success: false,
+                message: 'Database is offline. MongoDB Atlas cluster may be paused or unlinked in Render.'
+            });
+        }
         
         const errors = validationResult(req);
         if (!errors.isEmpty()) {

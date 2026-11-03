@@ -15,6 +15,15 @@ if (!fs.existsSync(path.join(baseDir, 'server')) && fs.existsSync(path.join(base
 const serverDir = path.join(baseDir, 'server');
 const clientDir = path.join(baseDir, 'client');
 
+// On Cloud Platforms (Render, Heroku, etc.), only start the Backend API server directly
+if (process.env.RENDER || process.env.NODE_ENV === 'production' || process.env.PORT) {
+    console.log(`☁️ Cloud Environment detected (PORT: ${process.env.PORT || 5000}).`);
+    console.log('🚀 Launching Backend API server directly...\n');
+    process.chdir(serverDir);
+    require(path.join(serverDir, 'server.js'));
+    return;
+}
+
 // 1. Start Backend Server on Port 5000
 console.log('🚀 [1/3] Starting Backend Server (Port 5000)...');
 const backend = spawn('node', ['server.js'], {

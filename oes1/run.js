@@ -9,6 +9,15 @@ const rootDir = __dirname;
 const serverDir = path.join(rootDir, 'server');
 const clientDir = path.join(rootDir, 'client');
 
+// On Cloud Platforms (Render, Heroku, etc.), only start the Backend API server directly
+if (process.env.RENDER || process.env.NODE_ENV === 'production' || process.env.PORT) {
+    console.log(`☁️ Cloud Environment detected (PORT: ${process.env.PORT || 5000}).`);
+    console.log('🚀 Launching Backend API server directly...\n');
+    process.chdir(serverDir);
+    require(path.join(serverDir, 'server.js'));
+    return;
+}
+
 // 1. Start Backend Server on Port 5000
 console.log('🚀 [1/3] Starting Backend Server (Port 5000)...');
 const backend = spawn('node', ['server.js'], {
